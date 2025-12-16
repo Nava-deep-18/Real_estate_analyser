@@ -1,7 +1,7 @@
 Name,Address,Bedrooms,Price,Rent,Area,Furnishing,Type,Match_Type,Price_Per_Sqft,Rent_Per_Sqft
 "Team Taurus Singhaduar, Team Taurus Singhaduar, Rajarhat, Kolkata",rajarhat,2,6630000,18000,1241.0,Unfurnished,buy,exact_match,5342.47,14.5
 "Prudent Amara, Prudent Amara, Rajpur Sonarpur, Kolkata",rajpur sonarpur,3,4570000,13687,865.0,Unfurnished,buy,address_bedroom,5283.24,15.82
-"4 BHK Villa for Sale in Arizuma Southern Vista, Rajpur Sonarpur Kolkata",rajpur sonarpur,4,15100000,37965,1974.0,Unfurnished,buy,address_only,7649.44,19.23
+"Arizuma Southern Vista, Rajpur Sonarpur Kolkata",rajpur sonarpur,4,15100000,37965,1974.0,Unfurnished,buy,address_only,7649.44,19.23
 "Look Saket Evara, Look Saket Evara, Baranagar, Kolkata",baranagar,3,10000000,27893,781.0,Unfurnished,buy,address_only,12804.1,35.71
 "Sureka Sunrise Aura, Sureka Sunrise Aura, Southern Bypass, Kolkata",southern bypass,2,6090000,28894,920.0,Unfurnished,buy,address_only,6619.57,31.41
 "Siddha Serena, Siddha Serena, Rajarhat, Kolkata",rajarhat,3,10000000,21000,1030.0,Unfurnished,buy,exact_match,9708.74,20.39
@@ -9,7 +9,7 @@ Name,Address,Bedrooms,Price,Rent,Area,Furnishing,Type,Match_Type,Price_Per_Sqft,
 "AKP Marinas Edge, AKP Marinas Edge, North 24 Parganas, Kolkata",north 24 parganas,5,65400000,138679,2824.0,Unfurnished,buy,bedroom_only,23158.64,49.11
 "Pansari Purti Tatsam, Pansari Purti Tatsam, Rajarhat, Kolkata",rajarhat,4,16200000,77070,1788.0,Unfurnished,buy,address_bedroom,9060.4,43.1
 "Purti The Varanda, Purti The Varanda, Lake Town, Kolkata",lake town,3,20600000,59072,1883.0,Unfurnished,buy,address_bedroom,10939.99,31.37
-"4 BHK Villa for Sale in Eden Group Amantran, Joka Kolkata",joka,4,14000000,46948,2024.0,Unfurnished,buy,address_only,6917.0,23.2
+"Eden Group Amantran, Joka Kolkata",joka,4,14000000,46948,2024.0,Unfurnished,buy,address_only,6917.0,23.2
 "Siddha Suburbia, Siddha Suburbia, Southern Bypass, Kolkata",southern bypass,2,4490000,28894,920.0,Unfurnished,buy,address_only,4880.43,31.41
 "Siddha Serena, Siddha Serena, Rajarhat, Kolkata",rajarhat,3,10000000,21000,1030.0,Unfurnished,buy,exact_match,9708.74,20.39
 "AKP Marinas Edge, AKP Marinas Edge, North 24 Parganas, Kolkata",north 24 parganas,5,65400000,138679,2824.0,Unfurnished,buy,bedroom_only,23158.64,49.11
@@ -53,7 +53,7 @@ Name,Address,Bedrooms,Price,Rent,Area,Furnishing,Type,Match_Type,Price_Per_Sqft,
 "GPS Meena Vedica, GPS Meena Vedica, Gouranganagar, Kolkata",gouranganagar,3,5250000,27619,1160.0,Unfurnished,buy,bedroom_only,4525.86,23.81
 "Bengal Peerless Avidipta Phase 2, Bengal Peerless Avidipta Phase 2, Eastern Metropolitan Bypass, Kolkata",em bypass,4,50100000,70000,1749.0,Semi-Furnished,buy,exact_match,28644.94,40.02
 "Rechi Anandi Enclave, Rechi Anandi Enclave, Rajarhat, Kolkata",rajarhat,2,5200000,25000,700.0,Unfurnished,buy,exact_match,7428.57,35.71
-6 BHK House for Sale in Kasba Kolkata,kasba,6,35000000,48000,2200.0,Semi-Furnished,buy,address_only,15909.09,21.82
+Kasba Kolkata,kasba,6,35000000,48000,2200.0,Semi-Furnished,buy,address_only,15909.09,21.82
 "Bhowanipore, Kolkata",bhawanipur,2,14500000,34667,1000.0,Semi-Furnished,buy,address_only,14500.0,34.67
 "Gopalpur, Kolkata",gopalpur,2,4380000,15364,717.0,Unfurnished,buy,bedroom_only,6108.79,21.43
 "Dinesh Nagar Mukundapur, Kolkata",dinesh nagar,4,51500000,90299,2200.0,Unfurnished,buy,bedroom_only,23409.09,41.04
@@ -85,7 +85,7 @@ Name,Address,Bedrooms,Price,Rent,Area,Furnishing,Type,Match_Type,Price_Per_Sqft,
 "Vinayak Vista, Vinayak Vista, Lake Town, Kolkata",lake town,3,15500000,43000,1590.0,Unfurnished,buy,exact_match,9748.43,27.04
 "Bhawani Bandhan, Bhawani Bandhan, Madhyamgram, Kolkata",madhyamgram,2,5300000,10400,660.0,Unfurnished,buy,address_bedroom,8030.3,15.76
 "Sugam Morya Phase 2, Sugam Morya Phase 2, Tollygunge, Kolkata",tollygunge,3,16400000,34000,1529.0,Unfurnished,buy,exact_match,10725.96,22.24
-"4 BHK Villa for Sale in Forum Legacy, Action Area 2 Kolkata",action area 2,4,39000000,51398,2492.0,Unfurnished,buy,address_only,15650.08,20.63
+"Forum Legacy, Action Area 2 Kolkata",action area 2,4,39000000,51398,2492.0,Unfurnished,buy,address_only,15650.08,20.63
 "Ambuja Utalika The Condoville, Ambuja Utalika The Condoville, Mukundapur, Kolkata",mukundapur,3,31000000,93475,2152.0,Unfurnished,buy,address_bedroom,14405.2,43.44
 "Santoshpur, Kolkata",santoshpur,3,8000000,21469,1460.0,Unfurnished,buy,address_bedroom,5479.45,14.7
 "Sureka Elita Garden Vista, Sureka Elita Garden Vista, New Town, Kolkata",new town,2,9800000,58000,1345.0,Semi-Furnished,buy,exact_match,7286.25,43.12
@@ -112,7 +112,7 @@ Kolkata,sudhakarpur,3,7500000,29524,1240.0,Unfurnished,buy,bedroom_only,6048.39,
 "Barrackpore, Kolkata",barrackpore,2,5000000,10000,834.0,Semi-Furnished,buy,exact_match,5995.2,11.99
 "Shriram Sunshine 2, Shriram Sunshine 2, Uttar Para, Kolkata",uttar para,1,2200000,7463,306.0,Unfurnished,buy,address_only,7189.54,24.39
 "Eden City Maheshtala, Eden City Maheshtala, Maheshtala, Kolkata",maheshtala,3,6500000,24674,950.0,Unfurnished,buy,address_bedroom,6842.11,25.97
-3 BHK Villa for Sale in Joka Kolkata,joka,3,7350000,32260,1400.0,Semi-Furnished,buy,address_bedroom,5250.0,23.04
+Joka Kolkata,joka,3,7350000,32260,1400.0,Semi-Furnished,buy,address_bedroom,5250.0,23.04
 "Nayabad, Kolkata",nayabad,2,3920000,23000,920.0,Unfurnished,buy,address_bedroom,4260.87,25.0
 "Vinayak Vista, Vinayak Vista, Lake Town, Kolkata",lake town,4,20000000,33871,1260.0,Unfurnished,buy,address_only,15873.02,26.88
 "Eden Elegante, Eden Elegante, Madurdaha, Hussainpur, Kolkata",madurdaha,3,6500000,16393,980.0,Semi-Furnished,buy,address_bedroom,6632.65,16.73
@@ -133,17 +133,17 @@ Kolkata,sudhakarpur,3,7500000,29524,1240.0,Unfurnished,buy,bedroom_only,6048.39,
 "Kaikhali, Kolkata",kaikhali,2,3800000,17708,850.0,Semi-Furnished,buy,address_bedroom,4470.59,20.83
 "Tangra, Kolkata",tangra,3,19000000,45000,1400.0,Semi-Furnished,buy,exact_match,13571.43,32.14
 "Green View, Green View, Southern Avenue, Kolkata",southern avenue,3,13500000,38369,1030.0,Furnished,buy,address_only,13106.8,37.25
-5 BHK House for Sale in Sector 1 Salt Lake City Kolkata,sector 1 salt lake city,5,45000000,70556,2500.0,Unfurnished,buy,address_only,18000.0,28.22
+Sector 1 Salt Lake City Kolkata,sector 1 salt lake city,5,45000000,70556,2500.0,Unfurnished,buy,address_only,18000.0,28.22
 "Jagatdal, Kolkata",jagatdal,2,3800000,12729,594.0,Furnished,buy,bedroom_only,6397.31,21.43
 "Siddha Eden Lakeville, Siddha Eden Lakeville, Barrackpore Trunk Road, Kolkata",barrackpore trunk road,2,6600000,25000,860.0,Unfurnished,buy,exact_match,7674.42,29.07
 "Bablatala, Gopalpur Gram, Kolkata",bablatala,3,9200000,30476,1280.0,Unfurnished,buy,bedroom_only,7187.5,23.81
-6 BHK House for Sale in New Alipore Kolkata,new alipore,6,32500000,97059,3000.0,Furnished,buy,address_only,10833.33,32.35
-3 BHK House for Sale in Airport 2 Number Gate Kolkata,airport 2 number gate,3,7000000,17798,1000.0,Unfurnished,buy,address_only,7000.0,17.8
+New Alipore Kolkata,new alipore,6,32500000,97059,3000.0,Furnished,buy,address_only,10833.33,32.35
+Airport 2 Number Gate Kolkata,airport 2 number gate,3,7000000,17798,1000.0,Unfurnished,buy,address_only,7000.0,17.8
 "Biswanath Abasan, Biswanath Abasan, Tegharia Baguiati, Kolkata",teghoria,3,6100000,20667,1050.0,Semi-Furnished,buy,address_only,5809.52,19.68
 "Bangur Avenue, Lake Town, Kolkata",bangur avenue,4,13000000,53358,1300.0,Semi-Furnished,buy,bedroom_only,10000.0,41.04
 "New Alipore, Kolkata",new alipore,1,2350000,9500,380.0,Furnished,buy,address_bedroom,6184.21,25.0
 Kolkata,swastik tower,3,11000000,40000,1680.0,Semi-Furnished,buy,bedroom_only,6547.62,23.81
-3 BHK House for Sale in Salap Kolkata,salap,3,3500000,9091,1000.0,Unfurnished,buy,address_only,3500.0,9.09
+Salap Kolkata,salap,3,3500000,9091,1000.0,Unfurnished,buy,address_only,3500.0,9.09
 "Dankuni, Kolkata",dankuni,2,1400000,7787,510.0,Unfurnished,buy,address_bedroom,2745.1,15.27
 Kolkata,dream palazzo,3,5800000,23810,1000.0,Semi-Furnished,buy,bedroom_only,5800.0,23.81
 "Patuli, Kolkata",patuli,4,7500000,41388,1550.0,Furnished,buy,address_only,4838.71,26.7
@@ -176,36 +176,36 @@ Kolkata,dream palazzo,3,5800000,23810,1000.0,Semi-Furnished,buy,bedroom_only,580
 "Antaranga 3, Antaranga 3, Haltu, Kolkata",haltu,3,7800000,38000,960.0,Furnished,buy,exact_match,8125.0,39.58
 "Garfa, Kolkata",garfa,2,3500000,15493,723.0,Semi-Furnished,buy,bedroom_only,4840.94,21.43
 "Motilal Colony, Kolkata",motilal colony,2,4000000,12000,800.0,Unfurnished,buy,exact_match,5000.0,15.0
-4 BHK House for Sale in Baguiati Kolkata,baguiati,4,15000000,35122,1800.0,Semi-Furnished,buy,address_only,8333.33,19.51
+Baguiati Kolkata,baguiati,4,15000000,35122,1800.0,Semi-Furnished,buy,address_only,8333.33,19.51
 "Unique Park Behala, Kolkata",unique park behala,2,2700000,14000,900.0,Semi-Furnished,buy,address_only,3000.0,15.56
 "Rajwada Estate Phase II, Rajwada Estate Phase II, Mahamaya Tala, Garia, Kolkata",mahamaya tala,3,9800000,18000,1200.0,Unfurnished,buy,exact_match,8166.67,15.0
 "Birati, Kolkata",birati,2,3000000,7857,550.0,Semi-Furnished,buy,address_bedroom,5454.55,14.29
-5 BHK House for Sale in Prantik Thakurpukur Kolkata,prantik thakurpukur,5,9000000,152232,3100.0,Furnished,buy,bedroom_only,2903.23,49.11
+Prantik Thakurpukur Kolkata,prantik thakurpukur,5,9000000,152232,3100.0,Furnished,buy,bedroom_only,2903.23,49.11
 "Golf Gardens, Tollygunge, Kolkata",golf gardens,2,3500000,20000,750.0,Unfurnished,buy,exact_match,4666.67,26.67
 "Realtech HIJIBIJI, Realtech HIJIBIJI, Rajarhat, Kolkata",rajarhat,2,5800000,25000,638.0,Unfurnished,buy,exact_match,9090.91,39.18
 "Pacific Rajeshwari Apartment, Pacific Rajeshwari Apartment, Boral, Kolkata",boral,3,3500000,16073,884.0,Semi-Furnished,buy,address_only,3959.28,18.18
-8 BHK House for Sale in Garia Kolkata,garia,8,20000000,52367,2635.0,Semi-Furnished,buy,address_only,7590.13,19.87
+Garia Kolkata,garia,8,20000000,52367,2635.0,Semi-Furnished,buy,address_only,7590.13,19.87
 "East Kolkata Township, Kolkata",east kolkata township,2,4700000,21474,680.0,Unfurnished,buy,address_only,6911.76,31.58
 "Eden Elegante, Eden Elegante, Eastern Metropolitan Bypass, Kolkata",em bypass,3,8500000,35000,1150.0,Furnished,buy,exact_match,7391.3,30.43
 "Merlin Elements, Merlin Elements, New Alipore, Kolkata",new alipore,3,22000000,51714,1150.0,Unfurnished,buy,address_bedroom,19130.43,44.97
-3 BHK House for Sale in Panchpota Kolkata,panchpota,3,5200000,22929,963.0,Semi-Furnished,buy,bedroom_only,5399.79,23.81
+Panchpota Kolkata,panchpota,3,5200000,22929,963.0,Semi-Furnished,buy,bedroom_only,5399.79,23.81
 "Bisharpara, Kolkata",bisharpara,2,2800000,15429,720.0,Unfurnished,buy,bedroom_only,3888.89,21.43
-3 BHK Villa for Sale in New Town Kolkata,new town,3,25000000,23000,1224.0,Semi-Furnished,buy,exact_match,20424.84,18.79
+New Town Kolkata,new town,3,25000000,23000,1224.0,Semi-Furnished,buy,exact_match,20424.84,18.79
 "Magnolia Prestige, Magnolia Prestige, Rajarhat, Kolkata",rajarhat,2,3300000,25000,680.0,Unfurnished,buy,exact_match,4852.94,36.76
 "Titagarh, Barrackpore, Kolkata",titagarh,2,3500000,13157,614.0,Unfurnished,buy,bedroom_only,5700.33,21.43
 "Urban Tower, Urban Tower, Madurdaha, Hussainpur, Kolkata",madurdaha,3,8200000,20000,1280.0,Furnished,buy,exact_match,6406.25,15.62
 "Dum Dum Cantonment, Kolkata",dum dum cantonment,3,3300000,10841,650.0,Unfurnished,buy,address_only,5076.92,16.68
 "Shrachi Greenwood Nest, Shrachi Greenwood Nest, Action Area 1, Kolkata",action area 1,3,14000000,18126,1006.0,Semi-Furnished,buy,address_bedroom,13916.5,18.02
-2 BHK House for Sale in Rajpur Sonarpur Kolkata,rajpur sonarpur,2,1600000,18000,720.0,Unfurnished,buy,exact_match,2222.22,25.0
+Rajpur Sonarpur Kolkata,rajpur sonarpur,2,1600000,18000,720.0,Unfurnished,buy,exact_match,2222.22,25.0
 "Eden Exotica Block K, Eden Exotica Block K, Nayabad, Kolkata",nayabad,2,4400000,17000,715.0,Semi-Furnished,buy,exact_match,6153.85,23.78
 "Dhakuria, Kolkata",dhakuria,2,6500000,18000,900.0,Semi-Furnished,buy,exact_match,7222.22,20.0
 "Rajarhat, Kolkata",rajarhat,2,2300000,12000,548.0,Unfurnished,buy,exact_match,4197.08,21.9
 "Madurdaha, Hussainpur, Kolkata",madurdaha,3,7200000,20000,1250.0,Unfurnished,buy,exact_match,5760.0,16.0
 "Magnolia Sports City, Magnolia Sports City, Barrackpore, Kolkata",barrackpore,3,5500000,6717,668.0,Unfurnished,buy,address_only,8233.53,10.06
-3 BHK House for Sale in Santoshpur Kolkata,santoshpur,3,4500000,17000,1190.0,Unfurnished,buy,exact_match,3781.51,14.29
-3 BHK Villa for Sale in Vedic Village Kolkata,vedic village,3,15000000,45524,1912.0,Furnished,buy,bedroom_only,7845.19,23.81
+Santoshpur Kolkata,santoshpur,3,4500000,17000,1190.0,Unfurnished,buy,exact_match,3781.51,14.29
+Vedic Village Kolkata,vedic village,3,15000000,45524,1912.0,Furnished,buy,bedroom_only,7845.19,23.81
 "Jain Dream Excellency, Jain Dream Excellency, Rajarhat, Kolkata",rajarhat,3,7200000,21000,1100.0,Unfurnished,buy,exact_match,6545.45,19.09
-"4 BHK Villa for Sale in Baishnabghata Patuli Township, Patuli Kolkata",baishnabghata patuli township,4,30000000,42541,2120.0,Semi-Furnished,buy,address_only,14150.94,20.07
+"Baishnabghata Patuli Township, Patuli Kolkata",baishnabghata patuli township,4,30000000,42541,2120.0,Semi-Furnished,buy,address_only,14150.94,20.07
 "Lake Gardens, Kolkata",lake gardens,4,16000000,52231,1480.0,Semi-Furnished,buy,address_only,10810.81,35.29
 "Siddha Eden Lakeville, Siddha Eden Lakeville, Bonhooghly, Kolkata",bonhooghly,3,12500000,20167,847.0,Furnished,buy,bedroom_only,14757.97,23.81
 "Chetla, Kolkata",chetla,2,6900000,25153,850.0,Unfurnished,buy,address_bedroom,8117.65,29.59
@@ -224,12 +224,12 @@ Kolkata,dream palazzo,3,5800000,23810,1000.0,Semi-Furnished,buy,bedroom_only,580
 "Shanti Apartment, Shanti Apartment, North Dumdum, Kolkata",north dum dum,3,5500000,24214,1017.0,Furnished,buy,bedroom_only,5408.06,23.81
 "Rajarhat, Kolkata",rajarhat,2,3200000,25000,729.0,Semi-Furnished,buy,exact_match,4389.57,34.29
 "Metropolitan Cooperative Housing Society, Metropolitan Cooperative Housing Society, Metropolitan Co Operative Housing Society Limited, Kolkata",metropolitan,5,16000000,58380,2085.0,Unfurnished,buy,address_only,7673.86,28.0
-"3 BHK House for Sale in Chak Thakurani, Thakurpukur Kolkata",chak thakurani,3,2700000,19048,800.0,Unfurnished,buy,bedroom_only,3375.0,23.81
+"Chak Thakurani, Thakurpukur Kolkata",chak thakurani,3,2700000,19048,800.0,Unfurnished,buy,bedroom_only,3375.0,23.81
 "Maa Apartment, Maa Apartment, Postal Park, Kolkata",postal park,2,5000000,22500,1050.0,Semi-Furnished,buy,bedroom_only,4761.9,21.43
 "Prantika Garia, Kolkata",prantik,2,3000000,11786,550.0,Semi-Furnished,buy,bedroom_only,5454.55,21.43
 "Prudent Prana, Prudent Prana, Garia, Kolkata",garia,2,2700000,9000,650.0,Unfurnished,buy,exact_match,4153.85,13.85
-"5 BHK House for Sale in Panchasayar, Garia Kolkata",panchasayar,5,25000000,98214,2000.0,Furnished,buy,bedroom_only,12500.0,49.11
-6 BHK House for Sale in Gostatala New Scheme Road Kolkata,gostatala new scheme road,6,31000000,169762,3100.0,Semi-Furnished,buy,bedroom_only,10000.0,54.76
+"Panchasayar, Garia Kolkata",panchasayar,5,25000000,98214,2000.0,Furnished,buy,bedroom_only,12500.0,49.11
+Gostatala New Scheme Road Kolkata,gostatala new scheme road,6,31000000,169762,3100.0,Semi-Furnished,buy,bedroom_only,10000.0,54.76
 "New Alipore, Kolkata",new alipore,2,7700000,27564,1053.0,Semi-Furnished,buy,address_bedroom,7312.44,26.18
 "Bardhanpalli, Joka, Kolkata",bardhanpalli,2,2240000,15493,723.0,Unfurnished,buy,bedroom_only,3098.2,21.43
 "Merlin Elements, Merlin Elements, New Alipore, Kolkata",new alipore,3,24000000,45000,1750.0,Semi-Furnished,buy,exact_match,13714.29,25.71
@@ -249,8 +249,8 @@ Kolkata,dream palazzo,3,5800000,23810,1000.0,Semi-Furnished,buy,bedroom_only,580
 "DTC Southern Heights, DTC Southern Heights, Joka, Kolkata",joka,3,8200000,24000,1370.0,Unfurnished,buy,exact_match,5985.4,17.52
 "Surya Tower, Surya Tower, Behala, Kolkata",behala,2,3400000,16352,806.0,Semi-Furnished,buy,address_bedroom,4218.36,20.29
 "Bengal Peerless Avidipta Phase 2, Bengal Peerless Avidipta Phase 2, Eastern Metropolitan Bypass, Kolkata",em bypass,4,54000000,120000,3500.0,Unfurnished,buy,exact_match,15428.57,34.29
-4 BHK House for Sale in Ballygunge Kolkata,ballygunge,4,13500000,150000,2000.0,Semi-Furnished,buy,exact_match,6750.0,75.0
-"5 BHK House for Sale in Baishnabghata Patuli Township, Patuli Kolkata",baishnabghata patuli township,5,32500000,33110,1650.0,Unfurnished,buy,address_only,19696.97,20.07
+Ballygunge Kolkata,ballygunge,4,13500000,150000,2000.0,Semi-Furnished,buy,exact_match,6750.0,75.0
+"Baishnabghata Patuli Township, Patuli Kolkata",baishnabghata patuli township,5,32500000,33110,1650.0,Unfurnished,buy,address_only,19696.97,20.07
 "Delux Complex, Delux Complex, Birati, Kolkata",birati,2,2500000,10000,700.0,Semi-Furnished,buy,exact_match,3571.43,14.29
 "Swan Court, Swan Court, New Town, Kolkata",new town,3,14000000,30000,1461.0,Semi-Furnished,buy,exact_match,9582.48,20.53
 "Mayukh Apartment, Mayukh Apartment, Garia, Kolkata",garia,3,6500000,26000,1200.0,Unfurnished,buy,exact_match,5416.67,21.67
@@ -281,7 +281,7 @@ Kolkata,anisabad,3,5500000,28571,1000.0,Unfurnished,buy,address_only,5500.0,28.5
 "Bansdroni, Kolkata",bansdroni,2,2600000,19500,588.0,Unfurnished,buy,exact_match,4421.77,33.16
 "Naihati, Kolkata",naihati,3,4000000,23810,1000.0,Unfurnished,buy,bedroom_only,4000.0,23.81
 "Lake Range, Kolkata",lake range,3,40000000,56548,2375.0,Furnished,buy,bedroom_only,16842.11,23.81
-6 BHK House for Sale in Konnagar Kolkata,konnagar,6,29000000,175238,3200.0,Furnished,buy,bedroom_only,9062.5,54.76
+Konnagar Kolkata,konnagar,6,29000000,175238,3200.0,Furnished,buy,bedroom_only,9062.5,54.76
 "Nagerbazar, Kolkata",nagerbazar,2,3000000,10000,560.0,Unfurnished,buy,exact_match,5357.14,17.86
 "Dakshindari Road, Kolkata",dakshindari road,3,7000000,27381,1150.0,Semi-Furnished,buy,bedroom_only,6086.96,23.81
 "Chinsurah Station Road, Kolkata",chinsurah station road,2,2750000,16157,754.0,Semi-Furnished,buy,bedroom_only,3647.21,21.43
@@ -289,7 +289,7 @@ Kolkata,anisabad,3,5500000,28571,1000.0,Unfurnished,buy,address_only,5500.0,28.5
 "Prince Anwar Shah Road, Kolkata",prince anwar shah road,3,12500000,52903,1025.0,Furnished,buy,address_bedroom,12195.12,51.61
 "Sureka Elita Garden Vista, Sureka Elita Garden Vista, New Town, Kolkata",new town,3,15500000,35000,1270.0,Semi-Furnished,buy,exact_match,12204.72,27.56
 "B.K.Enterprise Keshab Dham, B.K.Enterprise Keshab Dham, Baguiati, Kolkata",baguiati,2,3500000,20000,825.0,Semi-Furnished,buy,exact_match,4242.42,24.24
-6 BHK House for Sale in Lake Town Kolkata,lake town,6,12000000,24194,900.0,Semi-Furnished,buy,address_only,13333.33,26.88
+Lake Town Kolkata,lake town,6,12000000,24194,900.0,Semi-Furnished,buy,address_only,13333.33,26.88
 "New Shrachi Garden, New Shrachi Garden, Dum Dum, Kolkata",dum dum,3,7900000,22000,834.0,Semi-Furnished,buy,exact_match,9472.42,26.38
 "Godrej Seven, Godrej Seven, Joka, Kolkata",joka,3,7500000,25000,792.0,Unfurnished,buy,exact_match,9469.7,31.57
 "Kankurgachi, Kolkata",kankurgachi,3,4500000,28889,1300.0,Semi-Furnished,buy,address_bedroom,3461.54,22.22
@@ -300,16 +300,16 @@ Kolkata,anisabad,3,5500000,28571,1000.0,Unfurnished,buy,address_only,5500.0,28.5
 "Park Circus, Ballygunge, Kolkata",park circus,3,8800000,43450,1185.0,Semi-Furnished,buy,address_bedroom,7426.16,36.67
 "Phool Bagan Kankurgachi, Kolkata",phool bagan,3,10500000,40000,1050.0,Furnished,buy,exact_match,10000.0,38.1
 "Kankurgachi, Kolkata",kankurgachi,3,6000000,20000,937.0,Furnished,buy,exact_match,6403.42,21.34
-6 BHK House for Sale in Chinsurah Kolkata,hooghly-chinsurah,6,12500000,165326,3019.0,Semi-Furnished,buy,bedroom_only,4140.44,54.76
+Chinsurah Kolkata,hooghly-chinsurah,6,12500000,165326,3019.0,Semi-Furnished,buy,bedroom_only,4140.44,54.76
 "Katyayani Apartment, Katyayani Apartment, Dum Dum, Kolkata",dum dum,2,3700000,10112,600.0,Unfurnished,buy,address_bedroom,6166.67,16.85
 "Usha Park, Bansdroni, Kolkata",usha park,2,3500000,13071,610.0,Unfurnished,buy,bedroom_only,5737.7,21.43
 "KCB Solace, KCB Solace, New Town, Kolkata",new town,3,9250000,55000,808.0,Unfurnished,buy,exact_match,11448.02,68.07
 "Rajwada Altitude, Rajwada Altitude, Kolkata",embypass sahapara garia,4,13000000,43836,1068.0,Unfurnished,buy,bedroom_only,12172.28,41.04
 "Ganguly 4 Sight Grand Castle, Ganguly 4 Sight Grand Castle, Mahamaya Tala, Garia, Kolkata",mahamaya tala,3,12500000,26259,1523.0,Unfurnished,buy,address_bedroom,8207.49,17.24
-8 BHK House for Sale in Pratapgarh Garfa Kolkata,pratapgarh,8,12500000,61753,2700.0,Semi-Furnished,buy,city_avg,4629.63,22.87
+Pratapgarh Garfa Kolkata,pratapgarh,8,12500000,61753,2700.0,Semi-Furnished,buy,city_avg,4629.63,22.87
 "Srijan Solus, Srijan Solus, Madhyamgram, Kolkata",madhyamgram,3,5800000,25000,1094.0,Unfurnished,buy,exact_match,5301.65,22.85
 "Unimark Lakewood Estate, Unimark Lakewood Estate, Patuli, Kolkata",patuli,3,12000000,30000,1420.0,Semi-Furnished,buy,exact_match,8450.7,21.13
-6 BHK House for Sale in Nilganj Road Kolkata,nilganj road,6,16000000,108429,1980.0,Semi-Furnished,buy,bedroom_only,8080.81,54.76
+Nilganj Road Kolkata,nilganj road,6,16000000,108429,1980.0,Semi-Furnished,buy,bedroom_only,8080.81,54.76
 "Fort Residency, Fort Residency, Behala, Kolkata",behala,1,3300000,7583,455.0,Furnished,buy,address_bedroom,7252.75,16.67
 "Sinthee, Kolkata",sinthi,1,3200000,12762,670.0,Semi-Furnished,buy,address_only,4776.12,19.05
 "Pressman Apartment, Pressman Apartment, Tollygunge, Kolkata",tollygunge,1,4000000,15556,700.0,Semi-Furnished,buy,address_bedroom,5714.29,22.22
@@ -318,13 +318,13 @@ Kolkata,anisabad,3,4000000,28286,990.0,Semi-Furnished,buy,address_only,4040.4,28
 "Bally, Kolkata",bally,2,1700000,10714,500.0,Semi-Furnished,buy,bedroom_only,3400.0,21.43
 "Swinhoe Castle, Swinhoe Castle, Ballygunge, Kolkata",ballygunge,1,2500000,22500,450.0,Furnished,buy,address_only,5555.56,50.0
 "Santoshpur, Kolkata",santoshpur,3,8600000,18454,1255.0,Unfurnished,buy,address_bedroom,6852.59,14.7
-"3 BHK Villa for Sale in Emami Aastha, Bishnupur Kolkata",bishnupur,3,13000000,32071,1347.0,Semi-Furnished,buy,bedroom_only,9651.08,23.81
+"Emami Aastha, Bishnupur Kolkata",bishnupur,3,13000000,32071,1347.0,Semi-Furnished,buy,bedroom_only,9651.08,23.81
 "Mukundapur Main Road, Kolkata",mukundapur main road,2,2800000,15561,907.0,Furnished,buy,address_only,3087.1,17.16
-5 BHK House for Sale in Sector 2 Salt Lake City Kolkata,sector 2 salt lake city,5,25000000,1587,84.0,Semi-Furnished,buy,address_only,297619.05,18.89
+Sector 2 Salt Lake City Kolkata,sector 2 salt lake city,5,25000000,1587,84.0,Semi-Furnished,buy,address_only,297619.05,18.89
 "Banerjee Para Paschim Putiary, Kolkata",banerjee para,2,2700000,15429,720.0,Unfurnished,buy,bedroom_only,3750.0,21.43
 "Uttarpara Chinsurah, Kolkata",uttarpara,2,3500000,16000,960.0,Semi-Furnished,buy,exact_match,3645.83,16.67
 "Unimark Springfield, Unimark Springfield, Rajarhat, Kolkata",rajarhat,3,8200000,35000,1235.0,Semi-Furnished,buy,exact_match,6639.68,28.34
-2 BHK House for Sale in Roychak Kolkata,raichak,2,8000000,25671,1198.0,Furnished,buy,bedroom_only,6677.8,21.43
+Roychak Kolkata,raichak,2,8000000,25671,1198.0,Furnished,buy,bedroom_only,6677.8,21.43
 "Eden Solaris Joka Phase 1, Eden Solaris Joka Phase 1, Joka, Kolkata",joka,2,2950000,23000,506.0,Unfurnished,buy,exact_match,5830.04,45.45
 "Green Wood Nook, Green Wood Nook, Kalikapur Haltu, Kolkata",kalikapur,2,7700000,12941,550.0,Semi-Furnished,buy,address_bedroom,14000.0,23.53
 "Batanagar, Kolkata",batanagar,2,2000000,6660,666.0,Unfurnished,buy,address_only,3003.0,10.0
@@ -343,7 +343,7 @@ Kolkata,anisabad,3,4000000,28286,990.0,Semi-Furnished,buy,address_only,4040.4,28
 "Magnolia Empire, Magnolia Empire, Madhyamgram, Kolkata",madhyamgram,2,4000000,15000,848.0,Unfurnished,buy,exact_match,4716.98,17.69
 "Sodepur, Kolkata",sodepur,2,1600000,9000,610.0,Unfurnished,buy,exact_match,2622.95,14.75
 "Fortune Township, Fortune Township, Barasat, Kolkata",barasat,2,4000000,12500,1037.0,Unfurnished,buy,exact_match,3857.28,12.05
-3 BHK Villa for Sale in Howrah Kolkata,howrah,3,6000000,43293,1910.0,Semi-Furnished,buy,address_bedroom,3141.36,22.67
+Howrah Kolkata,howrah,3,6000000,43293,1910.0,Semi-Furnished,buy,address_bedroom,3141.36,22.67
 "Ackruti Geetobitan, Ackruti Geetobitan, Mourigram, Kolkata",mourigram,3,3800000,32286,1356.0,Unfurnished,buy,bedroom_only,2802.36,23.81
 "Birati, Kolkata",birati,2,2500000,8571,600.0,Unfurnished,buy,address_bedroom,4166.67,14.28
 "Lucid Elina, Lucid Elina, Behala, Kolkata",behala,3,6500000,18042,756.0,Semi-Furnished,buy,address_bedroom,8597.88,23.87
@@ -376,7 +376,7 @@ Kolkata,block g,3,15100000,35714,1500.0,Furnished,buy,bedroom_only,10066.67,23.8
 "Action Area 2C, Kolkata",action area 2c,2,4800000,17090,693.0,Furnished,buy,address_bedroom,6926.41,24.66
 "Greenfield City, Greenfield City, Shibrampur, Shibrampur Mauza, Kolkata",shibrampur,3,5600000,19000,1062.0,Semi-Furnished,buy,exact_match,5273.07,17.89
 "Balaji Apartment, Balaji Apartment, Baguiati, Kolkata",baguiati,2,5200000,20000,870.0,Furnished,buy,exact_match,5977.01,22.99
-2 BHK House for Sale in Block A Lake Town Kolkata,block a lake town,2,30000000,30857,1440.0,Unfurnished,buy,bedroom_only,20833.33,21.43
+Block A Lake Town Kolkata,block a lake town,2,30000000,30857,1440.0,Unfurnished,buy,bedroom_only,20833.33,21.43
 "Sahitya Parishad, Kolkata",sahitya parishad,2,7970000,13029,608.0,Unfurnished,buy,bedroom_only,13108.55,21.43
 "Andul, Kolkata",andul,3,3050000,20833,875.0,Unfurnished,buy,bedroom_only,3485.71,23.81
 "Santoshpur, Kolkata",santoshpur,2,4200000,12896,619.0,Unfurnished,buy,address_bedroom,6785.14,20.83
@@ -386,7 +386,7 @@ Kolkata,block g,3,15100000,35714,1500.0,Furnished,buy,bedroom_only,10066.67,23.8
 "Arihant Viento, Arihant Viento, Topsia, Kolkata",topsia,3,18000000,45000,1675.0,Furnished,buy,exact_match,10746.27,26.87
 "RMB Abhilasha, RMB Abhilasha, Ghoshpara Patipukur, Kolkata",ghoshpara patipukur,1,2700000,13846,600.0,Unfurnished,buy,bedroom_only,4500.0,23.08
 "Siddha Pine Woods, Siddha Pine Woods, Rajarhat Main Road, Kolkata",rajarhat main road,2,6400000,15000,788.0,Semi-Furnished,buy,exact_match,8121.83,19.04
-10 BHK House for Sale in Beleghata Kolkata,beleghata,10,24000000,59337,1785.0,Furnished,buy,address_only,13445.38,33.24
+Beleghata Kolkata,beleghata,10,24000000,59337,1785.0,Furnished,buy,address_only,13445.38,33.24
 "Purbayan, Purbayan, Patuli, Kolkata",patuli,2,3400000,30000,750.0,Semi-Furnished,buy,exact_match,4533.33,40.0
 "Concord, Concord, Hindustan Park, Gariahat, Kolkata",hindustan park,3,25000000,40881,1717.0,Semi-Furnished,buy,bedroom_only,14560.28,23.81
 "Tollygunge Karunamoyee, Kolkata",tollygunge karunamoyee,2,3000000,17000,638.0,Semi-Furnished,buy,exact_match,4702.19,26.65
@@ -395,11 +395,11 @@ Kolkata,block g,3,15100000,35714,1500.0,Furnished,buy,bedroom_only,10066.67,23.8
 "Ambey Gateway, Ambey Gateway, Rajarhat, Kolkata",rajarhat,2,14000000,18000,1217.0,Unfurnished,buy,exact_match,11503.7,14.79
 "Uniworld City, Uniworld City, Action Area 3, Kolkata",action area 3,3,13000000,50000,1768.0,Semi-Furnished,buy,exact_match,7352.94,28.28
 "Eden Pavilion, Eden Pavilion, Garia, Kolkata",garia,3,6800000,22500,879.0,Unfurnished,buy,exact_match,7736.06,25.6
-4 BHK House for Sale in Kasba Kolkata,kasba,4,10000000,34909,1600.0,Unfurnished,buy,address_only,6250.0,21.82
+Kasba Kolkata,kasba,4,10000000,34909,1600.0,Unfurnished,buy,address_only,6250.0,21.82
 "Eastern Metropolitan Bypass, Kolkata",em bypass,2,7000000,36000,709.0,Unfurnished,buy,exact_match,9873.06,50.78
 "Nagerbazar, Kolkata",nagerbazar,2,2200000,10000,680.0,Unfurnished,buy,exact_match,3235.29,14.71
 "Greenwood Park, Greenwood Park, Action Area 1, Kolkata",action area 1,4,16900000,120000,1900.0,Semi-Furnished,buy,exact_match,8894.74,63.16
-"8 BHK House for Sale in Dover Terrace, Ballygunge Kolkata",dover terrace,8,20000000,45743,2000.0,Unfurnished,buy,city_avg,10000.0,22.87
+"Dover Terrace, Ballygunge Kolkata",dover terrace,8,20000000,45743,2000.0,Unfurnished,buy,city_avg,10000.0,22.87
 "Ganpati Enclave, Ganpati Enclave, Behala, Kolkata",behala,3,6000000,30000,1050.0,Semi-Furnished,buy,exact_match,5714.29,28.57
 > 10 BHK House for Sale in Salt Lake City Kolkata,salt lake city,10,38000000,129600,3600.0,Unfurnished,buy,address_only,10555.56,36.0
 "The Ektaa Lotus, The Ektaa Lotus, Tangra, Kolkata",tangra,3,15000000,27776,868.0,Unfurnished,buy,address_bedroom,17281.11,32.0
@@ -420,7 +420,7 @@ Kolkata,block g,3,15100000,35714,1500.0,Furnished,buy,bedroom_only,10066.67,23.8
 "Jodhpur Park, Kolkata",jodhpur park,4,20000000,39850,1473.0,Semi-Furnished,buy,address_only,13577.73,27.05
 "Khardaha, Kolkata",khardah,2,3500000,10847,800.0,Furnished,buy,address_only,4375.0,13.56
 "Gurukripa Diamond Park Exotica, Gurukripa Diamond Park Exotica, Diamond Park, Joka, Kolkata",diamond park,2,4100000,10452,760.0,Unfurnished,buy,address_bedroom,5394.74,13.75
-4 BHK Villa for Sale in Sector 2 Salt Lake City Kolkata,sector 2 salt lake city,4,21000000,19833,1050.0,Unfurnished,buy,address_only,20000.0,18.89
+Sector 2 Salt Lake City Kolkata,sector 2 salt lake city,4,21000000,19833,1050.0,Unfurnished,buy,address_only,20000.0,18.89
 "Radhakrishna Apartment, Radhakrishna Apartment, Rajpur Sonarpur, Kolkata",rajpur sonarpur,2,2800000,18000,750.0,Semi-Furnished,buy,exact_match,3733.33,24.0
 "Merlin Vasundhara, Merlin Vasundhara, Behala, Kolkata",behala,3,6500000,30000,928.0,Semi-Furnished,buy,exact_match,7004.31,32.33
 "Parvati Garden, Parvati Garden, Birati, Kolkata",birati,2,3900000,13371,936.0,Semi-Furnished,buy,address_bedroom,4166.67,14.29
@@ -431,23 +431,23 @@ Kolkata,block g,3,15100000,35714,1500.0,Furnished,buy,bedroom_only,10066.67,23.8
 "Larica Tolly, Larica Tolly, Dhali Para Paschim Putiary, Kolkata",dhali para,3,4300000,25214,1059.0,Semi-Furnished,buy,bedroom_only,4060.43,23.81
 "Fortune Heights Barasat, Fortune Heights Barasat, Barasat, Kolkata",barasat,2,3900000,11074,828.0,Semi-Furnished,buy,address_bedroom,4710.14,13.37
 "Surya Nagar Colony, Kolkata",surya nagar colony,2,2500000,12857,600.0,Semi-Furnished,buy,bedroom_only,4166.67,21.43
-7 BHK House for Sale in Southern Avenue Kolkata,southern avenue,7,127500000,186258,5000.0,Furnished,buy,address_only,25500.0,37.25
-"4 BHK Villa for Sale in Gems City, Joka Kolkata",joka,4,8600000,27835,1200.0,Furnished,buy,address_only,7166.67,23.2
+Southern Avenue Kolkata,southern avenue,7,127500000,186258,5000.0,Furnished,buy,address_only,25500.0,37.25
+"Gems City, Joka Kolkata",joka,4,8600000,27835,1200.0,Furnished,buy,address_only,7166.67,23.2
 "Amrit Tower, Amrit Tower, Salt Lake City, Kolkata",salt lake city,2,2250000,16000,800.0,Semi-Furnished,buy,exact_match,2812.5,20.0
 "New Alipore, Kolkata",new alipore,3,7500000,47217,1050.0,Semi-Furnished,buy,address_bedroom,7142.86,44.97
 "Agarpara, Kolkata",agarpara,1,700000,2530,343.0,Unfurnished,buy,address_bedroom,2040.82,7.38
 "Eden Flora, Eden Flora, Eastern Metropolitan Bypass, Kolkata",em bypass,2,4600000,36000,903.0,Unfurnished,buy,exact_match,5094.13,39.87
-6 BHK House for Sale in Hazra Road Kolkata,hazra road,6,52500000,256943,4692.0,Semi-Furnished,buy,bedroom_only,11189.26,54.76
-5 BHK House for Sale in Kasba Kolkata,kasba,5,30000000,78545,3600.0,Unfurnished,buy,address_only,8333.33,21.82
+Hazra Road Kolkata,hazra road,6,52500000,256943,4692.0,Semi-Furnished,buy,bedroom_only,11189.26,54.76
+Kasba Kolkata,kasba,5,30000000,78545,3600.0,Unfurnished,buy,address_only,8333.33,21.82
 "Manicktala, Kolkata",manicktala,3,16500000,33405,1403.0,Unfurnished,buy,bedroom_only,11760.51,23.81
 "Sukhpally, Haltu, Kolkata",sukhpally,2,5100000,15000,656.0,Semi-Furnished,buy,exact_match,7774.39,22.87
 "Puspanjali, Puspanjali, New Garia, Garia, Kolkata",new garia,2,3600000,11000,707.0,Unfurnished,buy,exact_match,5091.94,15.56
 "Sisirkunja, Sisirkunja, Madhyamgram, Kolkata",madhyamgram,2,3500000,9833,624.0,Semi-Furnished,buy,address_bedroom,5608.97,15.76
-"3 BHK House for Sale in Mahamaya Tala, Garia Kolkata",mahamaya tala,3,8200000,27586,1600.0,Unfurnished,buy,address_bedroom,5125.0,17.24
+"Mahamaya Tala, Garia Kolkata",mahamaya tala,3,8200000,27586,1600.0,Unfurnished,buy,address_bedroom,5125.0,17.24
 "Kestopur, Kolkata",kestopur,2,3600000,8400,504.0,Furnished,buy,address_bedroom,7142.86,16.67
 "Dum Dum, Kolkata",dum dum,2,2750000,6910,410.0,Unfurnished,buy,address_bedroom,6707.32,16.85
 "Fortune Township, Fortune Township, Barasat, Kolkata",barasat,3,4650000,16770,1290.0,Semi-Furnished,buy,address_only,3604.65,13.0
-4 BHK House for Sale in Uchhepota Kolkata,uchhepota,4,5800000,57463,1400.0,Semi-Furnished,buy,bedroom_only,4142.86,41.04
+Uchhepota Kolkata,uchhepota,4,5800000,57463,1400.0,Semi-Furnished,buy,bedroom_only,4142.86,41.04
 "Greenfield City, Greenfield City, Shibrampur, Shibrampur Mauza, Kolkata",shibrampur,3,5200000,19000,1084.0,Furnished,buy,exact_match,4797.05,17.53
 "Dash Drone, Rajarhat Newtown, Kolkata",dash drone,2,2550000,15000,539.0,Semi-Furnished,buy,exact_match,4730.98,27.83
 "Greenfield Elegance, Greenfield Elegance, New Town, Kolkata",new town,3,11500000,40000,1100.0,Semi-Furnished,buy,exact_match,10454.55,36.36
@@ -457,7 +457,7 @@ Kolkata,block g,3,15100000,35714,1500.0,Furnished,buy,bedroom_only,10066.67,23.8
 "KIC Raj Laxmi, KIC Raj Laxmi, Paddapukur, Bhawanipur, Kolkata",paddapukur,2,12000000,40000,880.0,Semi-Furnished,buy,address_bedroom,13636.36,45.45
 "Subhas Apartment, Subhas Apartment, New Garia, Garia, Kolkata",new garia,3,5500000,17974,1000.0,Semi-Furnished,buy,address_only,5500.0,17.97
 "Ajoy Nagar Santoshpur, Kolkata",ajoynagar,2,6300000,17207,803.0,Semi-Furnished,buy,bedroom_only,7845.58,21.43
-6 BHK House for Sale in Tangra Kolkata,tangra,6,7500000,34526,1082.0,Unfurnished,buy,address_only,6931.61,31.91
+Tangra Kolkata,tangra,6,7500000,34526,1082.0,Unfurnished,buy,address_only,6931.61,31.91
 "Block O New Alipore, Kolkata",block o new alipore,2,13000000,17440,872.0,Semi-Furnished,buy,address_only,14908.26,20.0
 "Hussainpur, Kolkata",hussainpur,3,9400000,21429,900.0,Semi-Furnished,buy,bedroom_only,10444.44,23.81
 "Surya Tower, Surya Tower, Behala, Kolkata",behala,2,3400000,13390,660.0,Unfurnished,buy,address_bedroom,5151.52,20.29
@@ -491,7 +491,7 @@ Kolkata,block g,3,15100000,35714,1500.0,Furnished,buy,bedroom_only,10066.67,23.8
 "Bakultala Behala, Kolkata",bakultala,2,2800000,11850,553.0,Unfurnished,buy,bedroom_only,5063.29,21.43
 "Narendrapur Rajpur Sonarpur, Kolkata",narendrapur,2,3200000,12100,605.0,Unfurnished,buy,address_bedroom,5289.26,20.0
 "New Suvada Apartments, New Suvada Apartments, Naktala, Garia, Kolkata",naktala,1,2000000,11856,450.0,Semi-Furnished,buy,address_only,4444.44,26.35
-3 BHK House for Sale in Barasat Kolkata,barasat,3,2400000,13000,1000.0,Semi-Furnished,buy,address_only,2400.0,13.0
+Barasat Kolkata,barasat,3,2400000,13000,1000.0,Semi-Furnished,buy,address_only,2400.0,13.0
 "GM Meena Surya, GM Meena Surya, New Town, Kolkata",new town,2,2600000,25000,578.0,Semi-Furnished,buy,exact_match,4498.27,43.25
 "Ballygunge, Kolkata",ballygunge,3,16000000,55263,1500.0,Semi-Furnished,buy,address_bedroom,10666.67,36.84
 "Eden City Maheshtala, Eden City Maheshtala, Maheshtala, Kolkata",maheshtala,3,5000000,35765,1377.0,Unfurnished,buy,address_bedroom,3631.08,25.97
@@ -511,9 +511,9 @@ Kolkata,block g,3,15100000,35714,1500.0,Furnished,buy,bedroom_only,10066.67,23.8
 "Action Area 3, Kolkata",action area 3,3,6500000,27000,1040.0,Unfurnished,buy,exact_match,6250.0,25.96
 "Mahamaya Tala, Garia, Kolkata",mahamaya tala,2,3490000,11448,664.0,Unfurnished,buy,address_only,5256.02,17.24
 "Shantineerh Apartment, Shantineerh Apartment, Joka, Kolkata",joka,2,2800000,20000,857.0,Unfurnished,buy,exact_match,3267.21,23.34
-9 BHK House for Sale in Sonarpur Kolkata,sonarpur,9,9900000,47365,2830.0,Semi-Furnished,buy,address_only,3498.23,16.74
+Sonarpur Kolkata,sonarpur,9,9900000,47365,2830.0,Semi-Furnished,buy,address_only,3498.23,16.74
 "Mukundapur, Kolkata",mukundapur,3,6600000,45000,946.0,Semi-Furnished,buy,exact_match,6976.74,47.57
-5 BHK House for Sale in Block AE Sector 1 Salt Lake City Kolkata,block ae sector 1 salt lake city,5,38000000,122768,2500.0,Furnished,buy,bedroom_only,15200.0,49.11
+Block AE Sector 1 Salt Lake City Kolkata,block ae sector 1 salt lake city,5,38000000,122768,2500.0,Furnished,buy,bedroom_only,15200.0,49.11
 "Dum Dum Cantonment, Kolkata",anil abasan 163/2 laxmi narayan road kolkata 700065 land mark rakhadas mistir dokan,1,1250000,7846,340.0,Unfurnished,buy,bedroom_only,3676.47,23.08
 "Jheel Tower, Jheel Tower, Jheel Road, Kolkata",jheel road,1,2650000,8077,350.0,Furnished,buy,bedroom_only,7571.43,23.08
 "Diamond Villa, Diamond Villa, Krishnapur Kestopur, Kolkata",krishnapur,2,3700000,10000,650.0,Furnished,buy,exact_match,5692.31,15.38
@@ -535,7 +535,7 @@ Kolkata,block g,3,15100000,35714,1500.0,Furnished,buy,bedroom_only,10066.67,23.8
 "New Alipore, Kolkata",new alipore,4,17200000,45553,1408.0,Semi-Furnished,buy,address_only,12215.91,32.35
 "New Alipore, Kolkata",new alipore,1,3300000,9500,380.0,Semi-Furnished,buy,address_bedroom,8684.21,25.0
 "Prantik Phase 1, Prantik Phase 1, Prantik Thakurpukur, Kolkata",prantik thakurpukur,2,2500000,13800,644.0,Furnished,buy,bedroom_only,3881.99,21.43
-4 BHK House for Sale in Sarat Chatterjee Road Kolkata,sarat chatterjee road,4,8000000,41045,1000.0,Semi-Furnished,buy,bedroom_only,8000.0,41.04
+Sarat Chatterjee Road Kolkata,sarat chatterjee road,4,8000000,41045,1000.0,Semi-Furnished,buy,bedroom_only,8000.0,41.04
 "Shalimar, Kolkata",shalimar,3,7400000,24524,1030.0,Unfurnished,buy,bedroom_only,7184.47,23.81
 "Meena Residency, Meena Residency, Tegharia Baguiati, Kolkata",teghoria,3,6700000,25390,1290.0,Furnished,buy,address_only,5193.8,19.68
 "Bansdroni, Kolkata",bansdroni,2,2600000,15000,800.0,Semi-Furnished,buy,exact_match,3250.0,18.75
@@ -555,7 +555,7 @@ Kolkata,deblok apartment jheel road bank plot 1 garfa kolkata 700075,2,3200000,1
 "Khardaha, Kolkata",khardah,3,4750000,12149,896.0,Furnished,buy,address_bedroom,5301.34,13.56
 "Rajwada Springfield, Rajwada Springfield, Narendrapur Rajpur Sonarpur, Kolkata",narendrapur,2,5300000,15000,828.0,Semi-Furnished,buy,exact_match,6400.97,18.12
 "Nandi Bagan Salkia, Kolkata",nandi bagan salkia,3,2200000,15238,640.0,Unfurnished,buy,bedroom_only,3437.5,23.81
-4 BHK House for Sale in Barrackpore Kolkata,barrackpore,4,4200000,15083,1500.0,Unfurnished,buy,address_only,2800.0,10.06
+Barrackpore Kolkata,barrackpore,4,4200000,15083,1500.0,Unfurnished,buy,address_only,2800.0,10.06
 "Tegharia Baguiati, Kolkata",teghoria,2,3800000,20000,837.0,Semi-Furnished,buy,exact_match,4540.02,23.89
 "Ambalika Housing, Ambalika Housing, Madurdaha, Hussainpur, Kolkata",madurdaha,2,4000000,20000,700.0,Unfurnished,buy,exact_match,5714.29,28.57
 "AK Mukherjee Road, Kolkata",ak mukherjee road,2,5200000,27857,1300.0,Semi-Furnished,buy,bedroom_only,4000.0,21.43
@@ -572,7 +572,7 @@ Kolkata,deblok apartment jheel road bank plot 1 garfa kolkata 700075,2,3200000,1
 "Thakurpukur Bazar, Kolkata",thakurpukur bazar,2,2200000,12579,587.0,Unfurnished,buy,bedroom_only,3747.87,21.43
 "Lake Gardens, Kolkata",lake gardens,3,12500000,42000,1280.0,Furnished,buy,exact_match,9765.62,32.81
 "Shree Bhumi, Patipukur, Kolkata",shree bhumi,4,12100000,70187,1710.0,Furnished,buy,bedroom_only,7076.02,41.05
-3 BHK Villa for Sale in EM Bypass Connector Kolkata,em bypass connector,3,16000000,36095,1516.0,Unfurnished,buy,bedroom_only,10554.09,23.81
+EM Bypass Connector Kolkata,em bypass connector,3,16000000,36095,1516.0,Unfurnished,buy,bedroom_only,10554.09,23.81
 "Ultadanga, Kolkata",ultadanga,3,8750000,19737,1200.0,Semi-Furnished,buy,address_only,7291.67,16.45
 "Riya Manbhari Ananya, Riya Manbhari Ananya, Rajpur, Kolkata",rajpur,2,4700000,10000,780.0,Semi-Furnished,buy,address_bedroom,6025.64,12.82
 "Jadavpur, Kolkata",jadavpur,2,3700000,17000,820.0,Semi-Furnished,buy,exact_match,4512.2,20.73
@@ -582,7 +582,7 @@ Kolkata,deblok apartment jheel road bank plot 1 garfa kolkata 700075,2,3200000,1
 "Sarsuna, Kolkata",sarsuna,2,2150000,6768,549.0,Unfurnished,buy,address_bedroom,3916.21,12.33
 "GM Meena Eco Vista, GM Meena Eco Vista, New Town, Kolkata",new town,2,5900000,25000,570.0,Semi-Furnished,buy,exact_match,10350.88,43.86
 "Shree Tower VII, Shree Tower VII, Rajarhat, Kolkata",rajarhat,2,4000000,13500,860.0,Unfurnished,buy,exact_match,4651.16,15.7
-4 BHK House for Sale in Hridaypur Kolkata,hridaypur,4,22400000,53358,1300.0,Unfurnished,buy,bedroom_only,17230.77,41.04
+Hridaypur Kolkata,hridaypur,4,22400000,53358,1300.0,Unfurnished,buy,bedroom_only,17230.77,41.04
 "Paikpara, Kolkata",paikpara,3,5500000,20966,900.0,Unfurnished,buy,address_only,6111.11,23.3
 "Upohar The Condoville, Upohar The Condoville, Eastern Metropolitan Bypass, Kolkata",em bypass,5,55000000,109171,3557.0,Semi-Furnished,buy,address_only,15462.47,30.69
 "Netaji Nagar, Kolkata",netaji nagar,3,4500000,18750,900.0,Semi-Furnished,buy,address_bedroom,5000.0,20.83
@@ -609,7 +609,7 @@ Kolkata,deblok apartment jheel road bank plot 1 garfa kolkata 700075,2,3200000,1
 "Siddha Galaxia Phase I, Siddha Galaxia Phase I, Rajarhat, Kolkata",rajarhat,2,6500000,25000,654.0,Unfurnished,buy,exact_match,9938.84,38.23
 "Narkeldanga, Kolkata",narkeldanga,2,3500000,27447,680.0,Unfurnished,buy,address_only,5147.06,40.36
 "Haridevpur, Paschim Putiary, Kolkata",haridevpur,3,3500000,11413,750.0,Furnished,buy,address_only,4666.67,15.22
-4 BHK House for Sale in Dum Dum Cantonment Kolkata,dum dum cantonment,4,6500000,20015,1200.0,Semi-Furnished,buy,address_only,5416.67,16.68
+Dum Dum Cantonment Kolkata,dum dum cantonment,4,6500000,20015,1200.0,Semi-Furnished,buy,address_only,5416.67,16.68
 "Esteem Brooklyn, Esteem Brooklyn, Patuli, Kolkata",patuli,2,5760000,30000,784.0,Semi-Furnished,buy,exact_match,7346.94,38.27
 "Pelican Lake View, Pelican Lake View, Nayabad, Kolkata",nayabad,2,3500000,20475,819.0,Semi-Furnished,buy,address_bedroom,4273.5,25.0
 "Aashiana, Aashiana, New Alipore, Kolkata",new alipore,2,3200000,13402,512.0,Semi-Furnished,buy,address_bedroom,6250.0,26.18
@@ -644,7 +644,7 @@ Kolkata,deblok apartment jheel road bank plot 1 garfa kolkata 700075,2,3200000,1
 "Jeet Sunshine, Jeet Sunshine, Daspara Mukundapur, Kolkata",daspara,3,7500000,23333,980.0,Furnished,buy,bedroom_only,7653.06,23.81
 "Shapoorji Pallonji Shukhobrishti Spriha Phase 6 And 7, Shapoorji Pallonji Shukhobrishti Spriha Phase 6 And 7, New Town, Kolkata",new town,3,6000000,55000,680.0,Unfurnished,buy,exact_match,8823.53,80.88
 "J C INIA, J C INIA, Topsia, Kolkata",topsia,4,150000000,82035,4000.0,Furnished,buy,address_only,37500.0,20.51
-"3 BHK Villa for Sale in Sanjeeva Town Bungalows, Action Area 1 Kolkata",action area 1,3,30000000,35441,1967.0,Furnished,buy,address_bedroom,15251.65,18.02
+"Sanjeeva Town Bungalows, Action Area 1 Kolkata",action area 1,3,30000000,35441,1967.0,Furnished,buy,address_bedroom,15251.65,18.02
 "Durga Nagar, Kolkata",durga nagar,2,5000000,8200,820.0,Unfurnished,buy,address_only,6097.56,10.0
 "Greenwood Sonata, Greenwood Sonata, New Town, Kolkata",new town,5,34000000,58814,2200.0,Furnished,buy,address_only,15454.55,26.73
 "Bansdroni, Kolkata",bansdroni,2,3900000,15000,750.0,Unfurnished,buy,exact_match,5200.0,20.0
@@ -654,9 +654,9 @@ Kolkata,deblok apartment jheel road bank plot 1 garfa kolkata 700075,2,3200000,1
 "City High, City High, Tollygunge, Kolkata",tollygunge,2,8500000,25326,1120.0,Semi-Furnished,buy,address_bedroom,7589.29,22.61
 "Meena Garden, Meena Garden, Rajarhat, Kolkata",rajarhat,3,8000000,35000,1320.0,Semi-Furnished,buy,exact_match,6060.61,26.52
 "Tribeni, Kolkata",tribeni,2,1800000,19286,900.0,Unfurnished,buy,bedroom_only,2000.0,21.43
-6 BHK House for Sale in Sinthee Kolkata,sinthi,6,44100000,91524,4805.0,Semi-Furnished,buy,address_only,9177.94,19.05
+Sinthee Kolkata,sinthi,6,44100000,91524,4805.0,Semi-Furnished,buy,address_only,9177.94,19.05
 "New Alipore, Kolkata",new alipore,3,9500000,53962,1200.0,Semi-Furnished,buy,address_bedroom,7916.67,44.97
-2 BHK House for Sale in Salt Lake City Kolkata,salt lake city,2,35000000,22000,1000.0,Semi-Furnished,buy,exact_match,35000.0,22.0
+Salt Lake City Kolkata,salt lake city,2,35000000,22000,1000.0,Semi-Furnished,buy,exact_match,35000.0,22.0
 "New Town, Kolkata",new town,3,19800000,75000,1924.0,Furnished,buy,exact_match,10291.06,38.98
 "Falta, Kolkata",falta,3,4000000,21429,900.0,Unfurnished,buy,bedroom_only,4444.44,23.81
 "Batanagar, Kolkata",batanagar,2,2500000,7200,720.0,Unfurnished,buy,address_only,3472.22,10.0
@@ -668,7 +668,7 @@ Kolkata,champadali more,2,4500000,19286,900.0,Unfurnished,buy,bedroom_only,5000.
 "Bansdroni, Kolkata",bansdroni,2,3000000,15000,700.0,Unfurnished,buy,exact_match,4285.71,21.43
 "Joka, Kolkata",joka,2,4200000,20000,840.0,Unfurnished,buy,exact_match,5000.0,23.81
 Kolkata,mohitkali complex,2,4000000,21429,1000.0,Unfurnished,buy,bedroom_only,4000.0,21.43
-6 BHK House for Sale in Nayabad Kolkata,nayabad,6,16500000,66695,3429.0,Unfurnished,buy,address_only,4811.9,19.45
+Nayabad Kolkata,nayabad,6,16500000,66695,3429.0,Unfurnished,buy,address_only,4811.9,19.45
 "New Town, Kolkata",new town,2,3000000,14500,800.0,Unfurnished,buy,exact_match,3750.0,18.12
 "Behala, Kolkata",behala,2,3200000,15825,780.0,Semi-Furnished,buy,address_bedroom,4102.56,20.29
 "Patuli, Kolkata",patuli,2,3000000,17971,650.0,Semi-Furnished,buy,address_bedroom,4615.38,27.65
@@ -682,14 +682,14 @@ Kolkata,mohitkali complex,2,4000000,21429,1000.0,Unfurnished,buy,bedroom_only,40
 "Barrackpore, Kolkata",barrackpore,2,2160000,6234,620.0,Unfurnished,buy,address_bedroom,3483.87,10.05
 "Ballygunge, Kolkata",ballygunge,3,12500000,32789,890.0,Unfurnished,buy,address_bedroom,14044.94,36.84
 "Sreebhumi, Kolkata",lake town,4,15300000,55054,2048.0,Unfurnished,buy,address_only,7470.7,26.88
-2 BHK Villa for Sale in Rajarhat Main Road Kolkata,rajarhat main road,2,20000000,25899,1000.0,Furnished,buy,address_bedroom,20000.0,25.9
+Rajarhat Main Road Kolkata,rajarhat main road,2,20000000,25899,1000.0,Furnished,buy,address_bedroom,20000.0,25.9
 "Chandannagar, Hooghly-Chinsurah, Kolkata",chandannagar,2,3000000,8727,600.0,Unfurnished,buy,address_only,5000.0,14.54
 Kolkata,asirbad,2,4200000,17143,800.0,Unfurnished,buy,bedroom_only,5250.0,21.43
 "New Alipore, Kolkata",new alipore,3,10000000,150000,2800.0,Semi-Furnished,buy,exact_match,3571.43,53.57
 "Regent Estate, Bijoygarh, Kolkata",regent estate,3,4600000,22143,930.0,Semi-Furnished,buy,bedroom_only,4946.24,23.81
-4 BHK House for Sale in Belghoria Kolkata,belghoria,4,7500000,22588,1600.0,Semi-Furnished,buy,address_only,4687.5,14.12
+Belghoria Kolkata,belghoria,4,7500000,22588,1600.0,Semi-Furnished,buy,address_only,4687.5,14.12
 "Baguiati, Kolkata",baguiati,3,4000000,15700,850.0,Semi-Furnished,buy,exact_match,4705.88,18.47
-4 BHK House for Sale in New Alipore Kolkata,new alipore,4,15000000,58235,1800.0,Furnished,buy,address_only,8333.33,32.35
+New Alipore Kolkata,new alipore,4,15000000,58235,1800.0,Furnished,buy,address_only,8333.33,32.35
 "Realtech Rajotto, Realtech Rajotto, Rajarhat, Kolkata",rajarhat,2,4000000,9305,409.0,Semi-Furnished,buy,address_bedroom,9779.95,22.75
 "CMDA Nagar, CMDA Nagar, Barrackpore, Kolkata",barrackpore,1,1100000,3771,375.0,Unfurnished,buy,address_only,2933.33,10.06
 "Birati, Kolkata",birati,1,1850000,8500,425.0,Unfurnished,buy,address_only,4352.94,20.0
@@ -708,7 +708,7 @@ Kolkata,asirbad,2,4200000,17143,800.0,Unfurnished,buy,bedroom_only,5250.0,21.43
 "Belaghata, Belaghata, Phool Bagan Kankurgachi, Kolkata",phool bagan,2,3500000,10811,400.0,Unfurnished,buy,address_bedroom,8750.0,27.03
 "Seal Lane Tangra, Kolkata",seal lane,3,32100000,44810,1882.0,Furnished,buy,bedroom_only,17056.32,23.81
 "Netaji Subhash Chandra Bose Road, Kolkata",netaji subhash chandra bose road,2,5000000,27284,850.0,Semi-Furnished,buy,address_only,5882.35,32.1
-2 BHK House for Sale in North 24 Parganas Kolkata,prafullanagar,2,5000000,25714,1200.0,Unfurnished,buy,bedroom_only,4166.67,21.43
+North 24 Parganas Kolkata,prafullanagar,2,5000000,25714,1200.0,Unfurnished,buy,bedroom_only,4166.67,21.43
 "Chinar Park, Rajarhat, Kolkata",chinar park,5,22900000,37610,1658.0,Furnished,buy,address_only,13811.82,22.68
 "Tollygunge, Kolkata",tollygunge,2,2500000,10000,580.0,Semi-Furnished,buy,exact_match,4310.34,17.24
 "Sumi Apartment, Sumi Apartment, Nagerbazar, Kolkata",nagerbazar,1,1200000,5500,330.0,Unfurnished,buy,address_only,3636.36,16.67
@@ -716,7 +716,7 @@ Kolkata,asirbad,2,4200000,17143,800.0,Unfurnished,buy,bedroom_only,5250.0,21.43
 "Nainan Para Baranagar, Kolkata",nainan para,2,4800000,17143,800.0,Semi-Furnished,buy,bedroom_only,6000.0,21.43
 "Lake Range, Kolkata",lake range,4,43000000,106716,2600.0,Unfurnished,buy,bedroom_only,16538.46,41.04
 "Jadavpur, Kolkata",jadavpur,2,5800000,25000,700.0,Semi-Furnished,buy,exact_match,8285.71,35.71
-5 BHK House for Sale in Barasat Kolkata,barasat,5,9500000,13000,1000.0,Unfurnished,buy,address_only,9500.0,13.0
+Barasat Kolkata,barasat,5,9500000,13000,1000.0,Unfurnished,buy,address_only,9500.0,13.0
 "Rahara, Kolkata",rahara,2,2080000,15321,715.0,Unfurnished,buy,bedroom_only,2909.09,21.43
 "Mandirtala Shibpur, Kolkata",mandirtala,3,7500000,32857,1380.0,Unfurnished,buy,bedroom_only,5434.78,23.81
 "Phool Bagan Kankurgachi, Kolkata",phool bagan,4,13000000,39096,1440.0,Semi-Furnished,buy,address_only,9027.78,27.15
@@ -726,12 +726,12 @@ Kolkata,asirbad,2,4200000,17143,800.0,Unfurnished,buy,bedroom_only,5250.0,21.43
 Kolkata,kashba new bullygunge,2,2900000,12107,565.0,Unfurnished,buy,bedroom_only,5132.74,21.43
 "Akashdeep, Akashdeep, Barrackpore, Kolkata",barrackpore,1,2800000,6365,633.0,Semi-Furnished,buy,address_only,4423.38,10.06
 "Baghajatin Colony, Kolkata",baghajatin,1,2200000,6938,490.0,Semi-Furnished,buy,address_only,4489.8,14.16
-4 BHK House for Sale in Naihati Station Road Kolkata,naihati station road,4,11800000,168284,4100.0,Unfurnished,buy,bedroom_only,2878.05,41.04
+Naihati Station Road Kolkata,naihati station road,4,11800000,168284,4100.0,Unfurnished,buy,bedroom_only,2878.05,41.04
 "Bengal Peerless Avidipta Phase 2, Bengal Peerless Avidipta Phase 2, Mukundapur, Kolkata",mukundapur,3,29000000,72843,1677.0,Unfurnished,buy,address_bedroom,17292.78,43.44
 "Eden Tolly Lakeside II, Eden Tolly Lakeside II, Tollygunge, Kolkata",tollygunge,3,6800000,22000,1000.0,Unfurnished,buy,exact_match,6800.0,22.0
 "Mereit Enclave, Mereit Enclave, Durga Nagar, Kolkata",durga nagar,2,4200000,9350,935.0,Unfurnished,buy,address_only,4491.98,10.0
 "Fort Terrazzo, Fort Terrazzo, Dover Lane, Kolkata",dover lane,3,23000000,34952,1468.0,Semi-Furnished,buy,bedroom_only,15667.57,23.81
-4 BHK House for Sale in Habra Kolkata,habra,4,6500000,123,3.0,Unfurnished,buy,bedroom_only,2166666.67,41.0
+Habra Kolkata,habra,4,6500000,123,3.0,Unfurnished,buy,bedroom_only,2166666.67,41.0
 "Ishan 76 New Santoshpur, Ishan 76 New Santoshpur, Santoshpur, Kolkata",santoshpur,2,4000000,13958,670.0,Unfurnished,buy,address_bedroom,5970.15,20.83
 "Eden Meghbalika, Eden Meghbalika, Baruipur, Kolkata",baruipur,1,2200000,8220,411.0,Unfurnished,buy,address_only,5352.8,20.0
 "Mahamaya Apartment, Mahamaya Apartment, Garia, Kolkata",garia,2,3150000,21000,755.0,Furnished,buy,exact_match,4172.19,27.81
@@ -744,20 +744,20 @@ Kolkata,kashba new bullygunge,2,2900000,12107,565.0,Unfurnished,buy,bedroom_only
 "Rampur, Kolkata",rampur,2,4000000,22243,1038.0,Semi-Furnished,buy,bedroom_only,3853.56,21.43
 "Carry Road, Kolkata",carry road,2,2700000,15343,716.0,Semi-Furnished,buy,bedroom_only,3770.95,21.43
 "Gems City, Gems City, Joka, Kolkata",joka,1,2600000,14485,412.0,Unfurnished,buy,address_bedroom,6310.68,35.16
-"3 BHK Villa for Sale in Srijan Botanica, Eastern Metropolitan Bypass Kolkata",em bypass,3,22000000,110000,1516.0,Unfurnished,buy,exact_match,14511.87,72.56
+"Srijan Botanica, Eastern Metropolitan Bypass Kolkata",em bypass,3,22000000,110000,1516.0,Unfurnished,buy,exact_match,14511.87,72.56
 "Bansdroni, Kolkata",bansdroni,2,3000000,15000,725.0,Unfurnished,buy,exact_match,4137.93,20.69
 "Peerless Nagar, Peerless Nagar, Sodepur, Kolkata",sodepur,2,2900000,7012,660.0,Unfurnished,buy,address_bedroom,4393.94,10.62
 "Madhyamgram, Kolkata",madhyamgram,2,3000000,15000,752.0,Unfurnished,buy,exact_match,3989.36,19.95
 "Umakanta Sen Lane, Kolkata",umakanta sen lane,2,6000000,18214,850.0,Semi-Furnished,buy,bedroom_only,7058.82,21.43
-"3 BHK Villa for Sale in Lake Life, Joka Kolkata",joka,3,8500000,17000,1224.0,Unfurnished,buy,exact_match,6944.44,13.89
+"Lake Life, Joka Kolkata",joka,3,8500000,17000,1224.0,Unfurnished,buy,exact_match,6944.44,13.89
 "Golpark South Dumdum, Kolkata",golpark south dumdum,2,5500000,17143,800.0,Semi-Furnished,buy,bedroom_only,6875.0,21.43
 "Panchasayar, Garia, Kolkata",panchasayar,3,8050000,23810,1000.0,Unfurnished,buy,bedroom_only,8050.0,23.81
-5 BHK House for Sale in Tollygunge Kolkata,tollygunge,5,10600000,42235,1800.0,Unfurnished,buy,address_only,5888.89,23.46
+Tollygunge Kolkata,tollygunge,5,10600000,42235,1800.0,Unfurnished,buy,address_only,5888.89,23.46
 "Greenfield City Classic Premium, Greenfield City Classic Premium, Behala, Kolkata",behala,2,4700000,12984,640.0,Unfurnished,buy,address_bedroom,7343.75,20.29
 "Vinayak Apartment, Vinayak Apartment, Chandannagar, Hooghly-Chinsurah, Kolkata",chandannagar,2,3220000,10909,750.0,Unfurnished,buy,address_only,4293.33,14.55
 "Jodhpur Park, Kolkata",jodhpur park,3,12000000,25143,1100.0,Unfurnished,buy,address_bedroom,10909.09,22.86
 "New Alipore, Kolkata",new alipore,3,10000000,47217,1050.0,Furnished,buy,address_bedroom,9523.81,44.97
-6 BHK Villa for Sale in Salt Lake City Kolkata,salt lake city,6,21000000,72000,2000.0,Unfurnished,buy,address_only,10500.0,36.0
+Salt Lake City Kolkata,salt lake city,6,21000000,72000,2000.0,Unfurnished,buy,address_only,10500.0,36.0
 Kolkata,bt road,3,8000000,17857,750.0,Unfurnished,buy,bedroom_only,10666.67,23.81
 "Aishwarya Apartment, Aishwarya Apartment, Ballygunge, Kolkata",ballygunge,3,38000000,56368,1530.0,Unfurnished,buy,address_bedroom,24836.6,36.84
 "Jodhpur Park, Kolkata",jodhpur park,2,11200000,35938,1150.0,Semi-Furnished,buy,address_bedroom,9739.13,31.25
@@ -773,7 +773,7 @@ Kolkata,bt road,3,8000000,17857,750.0,Unfurnished,buy,bedroom_only,10666.67,23.8
 "Shapoorji Pallonji Bengal Shapoorji Shukhobristhi, Shapoorji Pallonji Bengal Shapoorji Shukhobristhi, Action Area 3, Kolkata",action area 3,3,5530000,18079,690.0,Unfurnished,buy,address_bedroom,8014.49,26.2
 "Godrej Seven, Godrej Seven, Joka, Kolkata",joka,3,8000000,24000,1356.0,Unfurnished,buy,exact_match,5899.71,17.7
 "Avinandan, Avinandan, Kalikapur Haltu, Kolkata",kalikapur,3,7000000,25506,1084.0,Semi-Furnished,buy,address_only,6457.56,23.53
-2 BHK Villa for Sale in Raichauk Kolkata,raichauk,2,4900000,30000,1400.0,Furnished,buy,bedroom_only,3500.0,21.43
+Raichauk Kolkata,raichauk,2,4900000,30000,1400.0,Furnished,buy,bedroom_only,3500.0,21.43
 "Action Area 1C, Kolkata",action area 1c,3,9600000,23095,970.0,Furnished,buy,bedroom_only,9896.91,23.81
 "Mani Casa, Mani Casa, New Town, Kolkata",new town,3,18000000,75000,1558.0,Unfurnished,buy,exact_match,11553.27,48.14
 "Concord, Concord, Purna Das Road, Kolkata",purna das road,3,23000000,35714,1500.0,Unfurnished,buy,bedroom_only,15333.33,23.81
@@ -787,14 +787,14 @@ Kolkata,z apartment,3,8900000,28810,1210.0,Unfurnished,buy,bedroom_only,7355.37,
 "Harinavi, Kolkata",harinavi,3,4200000,22000,820.0,Semi-Furnished,buy,exact_match,5121.95,26.83
 "Riddhi Siddhi Garden , Riddhi Siddhi Garden, Joka, Kolkata",joka,2,5500000,20000,800.0,Semi-Furnished,buy,exact_match,6875.0,25.0
 "Aspira Aashiyana, Aspira Aashiyana, Narayanpur North 24 Parganas, Kolkata",narayanpur north 24 parganas,2,6500000,21214,990.0,Furnished,buy,bedroom_only,6565.66,21.43
-4 BHK House for Sale in Regent Park Kolkata,regent park,4,22500000,73881,1800.0,Unfurnished,buy,bedroom_only,12500.0,41.04
+Regent Park Kolkata,regent park,4,22500000,73881,1800.0,Unfurnished,buy,bedroom_only,12500.0,41.04
 "Alipore, Kolkata",alipore,3,33000000,144000,1920.0,Unfurnished,buy,address_bedroom,17187.5,75.0
 "Hiland Metropolis, Hiland Metropolis, Chak Garia, Kolkata",chak garia,3,11000000,30095,1264.0,Unfurnished,buy,bedroom_only,8702.53,23.81
 "Alcove Flora Fountain, Alcove Flora Fountain, Topsia, Kolkata",topsia,3,16000000,24868,1050.0,Unfurnished,buy,address_bedroom,15238.1,23.68
 "Italgacha Road, Kolkata",italgacha road,3,5000000,21429,900.0,Semi-Furnished,buy,bedroom_only,5555.56,23.81
 "Siddha Waterfront, Siddha Waterfront, Khardaha, Kolkata",khardah,3,4500000,13153,970.0,Semi-Furnished,buy,address_bedroom,4639.18,13.56
 "Bansdroni Mauza, Krishnanagar, Kolkata",bansdroni mauza,2,3000000,13543,632.0,Unfurnished,buy,bedroom_only,4746.84,21.43
-3 BHK Villa for Sale in Bairampur South 24 Parganas Kolkata,bairampur south 24 parganas,3,45000000,66667,2800.0,Furnished,buy,bedroom_only,16071.43,23.81
+Bairampur South 24 Parganas Kolkata,bairampur south 24 parganas,3,45000000,66667,2800.0,Furnished,buy,bedroom_only,16071.43,23.81
 "PS The 102, PS The 102, Joka, Kolkata",joka,3,8000000,17000,1128.0,Furnished,buy,exact_match,7092.2,15.07
 "Madgul Antaraa, Madgul Antaraa, Hanspukur Joka, Kolkata",hanspukur joka,3,10500000,29667,1246.0,Semi-Furnished,buy,bedroom_only,8426.97,23.81
 Kolkata,santibazaar,2,5000000,17550,819.0,Unfurnished,buy,bedroom_only,6105.01,21.43
@@ -838,18 +838,18 @@ Kolkata,lord sinha road lord sinha road,5,45000000,147321,3000.0,Semi-Furnished,
 "Kalikapur Road, Kolkata",kalikapur road,2,3500000,17786,830.0,Furnished,buy,bedroom_only,4216.87,21.43
 "Bansdroni, Kolkata",bansdroni,2,2350000,9000,400.0,Semi-Furnished,buy,address_bedroom,5875.0,22.5
 "Prince Anwar Shah Road, Kolkata",prince anwar shah road,4,35000000,110024,2500.0,Semi-Furnished,buy,address_bedroom,14000.0,44.01
-4 BHK Villa for Sale in Chinsurah Kolkata,hooghly-chinsurah,4,8400000,82090,2000.0,Semi-Furnished,buy,bedroom_only,4200.0,41.04
+Chinsurah Kolkata,hooghly-chinsurah,4,8400000,82090,2000.0,Semi-Furnished,buy,bedroom_only,4200.0,41.04
 "Purbasha Apartment, Purbasha Apartment, Howrah, Kolkata",howrah,3,14500000,21000,1475.0,Unfurnished,buy,exact_match,9830.51,14.24
 "Sonajhuri Apartment, Sonajhuri Apartment, Airport Area, Kolkata",airport area,3,4000000,20238,850.0,Furnished,buy,bedroom_only,4705.88,23.81
 "Action Area 1, Kolkata",action area 1,3,8200000,26000,1150.0,Semi-Furnished,buy,exact_match,7130.43,22.61
-4 BHK House for Sale in Rahara Kolkata,rahara,4,22000000,493,12.0,Unfurnished,buy,bedroom_only,1833333.33,41.08
+Rahara Kolkata,rahara,4,22000000,493,12.0,Unfurnished,buy,bedroom_only,1833333.33,41.08
 "Baruipur Road, Kolkata",baruipur road,2,1900000,9729,454.0,Semi-Furnished,buy,bedroom_only,4185.02,21.43
 "South City Complex, Kolkata",south city complex,3,21500000,26190,1100.0,Unfurnished,buy,bedroom_only,19545.45,23.81
 "Shrachi Greenwood Elements, Shrachi Greenwood Elements, Rajarhat, Kolkata",rajarhat,3,13500000,44267,1830.0,Semi-Furnished,buy,address_bedroom,7377.05,24.19
 "Realtech Curiocity Classic, Realtech Curiocity Classic, New Town, Kolkata",new town,2,5700000,14500,792.0,Unfurnished,buy,exact_match,7196.97,18.31
-4 BHK House for Sale in Agapur New Barrakpur Kolkata,agapur new barrakpur,4,11000000,44698,1089.0,Semi-Furnished,buy,bedroom_only,10101.01,41.04
+Agapur New Barrakpur Kolkata,agapur new barrakpur,4,11000000,44698,1089.0,Semi-Furnished,buy,bedroom_only,10101.01,41.04
 "Ballygunge, Kolkata",ballygunge,6,210000000,332500,6650.0,Unfurnished,buy,address_only,31578.95,50.0
-3 BHK House for Sale in Subhasgram Kolkata,near rail station,3,5700000,23810,1000.0,Unfurnished,buy,bedroom_only,5700.0,23.81
+Subhasgram Kolkata,near rail station,3,5700000,23810,1000.0,Unfurnished,buy,bedroom_only,5700.0,23.81
 "Tollygunge Phari, Kolkata",tollygunge phari,2,5500000,19286,900.0,Semi-Furnished,buy,bedroom_only,6111.11,21.43
 "Bengal Abasan Urban Sabujayan, Bengal Abasan Urban Sabujayan, Mukundapur, Kolkata",mukundapur,3,7500000,54556,1256.0,Unfurnished,buy,address_bedroom,5971.34,43.44
 "Survey Park, Kolkata",survey park,2,8000000,23794,915.0,Semi-Furnished,buy,address_bedroom,8743.17,26.0
@@ -864,14 +864,14 @@ Kolkata,shanti apartmemt dum dum canamp;t hari mohan dutta road,3,3500000,26190,
 "Lake Mall, Lake Mall, Lake Market, Kalighat, Kolkata",lake market,2,9500000,19929,930.0,Furnished,buy,bedroom_only,10215.05,21.43
 "Ballygunge, Kolkata",ballygunge,3,12000000,52500,1425.0,Semi-Furnished,buy,address_bedroom,8421.05,36.84
 "Orbit Urban Park, Orbit Urban Park, New Town, Kolkata",new town,3,20000000,75000,1550.0,Unfurnished,buy,exact_match,12903.23,48.39
-2 BHK House for Sale in behala Moynagore Kolkata,behala moynagore,2,2200000,19286,900.0,Semi-Furnished,buy,bedroom_only,2444.44,21.43
-3 BHK Villa for Sale in Bally station Kolkata,bally station,3,8000000,33333,1400.0,Unfurnished,buy,bedroom_only,5714.29,23.81
+behala Moynagore Kolkata,behala moynagore,2,2200000,19286,900.0,Semi-Furnished,buy,bedroom_only,2444.44,21.43
+Bally station Kolkata,bally station,3,8000000,33333,1400.0,Unfurnished,buy,bedroom_only,5714.29,23.81
 "RDB Regent Sonarpur Phase I, RDB Regent Sonarpur Phase I, Rajpur Sonarpur, Kolkata",rajpur sonarpur,3,7500000,20000,1392.0,Unfurnished,buy,exact_match,5387.93,14.37
 "Sodepur, Kolkata",sodepur,2,2800000,11560,1088.0,Unfurnished,buy,address_bedroom,2573.53,10.62
 "Netaji Subhash Chandra Bose Road, Kolkata",netaji subhash chandra bose road,2,5000000,24074,750.0,Unfurnished,buy,address_only,6666.67,32.1
 "Kestopur, Kolkata",kestopur,2,2600000,8333,500.0,Semi-Furnished,buy,address_bedroom,5200.0,16.67
 "Kasba, Kolkata",kasba,4,10000000,25964,1190.0,Semi-Furnished,buy,address_only,8403.36,21.82
-3 BHK Villa for Sale in Southern Bypass Kolkata,southern bypass,3,9900000,39573,1260.0,Unfurnished,buy,address_bedroom,7857.14,31.41
+Southern Bypass Kolkata,southern bypass,3,9900000,39573,1260.0,Unfurnished,buy,address_bedroom,7857.14,31.41
 "Shyam Vihar, Shyam Vihar, Raghunathpur, Baguiati, Kolkata",raghunathpur,3,7000000,23810,1000.0,Unfurnished,buy,bedroom_only,7000.0,23.81
 "Gems City, Gems City, Joka, Kolkata",joka,1,1980000,14485,412.0,Unfurnished,buy,address_bedroom,4805.83,35.16
 "Kshetrum Aspire, Kshetrum Aspire, Behala Chowrasta, Kolkata",behala chowrasta,3,15000000,30000,1394.0,Semi-Furnished,buy,exact_match,10760.4,21.52
@@ -885,16 +885,16 @@ Kolkata,shanti apartmemt dum dum canamp;t hari mohan dutta road,3,3500000,26190,
 "Airport 2 Number Gate, Kolkata",airport 2 number gate,3,3500000,13882,780.0,Semi-Furnished,buy,address_only,4487.18,17.8
 "Merlin Lakescape, Merlin Lakescape, Rajarhat, Kolkata",rajarhat,3,11000000,30000,800.0,Unfurnished,buy,exact_match,13750.0,37.5
 "Kosmic North Grande, Kosmic North Grande, Dum Dum, Kolkata",dum dum,2,5500000,15000,1022.0,Unfurnished,buy,exact_match,5381.6,14.68
-8 BHK Villa for Sale in Sector 2 Salt Lake City Kolkata,sector 2 salt lake city,8,42000000,79333,4200.0,Semi-Furnished,buy,address_only,10000.0,18.89
+Sector 2 Salt Lake City Kolkata,sector 2 salt lake city,8,42000000,79333,4200.0,Semi-Furnished,buy,address_only,10000.0,18.89
 "Garia, Kolkata",garia,2,3700000,9000,711.0,Furnished,buy,exact_match,5203.94,12.66
 "Pushpak Rezidency, Pushpak Rezidency, Jessore Road, Kolkata",jessore road,3,6000000,25000,1097.0,Furnished,buy,exact_match,5469.46,22.79
 "Signum Windmere Apartments , Signum Windmere Apartments, Madhyamgram, Kolkata",madhyamgram,2,6000000,9864,626.0,Unfurnished,buy,address_bedroom,9584.66,15.76
 "Chak Garia, Kolkata",chak garia,2,2850000,18643,870.0,Unfurnished,buy,bedroom_only,3275.86,21.43
 "Entally, Kolkata",entally,3,12500000,55000,1265.0,Furnished,buy,address_only,9881.42,43.48
 "Diamond Plaza, Diamond Plaza, Shyamnagar, Kolkata",shyamnagar,3,7000000,33333,1400.0,Unfurnished,buy,bedroom_only,5000.0,23.81
-6 BHK House for Sale in Kasba Kolkata,kasba,6,25000000,65455,3000.0,Semi-Furnished,buy,address_only,8333.33,21.82
+Kasba Kolkata,kasba,6,25000000,65455,3000.0,Semi-Furnished,buy,address_only,8333.33,21.82
 "Calcutta Motor Dealers, Calcutta Motor Dealers, Behala, Kolkata",behala,3,10000000,22000,1284.0,Semi-Furnished,buy,exact_match,7788.16,17.13
-5 BHK Villa for Sale in Vedic Village Kolkata,vedic village,5,30000000,245536,5000.0,Semi-Furnished,buy,bedroom_only,6000.0,49.11
+Vedic Village Kolkata,vedic village,5,30000000,245536,5000.0,Semi-Furnished,buy,bedroom_only,6000.0,49.11
 "Nagerbazar, Kolkata",nagerbazar,4,7000000,21750,1305.0,Semi-Furnished,buy,address_only,5363.98,16.67
 "Tegharia Baguiati, Kolkata",teghoria,2,3000000,12000,675.0,Furnished,buy,exact_match,4444.44,17.78
 "Ideal Aquaview, Ideal Aquaview, Sector 5 Salt Lake City, Kolkata",sector 5 salt lake city,3,12900000,40000,1050.0,Unfurnished,buy,exact_match,12285.71,38.1
@@ -922,16 +922,16 @@ Kolkata,shanti apartmemt dum dum canamp;t hari mohan dutta road,3,3500000,26190,
 "Bediapara North Dumdum, Kolkata",bediapara north dumdum,2,3500000,16286,760.0,Unfurnished,buy,bedroom_only,4605.26,21.43
 "Ballygunge Park, Ballygunge, Kolkata",ballygunge park,4,60000000,102612,2500.0,Furnished,buy,bedroom_only,24000.0,41.04
 "Shobhabazar, Kolkata",shobha bazar,3,45000000,29286,1230.0,Unfurnished,buy,bedroom_only,36585.37,23.81
-"2 BHK House for Sale in Baishnabghata Patuli Township, Patuli Kolkata",baishnabghata patuli township,2,4000000,34113,1700.0,Unfurnished,buy,address_only,2352.94,20.07
+"Baishnabghata Patuli Township, Patuli Kolkata",baishnabghata patuli township,2,4000000,34113,1700.0,Unfurnished,buy,address_only,2352.94,20.07
 "M V Indraprastha Apartment, M V Indraprastha Apartment, Tegharia Baguiati, Kolkata",teghoria,2,2200000,10825,550.0,Semi-Furnished,buy,address_bedroom,4000.0,19.68
 "Kayastopara, Haltu, Kolkata",kayastopara,3,4500000,13889,750.0,Furnished,buy,address_only,6000.0,18.52
-5 BHK House for Sale in Motilal Nehru Road Kolkata,motilal nehru road,5,13000000,78571,1600.0,Unfurnished,buy,bedroom_only,8125.0,49.11
+Motilal Nehru Road Kolkata,motilal nehru road,5,13000000,78571,1600.0,Unfurnished,buy,bedroom_only,8125.0,49.11
 "Rajarhat, Kolkata",rajarhat,2,4500000,13500,900.0,Semi-Furnished,buy,exact_match,5000.0,15.0
 "Kanchrapara, Kolkata",kanchrapara,2,2200000,16286,760.0,Semi-Furnished,buy,bedroom_only,2894.74,21.43
-2 BHK House for Sale in Durgapur Kolkata,durgapur,2,2500000,25714,1200.0,Unfurnished,buy,bedroom_only,2083.33,21.43
+Durgapur Kolkata,durgapur,2,2500000,25714,1200.0,Unfurnished,buy,bedroom_only,2083.33,21.43
 "Garia, Kolkata",garia,2,3380000,21000,750.0,Unfurnished,buy,exact_match,4506.67,28.0
 "Rajat Avante, Rajat Avante, Joka, Kolkata",joka,3,5200000,16914,734.0,Unfurnished,buy,address_bedroom,7084.47,23.04
-7 BHK House for Sale in Bansdroni Kolkata,bansdroni,7,53500000,58500,2600.0,Semi-Furnished,buy,address_only,20576.92,22.5
+Bansdroni Kolkata,bansdroni,7,53500000,58500,2600.0,Semi-Furnished,buy,address_only,20576.92,22.5
 "Patuli, Kolkata",patuli,2,3500000,15000,680.0,Unfurnished,buy,exact_match,5147.06,22.06
 "Mereit Gardenia, Mereit Gardenia, Alipore, Kolkata",alipore,2,4200000,65000,910.0,Furnished,buy,exact_match,4615.38,71.43
 "H B Town, Sodepur, Kolkata",h b town,2,1600000,10714,500.0,Semi-Furnished,buy,bedroom_only,3200.0,21.43
@@ -946,7 +946,7 @@ Kolkata,basanta complex,1,1800000,9438,409.0,Semi-Furnished,buy,bedroom_only,440
 "Gokul, Gokul, Howrah, Kolkata",howrah,3,3500000,15731,694.0,Unfurnished,buy,address_bedroom,5043.23,22.67
 "Kaikhali, Kolkata",kaikhali,2,4500000,17812,855.0,Unfurnished,buy,address_bedroom,5263.16,20.83
 "Peerless Nagar, Peerless Nagar, Sodepur, Kolkata",sodepur,2,2600000,9000,639.0,Unfurnished,buy,exact_match,4068.86,14.08
-3 BHK House for Sale in Jirat Kolkata,jirat,3,4500000,18286,768.0,Unfurnished,buy,bedroom_only,5859.38,23.81
+Jirat Kolkata,jirat,3,4500000,18286,768.0,Unfurnished,buy,bedroom_only,5859.38,23.81
 "Swastik, Swastik, Bansdroni, Kolkata",bansdroni,4,9000000,22500,1000.0,Unfurnished,buy,address_only,9000.0,22.5
 "Shree Bhumi, Patipukur, Kolkata",shree bhumi,3,6000000,26190,1100.0,Furnished,buy,bedroom_only,5454.55,23.81
 Kolkata,jadavpur bijoygarh,2,2900000,15257,712.0,Semi-Furnished,buy,bedroom_only,4073.03,21.43
@@ -955,7 +955,7 @@ Kolkata,jadavpur bijoygarh,2,2900000,15257,712.0,Semi-Furnished,buy,bedroom_only
 "Prasad Rare Earth, Prasad Rare Earth, Narkeldanga, Kolkata",narkeldanga,3,23000000,63895,1583.0,Unfurnished,buy,address_only,14529.37,40.36
 "Shriram Grand One, Shriram Grand One, Uttarpara Chinsurah, Kolkata",uttarpara,2,3500000,16000,827.0,Unfurnished,buy,exact_match,4232.16,19.35
 "Primarc Southwinds, Primarc Southwinds, Rajpur Sonarpur, Kolkata",rajpur sonarpur,3,7800000,20000,1264.0,Unfurnished,buy,exact_match,6170.89,15.82
-3 BHK House for Sale in Ganguly Bagan Vidyasagar Colony Kolkata,ganguly bagan vidyasagar colony,3,7000000,38095,1600.0,Unfurnished,buy,bedroom_only,4375.0,23.81
+Ganguly Bagan Vidyasagar Colony Kolkata,ganguly bagan vidyasagar colony,3,7000000,38095,1600.0,Unfurnished,buy,bedroom_only,4375.0,23.81
 "Eden City Maheshtala, Eden City Maheshtala, Maheshtala, Kolkata",maheshtala,3,4200000,32103,1236.0,Furnished,buy,address_bedroom,3398.06,25.97
 "Mrinalini Apartment, Mrinalini Apartment, Tollygunge, Kolkata",tollygunge,3,3200000,22000,860.0,Unfurnished,buy,exact_match,3720.93,25.58
 "Unimark Lakewood Estate, Unimark Lakewood Estate, Patuli, Kolkata",patuli,2,7800000,30000,886.0,Unfurnished,buy,exact_match,8803.61,33.86
@@ -969,7 +969,7 @@ Kolkata,jadavpur bijoygarh,2,2900000,15257,712.0,Semi-Furnished,buy,bedroom_only
 "Heysham Road, Kolkata",heysham road,3,17000000,29762,1250.0,Unfurnished,buy,bedroom_only,13600.0,23.81
 "Bally, Kolkata",bally,2,1850000,12857,600.0,Unfurnished,buy,bedroom_only,3083.33,21.43
 "Shapoorji Paloonji Sukhobristi, Shapoorji Paloonji Sukhobristi, New Town, Kolkata",new town,3,6300000,55000,700.0,Unfurnished,buy,exact_match,9000.0,78.57
-5 BHK House for Sale in Salt Lake City Kolkata,salt lake city,5,33000000,82080,2280.0,Furnished,buy,address_only,14473.68,36.0
+Salt Lake City Kolkata,salt lake city,5,33000000,82080,2280.0,Furnished,buy,address_only,14473.68,36.0
 "Mani Towers, Mani Towers, New Alipore, Kolkata",new alipore,1,4200000,16000,669.0,Unfurnished,buy,exact_match,6278.03,23.92
 "Emami City, Emami City, Jessore Road, Kolkata",jessore road,4,23000000,55804,2520.0,Unfurnished,buy,address_only,9126.98,22.14
 "Kalikapur Road, Kolkata",kalikapur road,3,6780000,32333,1358.0,Unfurnished,buy,bedroom_only,4992.64,23.81
@@ -981,7 +981,7 @@ Kolkata,jadavpur bijoygarh,2,2900000,15257,712.0,Semi-Furnished,buy,bedroom_only
 "Primarc Southwinds, Primarc Southwinds, Harinavi, Kolkata",harinavi,2,6000000,17671,600.0,Unfurnished,buy,address_only,10000.0,29.45
 "SGIL Residenzza, SGIL Residenzza, Manikpur Rajbari, Kolkata",manikpur,3,9000000,23077,1000.0,Semi-Furnished,buy,address_only,9000.0,23.08
 "Ramgarh Garia, Kolkata",ramgarh,2,3000000,13929,650.0,Unfurnished,buy,bedroom_only,4615.38,21.43
-3 BHK House for Sale in Ballygunge Kolkata,ballygunge,3,25000000,70000,2000.0,Furnished,buy,exact_match,12500.0,35.0
+Ballygunge Kolkata,ballygunge,3,25000000,70000,2000.0,Furnished,buy,exact_match,12500.0,35.0
 "Jupiter Niharika, Jupiter Niharika, Gora Bazar, Dum Dum, Kolkata",gora bazar,2,3800000,16895,887.0,Furnished,buy,address_bedroom,4284.1,19.05
 "PS Rain Tree, PS Rain Tree, Kankurgachi, Kolkata",kankurgachi,4,23000000,60000,2224.0,Unfurnished,buy,exact_match,10341.73,26.98
 "Genexx Valley, Genexx Valley, Joka, Kolkata",joka,3,4600000,17000,1035.0,Unfurnished,buy,exact_match,4444.44,16.43
@@ -1024,14 +1024,14 @@ Kolkata,gopal kunja,2,6133333,18000,1150.0,Unfurnished,rent,bedroom_only,5333.33
 "Dum Dum, Kolkata",dum dum,2,5000000,15000,890.0,Unfurnished,rent,exact_match,5617.98,16.85
 "Anik One Rajarhat, Anik One Rajarhat, Action Area 1, Kolkata",action area 1,4,26942158,150000,3029.0,Furnished,rent,address_bedroom,8894.74,49.52
 "Jalan NVR Pride, Jalan NVR Pride, Diamond Harbour Road, Kolkata",diamond harbour road,2,3102273,12500,600.0,Unfurnished,rent,address_bedroom,5170.46,20.83
-2 BHK House for Rent in Bansdroni Kolkata,bansdroni,2,2600000,15000,700.0,Unfurnished,rent,exact_match,3714.29,21.43
-3 BHK House for Rent in Bramhapur Kolkata,brahmapur,3,4893617,18000,1150.0,Semi-Furnished,rent,address_only,4255.32,15.65
-2 BHK House for Rent in Thakurpukur Kolkata,thakurpukur,2,3000000,8500,553.0,Unfurnished,rent,exact_match,5424.95,15.37
+Bansdroni Kolkata,bansdroni,2,2600000,15000,700.0,Unfurnished,rent,exact_match,3714.29,21.43
+Bramhapur Kolkata,brahmapur,3,4893617,18000,1150.0,Semi-Furnished,rent,address_only,4255.32,15.65
+Thakurpukur Kolkata,thakurpukur,2,3000000,8500,553.0,Unfurnished,rent,exact_match,5424.95,15.37
 "Kamini Abashan, Kamini Abashan, Haridevpur, Paschim Putiary, Kolkata",haridevpur,2,2355842,10500,690.0,Unfurnished,rent,address_only,3414.26,15.22
 "Naktala, Garia, Kolkata",naktala,2,4750000,23000,727.0,Unfurnished,rent,exact_match,6533.7,31.64
 "Mangalam Park, Mangalam Park, Behala, Kolkata",behala,3,6000000,30000,1050.0,Semi-Furnished,rent,exact_match,5714.29,28.57
 "Rosedale Garden, Rosedale Garden, Action Area 3, Kolkata",action area 3,3,14000000,62000,1562.0,Furnished,rent,exact_match,8962.87,39.69
-2 BHK House for Rent in Howrah Kolkata,howrah,2,2769509,9000,650.0,Unfurnished,rent,address_bedroom,4260.78,13.85
+Howrah Kolkata,howrah,2,2769509,9000,650.0,Unfurnished,rent,address_bedroom,4260.78,13.85
 "Bansdroni, Kolkata",bansdroni,2,2600000,14000,600.0,Semi-Furnished,rent,exact_match,4333.33,23.33
 "Sureka Elita Garden Vista, Sureka Elita Garden Vista, New Town, Kolkata",new town,2,9800000,35000,1174.0,Semi-Furnished,rent,exact_match,8347.53,29.81
 "Minto Park Area, Kolkata",minto park,3,14648661,130000,2000.0,Furnished,rent,bedroom_only,7324.33,65.0
@@ -1041,7 +1041,7 @@ Kolkata,gopal kunja,2,6133333,18000,1150.0,Unfurnished,rent,bedroom_only,5333.33
 "Anik One Rajarhat, Anik One Rajarhat, Action Area 1, Kolkata",action area 1,2,15000000,55000,833.0,Unfurnished,rent,exact_match,18007.2,66.03
 "Prudent Prana, Prudent Prana, Garia, Kolkata",garia,2,2790000,21000,850.0,Furnished,rent,exact_match,3282.35,24.71
 "Haque Complex, Haque Complex, Topsia, Kolkata",topsia,1,5333858,6500,375.0,Furnished,rent,address_only,14223.62,17.33
-2 BHK House for Rent in Panchanan Tola Thakurpukur Kolkata,panchanan tola,2,4000000,15000,750.0,Semi-Furnished,rent,bedroom_only,5333.33,20.0
+Panchanan Tola Thakurpukur Kolkata,panchanan tola,2,4000000,15000,750.0,Semi-Furnished,rent,bedroom_only,5333.33,20.0
 "Kalitala Ward Number 113, Kolkata",kalitala ward number 113,2,4800000,22000,900.0,Semi-Furnished,rent,bedroom_only,5333.33,24.44
 "Ambey Florence, Ambey Florence, Rajarhat, Kolkata",rajarhat,3,10000000,21000,940.0,Semi-Furnished,rent,exact_match,10638.3,22.34
 "Shapoorji Paloonji Sukhobristi, Shapoorji Paloonji Sukhobristi, New Town, Kolkata",new town,2,4900000,25000,600.0,Furnished,rent,exact_match,8166.67,41.67
@@ -1058,11 +1058,11 @@ Kolkata,near laketown,3,6591897,22000,900.0,Semi-Furnished,rent,bedroom_only,732
 "Tata Eden Court, Tata Eden Court, New Town, Kolkata",new town,3,14000000,30000,1555.0,Semi-Furnished,rent,exact_match,9003.22,19.29
 Kolkata,bt college more,2,3733333,12000,700.0,Semi-Furnished,rent,bedroom_only,5333.33,17.14
 "Aspira Loharuka Green Heights, Aspira Loharuka Green Heights, Rajarhat, Kolkata",rajarhat,3,3940000,30000,828.0,Furnished,rent,exact_match,4758.45,36.23
-2 BHK House for Rent in Ranaghat Kolkata,ranaghat,2,4800000,9000,900.0,Semi-Furnished,rent,bedroom_only,5333.33,10.0
+Ranaghat Kolkata,ranaghat,2,4800000,9000,900.0,Semi-Furnished,rent,bedroom_only,5333.33,10.0
 "Naktala, Garia, Kolkata",naktala,2,6321678,23000,1000.0,Unfurnished,rent,address_bedroom,6321.68,23.0
 "Madurdaha, Hussainpur, Kolkata",madurdaha,2,4000000,20000,630.0,Semi-Furnished,rent,exact_match,6349.21,31.75
 "Standalone Property, Standalone Property, Santoshpur, Kolkata",santoshpur,2,3600000,10000,480.0,Unfurnished,rent,exact_match,7500.0,20.83
-3 BHK House for Rent in Santoshpur Kolkata,santoshpur,3,5479452,13000,1000.0,Unfurnished,rent,address_bedroom,5479.45,13.0
+Santoshpur Kolkata,santoshpur,3,5479452,13000,1000.0,Unfurnished,rent,address_bedroom,5479.45,13.0
 "Mohini Villa, Mohini Villa, Kaikhali, Kolkata",kaikhali,2,5160000,14500,1000.0,Furnished,rent,exact_match,5160.0,14.5
 "Riya Manbhari Ananya, Riya Manbhari Ananya, Rajpur, Kolkata",rajpur,2,5875000,12500,975.0,Semi-Furnished,rent,address_bedroom,6025.64,12.82
 "Simoco Sanhita Housing Complex Commercial , Simoco Sanhita Housing Complex Commercial, Bhangar, Kolkata",bhangar,3,4416571,10000,603.0,Semi-Furnished,rent,bedroom_only,7324.33,16.58
@@ -1073,8 +1073,8 @@ Kolkata,bt college more,2,3733333,12000,700.0,Semi-Furnished,rent,bedroom_only,5
 "Unique Park Behala, Kolkata",unique park behala,1,1350000,7000,450.0,Semi-Furnished,rent,address_only,3000.0,15.56
 "Behala, Kolkata",behala,3,6000000,22000,1150.0,Semi-Furnished,rent,exact_match,5217.39,19.13
 "Action Area 1, Kolkata",action area 1,2,15000000,19500,880.0,Unfurnished,rent,exact_match,17045.45,22.16
-2 BHK House for Rent in Tollygunge Kolkata,tollygunge,2,2900000,16000,700.0,Semi-Furnished,rent,exact_match,4142.86,22.86
-2 BHK House for Rent in Saltlake sec v Kolkata,saltlake sec v,2,3200000,30000,600.0,Furnished,rent,bedroom_only,5333.33,50.0
+Tollygunge Kolkata,tollygunge,2,2900000,16000,700.0,Semi-Furnished,rent,exact_match,4142.86,22.86
+Saltlake sec v Kolkata,saltlake sec v,2,3200000,30000,600.0,Furnished,rent,bedroom_only,5333.33,50.0
 "Simoco Sanhita Housing Complex Commercial , Simoco Sanhita Housing Complex Commercial, Bhangar, Kolkata",bhangar,3,6709087,11000,916.0,Semi-Furnished,rent,bedroom_only,7324.33,12.01
 "Vinayak Blossom County, Vinayak Blossom County, Sahapur New Alipore, Kolkata",sahapur,2,3043478,17000,350.0,Semi-Furnished,rent,address_only,8695.65,48.57
 "Purbalok, Mukundapur, Kolkata",purbalok,2,6489020,14000,985.0,Unfurnished,rent,address_bedroom,6587.84,14.21
@@ -1093,16 +1093,16 @@ Kolkata,bt college more,2,3733333,12000,700.0,Semi-Furnished,rent,bedroom_only,5
 "Siddha Town, Siddha Town, Rajarhat, Kolkata",rajarhat,2,3200000,13500,950.0,Semi-Furnished,rent,exact_match,3368.42,14.21
 "Siriti, Siriti, Tollygunge, Kolkata",tollygunge,2,2900000,10000,620.0,Unfurnished,rent,exact_match,4677.42,16.13
 Kolkata,hari saba math garia,3,8422980,20000,1150.0,Semi-Furnished,rent,bedroom_only,7324.33,17.39
-"1 BHK House for Rent in Ichapur Bidhanpally, Ichapur Kolkata",ichapur bidhanpally,1,1421053,6000,300.0,Furnished,rent,bedroom_only,4736.84,20.0
+"Ichapur Bidhanpally, Ichapur Kolkata",ichapur bidhanpally,1,1421053,6000,300.0,Furnished,rent,bedroom_only,4736.84,20.0
 "Utsa The Condovile, Utsa The Condovile, Rajarhat, Kolkata",rajarhat,2,5200000,25000,750.0,Furnished,rent,exact_match,6933.33,33.33
 "Merlin Maximus, Merlin Maximus, Sodepur, Kolkata",sodepur,3,8900000,25000,881.0,Semi-Furnished,rent,exact_match,10102.16,28.38
 "Bonorini, Bonorini, Dunlop, Dakshineswar, Belgharia Expressway, Kolkata",dunlop,2,4000000,17000,750.0,Furnished,rent,bedroom_only,5333.33,22.67
 Kolkata,lilua surya nagar,2,2186667,7000,410.0,Unfurnished,rent,bedroom_only,5333.33,17.07
-2 BHK Villa for Rent in Thakurpukur Kolkata,thakurpukur,2,4500000,7000,900.0,Semi-Furnished,rent,address_bedroom,5000.0,7.78
+Thakurpukur Kolkata,thakurpukur,2,4500000,7000,900.0,Semi-Furnished,rent,address_bedroom,5000.0,7.78
 Kolkata,ramkrishna apartment,2,3840000,8500,720.0,Semi-Furnished,rent,bedroom_only,5333.33,11.81
 "Primarc Southwinds, Primarc Southwinds, Rajpur Sonarpur, Kolkata",rajpur sonarpur,2,1600000,18000,720.0,Semi-Furnished,rent,exact_match,2222.22,25.0
 "South Dumdum, Kolkata",south dum dum,2,3626667,10000,680.0,Semi-Furnished,rent,bedroom_only,5333.33,14.71
-3 BHK House for Rent in Dhakuria Kolkata,dhakuria,3,7000000,15000,1000.0,Semi-Furnished,rent,exact_match,7000.0,15.0
+Dhakuria Kolkata,dhakuria,3,7000000,15000,1000.0,Semi-Furnished,rent,exact_match,7000.0,15.0
 "Buroshibtalla, Behala, Kolkata",buroshibtalla,1,4760000,19000,420.0,Furnished,rent,address_only,11333.33,45.24
 "Mayfair Greenwoods, Mayfair Greenwoods, Malancha Mahi Nagar, Kolkata",malancha,3,7251087,15000,990.0,Unfurnished,rent,bedroom_only,7324.33,15.15
 "Upohar The Condoville, Upohar The Condoville, Eastern Metropolitan Bypass, Kolkata",em bypass,1,6235714,17000,582.0,Semi-Furnished,rent,address_only,10714.29,29.21
@@ -1110,21 +1110,21 @@ Kolkata,ramkrishna apartment,2,3840000,8500,720.0,Semi-Furnished,rent,bedroom_on
 "Dr Suresh Sarkar Road, Kolkata",dr suresh sarkar road,3,7324331,40000,1000.0,Furnished,rent,bedroom_only,7324.33,40.0
 "Realtech Titli, Realtech Titli, Noapara Sukanta Pally, Kolkata",noapara,2,3946667,18500,740.0,Semi-Furnished,rent,bedroom_only,5333.33,25.0
 "Santoshpur Maheshtala, Kolkata",santoshpur maheshtala,1,1184211,3500,250.0,Furnished,rent,bedroom_only,4736.84,14.0
-1 BHK House for Rent in Jadavpur Kolkata,jadavpur,1,2485714,8000,300.0,Unfurnished,rent,address_only,8285.71,26.67
+Jadavpur Kolkata,jadavpur,1,2485714,8000,300.0,Unfurnished,rent,address_only,8285.71,26.67
 Kolkata,bartika,2,3306667,7500,620.0,Semi-Furnished,rent,bedroom_only,5333.33,12.1
 "Kasba Housing, Kasba Housing, Kasba, Kolkata",kasba,2,6000000,16000,800.0,Furnished,rent,exact_match,7500.0,20.0
 "Ideal Aquaview, Ideal Aquaview, Sector 5 Salt Lake City, Kolkata",sector 5 salt lake city,3,8500000,40000,1000.0,Semi-Furnished,rent,exact_match,8500.0,40.0
-2 BHK House for Rent in Sodepur Kolkata,sodepur,2,2490000,7000,800.0,Semi-Furnished,rent,exact_match,3112.5,8.75
-3 BHK House for Rent in Sonarpur Kolkata,sonarpur,3,3747608,9000,950.0,Semi-Furnished,rent,address_only,3944.85,9.47
+Sodepur Kolkata,sodepur,2,2490000,7000,800.0,Semi-Furnished,rent,exact_match,3112.5,8.75
+Sonarpur Kolkata,sonarpur,3,3747608,9000,950.0,Semi-Furnished,rent,address_only,3944.85,9.47
 "Merlin Urvan, Merlin Urvan, Dum Dum, Kolkata",dum dum,2,5000000,30000,964.0,Semi-Furnished,rent,exact_match,5186.72,31.12
-2 BHK House for Rent in Sector 2 Salt Lake City Kolkata,sector 2 salt lake city,2,4939024,17000,900.0,Unfurnished,rent,address_bedroom,5487.8,18.89
+Sector 2 Salt Lake City Kolkata,sector 2 salt lake city,2,4939024,17000,900.0,Unfurnished,rent,address_bedroom,5487.8,18.89
 "Anik One Rajarhat, Anik One Rajarhat, Action Area 1, Kolkata",action area 1,4,16900000,120000,1789.0,Unfurnished,rent,exact_match,9446.62,67.08
 "The Lake Paradise, The Lake Paradise, Barasat, Kolkata",barasat,2,2500000,15000,680.0,Semi-Furnished,rent,exact_match,3676.47,22.06
 "Nirjhar Apartment, Nirjhar Apartment, Sahapur New Alipore, Kolkata",sahapur,3,7704348,23000,886.0,Semi-Furnished,rent,address_bedroom,8695.65,25.96
 "Ballygunge, Kolkata",ballygunge,2,12500000,35000,950.0,Unfurnished,rent,exact_match,13157.89,36.84
 "D P Apartment, D P Apartment, Tarapukur West, Kolkata",tarapukur west,2,6666667,10000,1250.0,Unfurnished,rent,bedroom_only,5333.33,8.0
 "Unitech Uniworld City Garden, Unitech Uniworld City Garden, Action Area 3, Kolkata",action area 3,3,14000000,60000,1676.0,Semi-Furnished,rent,exact_match,8353.22,35.8
-3 BHK House for Rent in Sector 1 Salt Lake City Kolkata,sector 1 salt lake city,3,17400000,48000,1500.0,Semi-Furnished,rent,address_bedroom,11600.0,32.0
+Sector 1 Salt Lake City Kolkata,sector 1 salt lake city,3,17400000,48000,1500.0,Semi-Furnished,rent,address_bedroom,11600.0,32.0
 "Tribeni Apartment, Tribeni Apartment, Dhakuria, Kolkata",dhakuria,2,4822115,18000,765.0,Semi-Furnished,rent,address_bedroom,6303.42,23.53
 "Kamalgazi, Narendrapur, Kolkata",kamalgazi,5,14200176,100000,3500.0,Unfurnished,rent,address_only,4057.19,28.57
 "Mani Casa, Mani Casa, New Town, Kolkata",new town,3,17500000,40000,995.0,Semi-Furnished,rent,exact_match,17587.94,40.2
@@ -1134,32 +1134,32 @@ Kolkata,bartika,2,3306667,7500,620.0,Semi-Furnished,rent,bedroom_only,5333.33,12
 "BG Bitasta Residency, BG Bitasta Residency, Chinar Park, Rajarhat, Kolkata",chinar park,2,4300000,18500,807.0,Unfurnished,rent,exact_match,5328.38,22.92
 "Baguiati, Kolkata",baguiati,2,3500000,20000,800.0,Semi-Furnished,rent,exact_match,4375.0,25.0
 "Puspanjali, Puspanjali, New Garia, Garia, Kolkata",new garia,2,2200000,11000,612.0,Unfurnished,rent,exact_match,3594.77,17.97
-1 BHK House for Rent in Batanagar Kolkata,batanagar,1,2777778,8000,800.0,Unfurnished,rent,address_only,3472.22,10.0
+Batanagar Kolkata,batanagar,1,2777778,8000,800.0,Unfurnished,rent,address_only,3472.22,10.0
 "Indraprastha, Indraprastha, Kaikhali, Kolkata",kaikhali,2,5840248,25000,1200.0,Unfurnished,rent,address_bedroom,4866.87,20.83
 "Lake Town, Kolkata",lake town,2,4520194,12500,670.0,Semi-Furnished,rent,address_bedroom,6746.56,18.66
 "Unique Pearl, Unique Pearl, New Town, Kolkata",new town,3,17500000,17500,975.0,Semi-Furnished,rent,exact_match,17948.72,17.95
 "Eden Oxford Park, Eden Oxford Park, Nayabad, Kolkata",nayabad,3,4716000,18000,786.0,Unfurnished,rent,address_bedroom,6000.0,22.9
 "Kasba, Kolkata",kasba,2,7275439,24000,1100.0,Furnished,rent,address_bedroom,6614.04,21.82
 "Tegharia Baguiati, Kolkata",teghoria,2,3000000,12000,700.0,Furnished,rent,exact_match,4285.71,17.14
-3 BHK House for Rent in Dum Dum Kolkata,dum dum,3,7900000,22000,800.0,Unfurnished,rent,exact_match,9875.0,27.5
+Dum Dum Kolkata,dum dum,3,7900000,22000,800.0,Unfurnished,rent,exact_match,9875.0,27.5
 "Golf Gardens, Tollygunge, Kolkata",golf gardens,2,3500000,20000,750.0,Furnished,rent,exact_match,4666.67,26.67
 "Sukh Sadan, Sukh Sadan, Shakespeare Sarani, Kolkata",shakespeare sarani road,3,35844828,70000,1320.0,Furnished,rent,address_only,27155.17,53.03
-2 BHK House for Rent in Joramondir Road Kolkata,joramondir road,2,3173333,12000,595.0,Unfurnished,rent,bedroom_only,5333.33,20.17
+Joramondir Road Kolkata,joramondir road,2,3173333,12000,595.0,Unfurnished,rent,bedroom_only,5333.33,20.17
 "Unimark Lakewood Estate, Unimark Lakewood Estate, Patuli, Kolkata",patuli,3,10377465,30000,1228.0,Semi-Furnished,rent,address_bedroom,8450.7,24.43
 "Entally, Kolkata",entally,2,12447059,40000,920.0,Furnished,rent,address_only,13529.41,43.48
 "East Kolkata Township, Kolkata",east kolkata township,3,9449120,30000,950.0,Semi-Furnished,rent,address_bedroom,9946.44,31.58
 "Kasba, Kolkata",kasba,3,10000000,25000,1200.0,Semi-Furnished,rent,address_only,8333.33,20.83
 "Purbalok, Mukundapur, Kolkata",purbalok,3,9223178,30000,1125.0,Furnished,rent,address_bedroom,8198.38,26.67
-2 BHK House for Rent in Garia Kolkata,garia,2,3000000,9000,680.0,Unfurnished,rent,exact_match,4411.76,13.24
+Garia Kolkata,garia,2,3000000,9000,680.0,Unfurnished,rent,exact_match,4411.76,13.24
 "Vishnu Paradise, Vishnu Paradise, Tollygunge, Kolkata",tollygunge,2,7500000,25000,885.0,Unfurnished,rent,exact_match,8474.58,28.25
 "Kamala Village, Kamala Village, Barasat, Kolkata",barasat,2,4000000,12000,1000.0,Unfurnished,rent,exact_match,4000.0,12.0
 "New Alipore, Kolkata",new alipore,2,4972460,22000,680.0,Furnished,rent,address_bedroom,7312.44,32.35
 "Gopal Nagar, Kolkata",gopal nagar,2,3733333,16000,700.0,Furnished,rent,bedroom_only,5333.33,22.86
 "Thakurpukur, Kolkata",thakurpukur,2,3000000,15000,630.0,Semi-Furnished,rent,exact_match,4761.9,23.81
-"2 BHK House for Rent in Sonartori Housing Complex, New Town Kolkata",new town,2,6200000,10000,800.0,Unfurnished,rent,exact_match,7750.0,12.5
-2 BHK House for Rent in Surer Math Kolkata,surer math,2,3813333,13000,715.0,Unfurnished,rent,bedroom_only,5333.33,18.18
+"Sonartori Housing Complex, New Town Kolkata",new town,2,6200000,10000,800.0,Unfurnished,rent,exact_match,7750.0,12.5
+Surer Math Kolkata,surer math,2,3813333,13000,715.0,Unfurnished,rent,bedroom_only,5333.33,18.18
 "Kamalgazi, Narendrapur, Kolkata",kamalgazi,2,3880000,16000,880.0,Semi-Furnished,rent,exact_match,4409.09,18.18
-2 BHK House for Rent in Lake Gardens Kolkata,lake gardens,2,4300000,22500,850.0,Semi-Furnished,rent,exact_match,5058.82,26.47
+Lake Gardens Kolkata,lake gardens,2,4300000,22500,850.0,Semi-Furnished,rent,exact_match,5058.82,26.47
 "New Town, Kolkata",new town,3,10100000,40000,1400.0,Furnished,rent,exact_match,7214.29,28.57
 "Jadavpur, Kolkata",jadavpur,2,3700000,22000,850.0,Furnished,rent,exact_match,4352.94,25.88
 "Golf Club Road, Tollygunge, Kolkata",golf club road,3,10986496,35000,1500.0,Semi-Furnished,rent,bedroom_only,7324.33,23.33
@@ -1168,30 +1168,30 @@ Kolkata,bartika,2,3306667,7500,620.0,Semi-Furnished,rent,bedroom_only,5333.33,12
 "Avani Oxford 1, Avani Oxford 1, Lake Town, Kolkata",lake town,3,15500000,43000,1550.0,Semi-Furnished,rent,exact_match,10000.0,27.74
 "Eden Tolly Lakeside, Eden Tolly Lakeside, Tollygunge, Kolkata",tollygunge,2,7500000,17000,760.0,Unfurnished,rent,exact_match,9868.42,22.37
 "purbadri cooperative housing society, purbadri cooperative housing society, Baishnabghata Patuli Township, Patuli, Kolkata",baishnabghata patuli township,1,7248302,8500,640.0,Semi-Furnished,rent,address_only,11325.47,13.28
-2 BHK House for Rent in Nona Chandanpukur Kolkata,nona chandanpukur,2,4160000,10000,780.0,Semi-Furnished,rent,bedroom_only,5333.33,12.82
+Nona Chandanpukur Kolkata,nona chandanpukur,2,4160000,10000,780.0,Semi-Furnished,rent,bedroom_only,5333.33,12.82
 "Bansdroni, Kolkata",bansdroni,2,2600000,12500,560.0,Semi-Furnished,rent,exact_match,4642.86,22.32
 "Minati Apartment, Minati Apartment, Garia, Kolkata",garia,1,1700000,14000,500.0,Furnished,rent,exact_match,3400.0,28.0
 "purbadri cooperative housing society, purbadri cooperative housing society, Baishnabghata Patuli Township, Patuli, Kolkata",baishnabghata patuli township,1,6115755,14500,540.0,Furnished,rent,address_only,11325.47,26.85
-2 BHK House for Rent in Salap Kolkata,salap,2,3850000,10000,1100.0,Unfurnished,rent,address_only,3500.0,9.09
+Salap Kolkata,salap,2,3850000,10000,1100.0,Unfurnished,rent,address_only,3500.0,9.09
 "Aryan Tower, Aryan Tower, Madhyamgram, Kolkata",madhyamgram,3,5670000,20000,1384.0,Semi-Furnished,rent,exact_match,4096.82,14.45
-2 BHK House for Rent in Madhyamgram Kolkata,madhyamgram,2,6730769,8000,1200.0,Unfurnished,rent,address_bedroom,5608.97,6.67
+Madhyamgram Kolkata,madhyamgram,2,6730769,8000,1200.0,Unfurnished,rent,address_bedroom,5608.97,6.67
 "Behala Chowrasta, Kolkata",behala chowrasta,2,2600000,15000,700.0,Unfurnished,rent,exact_match,3714.29,21.43
 "New Town, Kolkata",new town,2,6100000,12000,850.0,Semi-Furnished,rent,exact_match,7176.47,14.12
 "Tirath Divine, Tirath Divine, Madhyamgram, Kolkata",madhyamgram,2,4600000,13000,825.0,Unfurnished,rent,exact_match,5575.76,15.76
-1 BHK House for Rent in Airport 2 Number Gate Kolkata,airport 2 number gate,1,1148718,4500,200.0,Unfurnished,rent,address_only,5743.59,22.5
-"3 BHK Villa for Rent in Ideal Villas, New Town Kolkata",new town,3,32789623,68000,3483.0,Semi-Furnished,rent,address_bedroom,9414.19,19.52
+Airport 2 Number Gate Kolkata,airport 2 number gate,1,1148718,4500,200.0,Unfurnished,rent,address_only,5743.59,22.5
+"Ideal Villas, New Town Kolkata",new town,3,32789623,68000,3483.0,Semi-Furnished,rent,address_bedroom,9414.19,19.52
 "Bengal DCL Sampoorna, Bengal DCL Sampoorna, Action Area 2, Kolkata",action area 2,3,15800000,50000,1820.0,Furnished,rent,exact_match,8681.32,27.47
 "Saduli, Kolkata",saduli,1,2065263,5000,436.0,Unfurnished,rent,bedroom_only,4736.84,11.47
 "Salarpuria Silver Oak Estate, Salarpuria Silver Oak Estate, Rajarhat, Kolkata",rajarhat,3,10000000,35000,1209.0,Semi-Furnished,rent,exact_match,8271.3,28.95
 "Siddha Suburbia, Siddha Suburbia, Southern Bypass, Kolkata",southern bypass,3,6254286,25000,796.0,Semi-Furnished,rent,address_bedroom,7857.14,31.41
-2 BHK House for Rent in Belur Math Kolkata,belur math,2,2400000,8500,450.0,Unfurnished,rent,bedroom_only,5333.33,18.89
+Belur Math Kolkata,belur math,2,2400000,8500,450.0,Unfurnished,rent,bedroom_only,5333.33,18.89
 "VIP Terrace, VIP Terrace, Lake Town, Kolkata",lake town,3,12413050,42000,1200.0,Furnished,rent,address_bedroom,10344.21,35.0
 "PS Amistad, PS Amistad, Action Area 2, Kolkata",action area 2,3,13047742,35000,1280.0,Semi-Furnished,rent,address_bedroom,10193.55,27.34
 "Chinar Park, Rajarhat, Kolkata",chinar park,2,2756410,19000,500.0,Furnished,rent,address_bedroom,5512.82,38.0
 "Action Area 1, Kolkata",action area 1,3,10500000,24000,1332.0,Semi-Furnished,rent,exact_match,7882.88,18.02
 "Anik One Rajarhat, Anik One Rajarhat, New Town, Kolkata",new town,3,16000000,85000,1891.0,Semi-Furnished,rent,exact_match,8461.13,44.95
 "PS ONE10, PS ONE10, Action Area 1, Kolkata",action area 1,2,6500000,40000,690.0,Semi-Furnished,rent,exact_match,9420.29,57.97
-7 BHK Villa for Rent in Sector 2 Salt Lake City Kolkata,sector 2 salt lake city,7,48000000,130000,3200.0,Semi-Furnished,rent,address_only,15000.0,40.62
+Sector 2 Salt Lake City Kolkata,sector 2 salt lake city,7,48000000,130000,3200.0,Semi-Furnished,rent,address_only,15000.0,40.62
 "Kudghat, Ashok Nagar, Kolkata",kudghat,2,5066667,30000,950.0,Furnished,rent,bedroom_only,5333.33,31.58
 "Mukundapur, Kolkata",mukundapur,1,4919186,6500,500.0,Unfurnished,rent,address_only,9838.37,13.0
 "Merlin 5th Avenue, Merlin 5th Avenue, Sector 5 Salt Lake City, Kolkata",sector 5 salt lake city,3,23000000,90000,1887.0,Unfurnished,rent,exact_match,12188.66,47.69
@@ -1223,11 +1223,11 @@ Kolkata,bartika,2,3306667,7500,620.0,Semi-Furnished,rent,bedroom_only,5333.33,12
 "Rajwada Royal Gardens, Rajwada Royal Gardens, Narendrapur Rajpur Sonarpur, Kolkata",narendrapur,3,6500000,29000,1040.0,Semi-Furnished,rent,exact_match,6250.0,27.88
 "Kendriya Vihar Phase 2, Kendriya Vihar Phase 2, Khalisha Kota, Kolkata",khalisha kota,4,18393250,20000,1711.0,Semi-Furnished,rent,bedroom_only,10750.0,11.69
 "Rishi Pranaya, Rishi Pranaya, Rajarhat, Kolkata",rajarhat,2,5200000,25000,680.0,Semi-Furnished,rent,exact_match,7647.06,36.76
-2 BHK House for Rent in Desh Bandhu Nagar Baguiati Kolkata,desh bandhu nagar,2,2700000,9000,600.0,Unfurnished,rent,exact_match,4500.0,15.0
-2 BHK House for Rent in Howrah Kolkata,howrah,2,4500000,12000,950.0,Furnished,rent,exact_match,4736.84,12.63
+Desh Bandhu Nagar Baguiati Kolkata,desh bandhu nagar,2,2700000,9000,600.0,Unfurnished,rent,exact_match,4500.0,15.0
+Howrah Kolkata,howrah,2,4500000,12000,950.0,Furnished,rent,exact_match,4736.84,12.63
 "Natore Colony, Natore Colony, Silpara, Purba Barisha, Kolkata",silpara,2,2450000,14999,790.0,Furnished,rent,exact_match,3101.27,18.99
 "AWHO Teghoria, AWHO Teghoria, Vip Road, Kolkata",vip road,2,5893333,20000,1105.0,Unfurnished,rent,bedroom_only,5333.33,18.1
-3 BHK House for Rent in Salkia Kolkata,salkia,3,7697871,13000,1051.0,Unfurnished,rent,bedroom_only,7324.33,12.37
+Salkia Kolkata,salkia,3,7697871,13000,1051.0,Unfurnished,rent,bedroom_only,7324.33,12.37
 "Soura Niloy Housing Complex, Soura Niloy Housing Complex, Behala, Kolkata",behala,4,6500000,22000,1500.0,Semi-Furnished,rent,exact_match,4333.33,14.67
 "Maple Wood, Maple Wood, Rajarhat Main Road, Kolkata",rajarhat main road,2,6400000,15000,730.0,Unfurnished,rent,exact_match,8767.12,20.55
 "Prudent Pragati , Prudent Pragati, Narendrapur Rajpur Sonarpur, Kolkata",narendrapur,3,4500000,18000,787.0,Semi-Furnished,rent,exact_match,5717.92,22.87
@@ -1238,8 +1238,8 @@ Kolkata,bartika,2,3306667,7500,620.0,Semi-Furnished,rent,bedroom_only,5333.33,12
 "Anik One Rajarhat, Anik One Rajarhat, New Town, Kolkata",new town,2,9800000,65000,1244.0,Furnished,rent,exact_match,7877.81,52.25
 "Action Area 2C, Kolkata",action area 2c,2,4800000,20000,811.0,Furnished,rent,exact_match,5918.62,24.66
 "Naktala, Garia, Kolkata",naktala,2,4750000,20000,800.0,Semi-Furnished,rent,exact_match,5937.5,25.0
-"4 BHK House for Rent in Tagore Park, Kasba Kolkata",tagore park,4,15587500,42000,1450.0,Semi-Furnished,rent,bedroom_only,10750.0,28.97
-"2 BHK House for Rent in Vastu Jayanti Bungalow, Bhojerhat Kolkata",bhojerhat,2,7466667,8000,1400.0,Unfurnished,rent,bedroom_only,5333.33,5.71
+"Tagore Park, Kasba Kolkata",tagore park,4,15587500,42000,1450.0,Semi-Furnished,rent,bedroom_only,10750.0,28.97
+"Vastu Jayanti Bungalow, Bhojerhat Kolkata",bhojerhat,2,7466667,8000,1400.0,Unfurnished,rent,bedroom_only,5333.33,5.71
 "Shapoorji Pallonji Joyville Howrah Tower A1 Pinnacle, Shapoorji Pallonji Joyville Howrah Tower A1 Pinnacle, Howrah, Kolkata",howrah,2,2000000,18000,615.0,Unfurnished,rent,exact_match,3252.03,29.27
 "Action Area 2, Kolkata",action area 2,2,5685379,28000,650.0,Furnished,rent,address_bedroom,8746.74,43.08
 "Associated Erectors Green Residenza 3, Associated Erectors Green Residenza 3, Rajarhat, Kolkata",rajarhat,3,3940000,20000,800.0,Semi-Furnished,rent,exact_match,4925.0,25.0
@@ -1259,11 +1259,11 @@ Kolkata,bartika,2,3306667,7500,620.0,Semi-Furnished,rent,bedroom_only,5333.33,12
 "Action Area 1, Kolkata",action area 1,2,14215667,25000,1500.0,Semi-Furnished,rent,address_bedroom,9477.11,16.67
 "Samta Apartment , Samta Apartment, Baranagar, Kolkata",baranagar,2,2550000,25000,700.0,Furnished,rent,exact_match,3642.86,35.71
 "MBPS WaterView, MBPS WaterView, Rajpur, Kolkata",rajpur,3,6652308,18000,1104.0,Furnished,rent,address_only,6025.64,16.3
-2 BHK House for Rent in Desh Bandhu Nagar Baguiati Kolkata,desh bandhu nagar,2,4700000,12000,900.0,Unfurnished,rent,exact_match,5222.22,13.33
+Desh Bandhu Nagar Baguiati Kolkata,desh bandhu nagar,2,4700000,12000,900.0,Unfurnished,rent,exact_match,5222.22,13.33
 "Utthan II, Utthan II, Chinar Park, Rajarhat, Kolkata",chinar park,2,8600000,23000,1560.0,Furnished,rent,address_bedroom,5512.82,14.74
 "Tarini Enclave, Tarini Enclave, Chinar Park, Rajarhat, Kolkata",chinar park,3,9662321,23000,1000.0,Semi-Furnished,rent,address_only,9662.32,23.0
 "Keyatala Road, Kolkata",keyatala road,3,6591897,25000,900.0,Unfurnished,rent,bedroom_only,7324.33,27.78
-"2 BHK House for Rent in New Garia, Garia Kolkata",new garia,2,3600000,10000,760.0,Unfurnished,rent,exact_match,4736.84,13.16
+"New Garia, Garia Kolkata",new garia,2,3600000,10000,760.0,Unfurnished,rent,exact_match,4736.84,13.16
 "Parvati Garden, Parvati Garden, Birati, Kolkata",birati,2,2500000,14000,700.0,Semi-Furnished,rent,exact_match,3571.43,20.0
 "Primarc Southwinds, Primarc Southwinds, Rajpur Sonarpur, Kolkata",rajpur sonarpur,3,7500000,20000,1264.0,Unfurnished,rent,exact_match,5933.54,15.82
 "Liluah, Kolkata",liluah,3,7324331,10000,1000.0,Semi-Furnished,rent,bedroom_only,7324.33,10.0
@@ -1277,17 +1277,17 @@ Kolkata,bartika,2,3306667,7500,620.0,Semi-Furnished,rent,bedroom_only,5333.33,12
 "Naktala, Garia, Kolkata",naktala,2,4500000,16000,550.0,Semi-Furnished,rent,exact_match,8181.82,29.09
 "Orchid View, Orchid View, Rajarhat Main Road, Kolkata",rajarhat main road,3,9939857,16000,1012.0,Unfurnished,rent,address_only,9821.99,15.81
 "Mukundapur, Kolkata",mukundapur,2,7012419,28000,729.0,Furnished,rent,address_bedroom,9619.23,38.41
-1 BHK House for Rent in Kalighat Kolkata,kalighat,1,947368,7000,200.0,Semi-Furnished,rent,bedroom_only,4736.84,35.0
+Kalighat Kolkata,kalighat,1,947368,7000,200.0,Semi-Furnished,rent,bedroom_only,4736.84,35.0
 "Rajarhat Main Road, Kolkata",rajarhat main road,3,8633532,15000,879.0,Unfurnished,rent,address_only,9821.99,17.06
 "Taalchaya, Taalchaya, Rajarhat, Kolkata",rajarhat,3,10000000,25000,975.0,Semi-Furnished,rent,exact_match,10256.41,25.64
 "Kaikhali, Kolkata",kaikhali,2,2540508,18000,522.0,Furnished,rent,address_bedroom,4866.87,34.48
-"4 BHK Villa for Rent in TATA Avenida, New Town Kolkata",new town,4,29000000,160000,2385.0,Furnished,rent,exact_match,12159.33,67.09
+"TATA Avenida, New Town Kolkata",new town,4,29000000,160000,2385.0,Furnished,rent,exact_match,12159.33,67.09
 "Liluah, Kolkata",liluah,2,4800000,19500,900.0,Semi-Furnished,rent,bedroom_only,5333.33,21.67
 "Oswal Orchard Residency, Oswal Orchard Residency, New Garia, Garia, Kolkata",new garia,2,3845027,20000,878.0,Semi-Furnished,rent,address_bedroom,4379.3,22.78
-"2 BHK House for Rent in Kamalgazi, Narendrapur Kolkata",kamalgazi,2,3107656,10000,680.0,Unfurnished,rent,address_bedroom,4570.08,14.71
+"Kamalgazi, Narendrapur Kolkata",kamalgazi,2,3107656,10000,680.0,Unfurnished,rent,address_bedroom,4570.08,14.71
 "Baishali Apartment, Baishali Apartment, Kalikapur Haltu, Kolkata",kalikapur,2,5950000,10000,425.0,Unfurnished,rent,address_bedroom,14000.0,23.53
 "PS Amistad, PS Amistad, New Town, Kolkata",new town,3,9250000,45000,852.0,Semi-Furnished,rent,exact_match,10856.81,52.82
-2 BHK House for Rent in Sector 3 Salt Lake City Kolkata,sector 3 salt lake city,2,10625000,30000,1020.0,Semi-Furnished,rent,address_only,10416.67,29.41
+Sector 3 Salt Lake City Kolkata,sector 3 salt lake city,2,10625000,30000,1020.0,Semi-Furnished,rent,address_only,10416.67,29.41
 "Basunagar, Kolkata",basunagar,2,5086614,17000,850.0,Unfurnished,rent,address_bedroom,5984.25,20.0
 "Rajarhat, Kolkata",rajarhat,2,5200000,12000,628.0,Unfurnished,rent,exact_match,8280.25,19.11
 "Krishnapur Kestopur, Kolkata",krishnapur,2,3700000,10000,600.0,Semi-Furnished,rent,exact_match,6166.67,16.67
@@ -1295,10 +1295,10 @@ Kolkata,bartika,2,3306667,7500,620.0,Semi-Furnished,rent,bedroom_only,5333.33,12
 "SD Aqua View, SD Aqua View, Jessore Road, Kolkata",jessore road,3,6162920,31000,1312.0,Semi-Furnished,rent,address_bedroom,4697.35,23.63
 "Dum Dum Park, Kolkata",dum dum park,3,6160000,17500,1100.0,Unfurnished,rent,address_only,5600.0,15.91
 "Saha Para Desh Bandhu Nagar, Kolkata",saha para desh bandhu nagar,3,6591897,19000,900.0,Semi-Furnished,rent,bedroom_only,7324.33,21.11
-2 BHK House for Rent in Barrackpore Kolkata,barrackpore,2,5405009,9000,1000.0,Unfurnished,rent,address_bedroom,5405.01,9.0
+Barrackpore Kolkata,barrackpore,2,5405009,9000,1000.0,Unfurnished,rent,address_bedroom,5405.01,9.0
 "Avishikta, Avishikta, Eastern Metropolitan Bypass, Kolkata",em bypass,2,9500000,36000,800.0,Furnished,rent,exact_match,11875.0,45.0
 "Block O New Alipore, Kolkata",block o new alipore,3,22362385,30000,1500.0,Semi-Furnished,rent,address_only,14908.26,20.0
-3 BHK House for Rent in Durga Nagar Kolkata,durga nagar,3,6353724,12000,1200.0,Unfurnished,rent,address_only,5294.77,10.0
+Durga Nagar Kolkata,durga nagar,3,6353724,12000,1200.0,Unfurnished,rent,address_only,5294.77,10.0
 "Action Area 2, Kolkata",action area 2,3,9989677,25000,980.0,Unfurnished,rent,address_bedroom,10193.55,25.51
 "Kailash Co Operative Society Ltd, Kailash Co Operative Society Ltd, New Town, Kolkata",new town,3,17500000,25000,1050.0,Unfurnished,rent,exact_match,16666.67,23.81
 "Jodhpur Park, Kolkata",jodhpur park,2,9300000,25000,800.0,Furnished,rent,exact_match,11625.0,31.25
@@ -1313,10 +1313,10 @@ Kolkata,bartika,2,3306667,7500,620.0,Semi-Furnished,rent,bedroom_only,5333.33,12
 "Vishnu Primus, Vishnu Primus, Bhowanipore, Kolkata",bhawanipur,4,24365957,40000,1600.0,Semi-Furnished,rent,address_only,15228.72,25.0
 "Lake Gardens, Kolkata",lake gardens,3,12500000,42000,1160.0,Furnished,rent,exact_match,10775.86,36.21
 "Anandapuri, Barrackpore, Kolkata",anandapuri,2,3466667,12000,650.0,Unfurnished,rent,bedroom_only,5333.33,18.46
-2 BHK Villa for Rent in Behala Chowrasta Kolkata,behala chowrasta,2,2500000,12000,750.0,Unfurnished,rent,exact_match,3333.33,16.0
-5 BHK House for Rent in Subhash Nagar Sodepur Kolkata,subhash nagar sodepur,5,31842105,30000,2200.0,Semi-Furnished,rent,bedroom_only,14473.68,13.64
+Behala Chowrasta Kolkata,behala chowrasta,2,2500000,12000,750.0,Unfurnished,rent,exact_match,3333.33,16.0
+Subhash Nagar Sodepur Kolkata,subhash nagar sodepur,5,31842105,30000,2200.0,Semi-Furnished,rent,bedroom_only,14473.68,13.64
 "Baghajatin Colony, Kolkata",baghajatin,2,5670000,13000,1260.0,Furnished,rent,address_bedroom,4500.0,10.32
-1 BHK House for Rent in Sarsuna Kolkata,sarsuna,1,2332843,5000,500.0,Semi-Furnished,rent,address_only,4665.69,10.0
+Sarsuna Kolkata,sarsuna,1,2332843,5000,500.0,Semi-Furnished,rent,address_only,4665.69,10.0
 "Parnasree Palli, Kolkata",parnasree,2,4526167,25000,1000.0,Furnished,rent,address_bedroom,4526.17,25.0
 "Sreebhumi, Kolkata",sreebhumi,3,8789197,22000,1200.0,Semi-Furnished,rent,bedroom_only,7324.33,18.33
 "Salt Lake City, Kolkata",salt lake city,3,24509044,72000,2000.0,Furnished,rent,address_only,12254.52,36.0
@@ -1330,29 +1330,29 @@ Kolkata,block g new alipore,3,9155413,80000,1250.0,Furnished,rent,bedroom_only,7
 "Alcove New Kolkata Sangam, Alcove New Kolkata Sangam, Serampore, Kolkata",serampore,2,5341463,22000,730.0,Furnished,rent,address_bedroom,7317.07,30.14
 Kolkata,panditiya place,2,3840000,18000,720.0,Semi-Furnished,rent,bedroom_only,5333.33,25.0
 "Rajpur Municipal Market, Rajpur Municipal Market, Rajpur Sonarpur, Kolkata",rajpur sonarpur,1,4809160,13000,900.0,Furnished,rent,address_only,5343.51,14.44
-2 BHK House for Rent in Naihati Habra Road Kolkata,naihati habra road,2,5866667,8000,1100.0,Semi-Furnished,rent,bedroom_only,5333.33,7.27
+Naihati Habra Road Kolkata,naihati habra road,2,5866667,8000,1100.0,Semi-Furnished,rent,bedroom_only,5333.33,7.27
 "Multiple Group Krishna Vihar, Multiple Group Krishna Vihar, Suryanagar Bansdroni, Kolkata",suryanagar bansdroni,2,2300000,27500,786.0,Furnished,rent,exact_match,2926.21,34.99
 "Eternis, Eternis, Madhyamgram, Kolkata",madhyamgram,3,5670000,25000,1252.0,Unfurnished,rent,exact_match,4528.75,19.97
 "Airport 2 Number Gate, Kolkata",airport 2 number gate,2,4594872,10000,800.0,Unfurnished,rent,address_only,5743.59,12.5
 "Rishi Pranaya, Rishi Pranaya, Rajarhat, Kolkata",rajarhat,2,3200000,28000,954.0,Semi-Furnished,rent,exact_match,3354.3,29.35
 "Tangra, Kolkata",tangra,3,19000000,45000,1300.0,Semi-Furnished,rent,exact_match,14615.38,34.62
-2 BHK House for Rent in Thakurpukur Kolkata,thakurpukur,2,2250000,8000,450.0,Furnished,rent,address_bedroom,5000.0,17.78
+Thakurpukur Kolkata,thakurpukur,2,2250000,8000,450.0,Furnished,rent,address_bedroom,5000.0,17.78
 "Sreema Apartment, Sreema Apartment, Tollygunge, Kolkata",tollygunge,1,2571429,10000,450.0,Unfurnished,rent,address_bedroom,5714.29,22.22
 "Loharuka Urban Greens Phase 2, Loharuka Urban Greens Phase 2, Chinar Park, Rajarhat, Kolkata",chinar park,3,8116350,30000,840.0,Semi-Furnished,rent,address_only,9662.32,35.71
 "Bangalakshmi Abasan, Bangalakshmi Abasan, Rajarhat, Kolkata",rajarhat,2,5200000,18000,760.0,Furnished,rent,exact_match,6842.11,23.68
-"3 BHK House for Rent in Chinar Park, Rajarhat Kolkata",chinar park,3,9662321,14000,1000.0,Semi-Furnished,rent,address_only,9662.32,14.0
+"Chinar Park, Rajarhat Kolkata",chinar park,3,9662321,14000,1000.0,Semi-Furnished,rent,address_only,9662.32,14.0
 "Brindavan Apartment, Brindavan Apartment, Narkel Bagan, Kolkata",narkel bagan,3,8056764,30000,1100.0,Furnished,rent,bedroom_only,7324.33,27.27
 "Action Area 2, Kolkata",action area 2,3,10193548,20000,1000.0,Semi-Furnished,rent,address_bedroom,10193.55,20.0
 "Tollygunge, Kolkata",tollygunge,2,7500000,25000,741.0,Unfurnished,rent,exact_match,10121.46,33.74
 "Lake Town Block A, Lake Town Block A, Lake Town, Kolkata",lake town,1,7436422,10000,750.0,Unfurnished,rent,address_only,9915.23,13.33
 "Dum Dum Park, Kolkata",dum dum park,2,4200000,14000,690.0,Semi-Furnished,rent,exact_match,6086.96,20.29
-2 BHK House for Rent in Taltala Kolkata,taltala,2,2933333,20000,550.0,Semi-Furnished,rent,bedroom_only,5333.33,36.36
+Taltala Kolkata,taltala,2,2933333,20000,550.0,Semi-Furnished,rent,bedroom_only,5333.33,36.36
 "Purti jewel, Purti jewel, Tangra, Kolkata",tangra,3,21000000,27000,1210.0,Unfurnished,rent,exact_match,17355.37,22.31
 Kolkata,woodland high apartment,3,13183795,140000,1800.0,Furnished,rent,bedroom_only,7324.33,77.78
 "Action Area 2, Kolkata",action area 2,2,6700000,45000,800.0,Furnished,rent,exact_match,8375.0,56.25
-1 BHK House for Rent in Salt Lake City Kolkata,salt lake city,1,2450904,15000,200.0,Furnished,rent,address_only,12254.52,75.0
+Salt Lake City Kolkata,salt lake city,1,2450904,15000,200.0,Furnished,rent,address_only,12254.52,75.0
 "Primarc Southwinds, Primarc Southwinds, Harinavi, Kolkata",harinavi,3,4200000,22000,747.0,Unfurnished,rent,exact_match,5622.49,29.45
-6 BHK House for Rent in Block CF Sector 1 Salt Lake City Kolkata,block cf sector 1 salt lake city,6,47944849,250000,5000.0,Semi-Furnished,rent,bedroom_only,9588.97,50.0
+Block CF Sector 1 Salt Lake City Kolkata,block cf sector 1 salt lake city,6,47944849,250000,5000.0,Semi-Furnished,rent,bedroom_only,9588.97,50.0
 "Nandan Kanan Santoshpur, Kolkata",nandan kanan,3,9155413,32000,1250.0,Unfurnished,rent,bedroom_only,7324.33,25.6
 "Anik One Rajarhat, Anik One Rajarhat, New Town, Kolkata",new town,2,6200000,60000,800.0,Semi-Furnished,rent,exact_match,7750.0,75.0
 "Rajarhat, Kolkata",rajarhat,3,10000000,35000,1100.0,Furnished,rent,exact_match,9090.91,31.82
@@ -1364,13 +1364,13 @@ Kolkata,woodland high apartment,3,13183795,140000,1800.0,Furnished,rent,bedroom_
 "Rail Vihar, Rail Vihar, New Town, Kolkata",new town,3,25000000,27000,1120.0,Semi-Furnished,rent,exact_match,22321.43,24.11
 "Drishti Regency, Drishti Regency, Nayabad, Kolkata",nayabad,3,6000000,14000,924.0,Unfurnished,rent,exact_match,6493.51,15.15
 "Mayfair Residency, Mayfair Residency, Madurdaha, Hussainpur, Kolkata",madurdaha,2,5300000,19500,1048.0,Semi-Furnished,rent,exact_match,5057.25,18.61
-"1 BHK House for Rent in Haridevpur, Paschim Putiary Kolkata",haridevpur,1,451111,5400,140.0,Semi-Furnished,rent,address_bedroom,3222.22,38.57
-2 BHK House for Rent in Haltu Kolkata,haltu,2,4482462,9000,800.0,Unfurnished,rent,address_bedroom,5603.08,11.25
-3 BHK House for Rent in S S Twp Sarsuna Kolkata,s s twp sarsuna,3,9887846,12900,1350.0,Unfurnished,rent,bedroom_only,7324.33,9.56
+"Haridevpur, Paschim Putiary Kolkata",haridevpur,1,451111,5400,140.0,Semi-Furnished,rent,address_bedroom,3222.22,38.57
+Haltu Kolkata,haltu,2,4482462,9000,800.0,Unfurnished,rent,address_bedroom,5603.08,11.25
+S S Twp Sarsuna Kolkata,s s twp sarsuna,3,9887846,12900,1350.0,Unfurnished,rent,bedroom_only,7324.33,9.56
 "Italgacha, Kolkata",italgacha,2,3733333,8000,700.0,Semi-Furnished,rent,bedroom_only,5333.33,11.43
 "Shapoorji Paloonji Sukhobristi, Shapoorji Paloonji Sukhobristi, New Town, Kolkata",new town,3,9250000,35000,900.0,Furnished,rent,exact_match,10277.78,38.89
 "Merlin 5th Avenue, Merlin 5th Avenue, Sector 5 Salt Lake City, Kolkata",sector 5 salt lake city,3,8500000,38000,1062.0,Furnished,rent,exact_match,8003.77,35.78
-1 BHK House for Rent in New town gouranga nagar Kolkata,new town gouranga nagar,1,1657895,5000,350.0,Unfurnished,rent,bedroom_only,4736.84,14.29
+New town gouranga nagar Kolkata,new town gouranga nagar,1,1657895,5000,350.0,Unfurnished,rent,bedroom_only,4736.84,14.29
 Kolkata,morutrisha action area 2,3,8789197,35000,1200.0,Semi-Furnished,rent,bedroom_only,7324.33,29.17
 "Diamond City South, Diamond City South, Tollygunge, Kolkata",tollygunge,3,16400000,60000,1659.0,Semi-Furnished,rent,exact_match,9885.47,36.17
 "Sharnam, Sharnam, Kaikhali, Kolkata",kaikhali,3,4297449,15000,883.0,Semi-Furnished,rent,address_only,4866.87,16.99
@@ -1379,20 +1379,20 @@ Kolkata,morutrisha action area 2,3,8789197,35000,1200.0,Semi-Furnished,rent,bedr
 "Shapoorji Paloonji Sukhobristi, Shapoorji Paloonji Sukhobristi, New Town, Kolkata",new town,1,2200000,17500,450.0,Furnished,rent,exact_match,4888.89,38.89
 "Shapoorji Paloonji Sukhobristi, Shapoorji Paloonji Sukhobristi, New Town, Kolkata",new town,3,9250000,20000,780.0,Unfurnished,rent,exact_match,11858.97,25.64
 "Kalindi Housing Estate, Kolkata",kalindi housing estate,2,4840686,15000,750.0,Unfurnished,rent,address_bedroom,6454.25,20.0
-2 BHK House for Rent in Uttarpara Chinsurah Kolkata,uttarpara,2,4000000,8000,850.0,Unfurnished,rent,exact_match,4705.88,9.41
+Uttarpara Chinsurah Kolkata,uttarpara,2,4000000,8000,850.0,Unfurnished,rent,exact_match,4705.88,9.41
 "Ballygunge, Kolkata",ballygunge,5,63707865,260000,4800.0,Furnished,rent,address_only,13272.47,54.17
-2 BHK House for Rent in Patuli Kolkata,patuli,2,3400000,15000,750.0,Semi-Furnished,rent,exact_match,4533.33,20.0
+Patuli Kolkata,patuli,2,3400000,15000,750.0,Semi-Furnished,rent,exact_match,4533.33,20.0
 "Bengal Peerless Animikha, Bengal Peerless Animikha, New Town, Kolkata",new town,3,25000000,27000,1100.0,Furnished,rent,exact_match,22727.27,24.55
 "Dankuni, Kolkata",dankuni,2,2075294,16000,756.0,Furnished,rent,address_bedroom,2745.1,21.16
 "Dolphin Santana Apartment, Dolphin Santana Apartment, Rajarhat, Kolkata",rajarhat,2,5200000,10000,700.0,Unfurnished,rent,exact_match,7428.57,14.29
-2 BHK House for Rent in Pirpukur South Park Ward Number 113 Kolkata,kalitala,2,4533333,8500,850.0,Unfurnished,rent,bedroom_only,5333.33,10.0
+Pirpukur South Park Ward Number 113 Kolkata,kalitala,2,4533333,8500,850.0,Unfurnished,rent,bedroom_only,5333.33,10.0
 "PS The 102, PS The 102, Joka, Kolkata",joka,3,8000000,23000,900.0,Unfurnished,rent,exact_match,8888.89,25.56
 "Chinar Park, Rajarhat, Kolkata",chinar park,1,3381812,18000,350.0,Furnished,rent,address_only,9662.32,51.43
 "Kalikapur South 24 Parganas, Kolkata",kalikapur south 24 parganas,3,6591897,15000,900.0,Unfurnished,rent,bedroom_only,7324.33,16.67
 "Swagat Skyline, Swagat Skyline, Rajarhat, Kolkata",rajarhat,3,6500000,13000,712.0,Unfurnished,rent,exact_match,9129.21,18.26
 Kolkata,near don bosco school liluah,3,10254063,20000,1400.0,Semi-Furnished,rent,bedroom_only,7324.33,14.29
 "Sucheta Nagar, Haltu, Kolkata",sucheta nagar,2,4000000,13000,750.0,Unfurnished,rent,bedroom_only,5333.33,17.33
-"1 BHK House for Rent in Haridevpur, Paschim Putiary Kolkata",haridevpur,1,2094444,7000,650.0,Unfurnished,rent,address_bedroom,3222.22,10.77
+"Haridevpur, Paschim Putiary Kolkata",haridevpur,1,2094444,7000,650.0,Unfurnished,rent,address_bedroom,3222.22,10.77
 "Rohra Developers Eco, Rohra Developers Eco, New Town, Kolkata",new town,2,2600000,28000,582.0,Unfurnished,rent,exact_match,4467.35,48.11
 "Hiland Greens, Hiland Greens, Maheshtala, Kolkata",maheshtala,3,2425323,18000,668.0,Semi-Furnished,rent,address_bedroom,3630.72,26.95
 "Godrej Seven, Godrej Seven, Joka, Kolkata",joka,3,8000000,24637,916.0,Semi-Furnished,rent,exact_match,8733.62,26.9
@@ -1405,7 +1405,7 @@ Kolkata,prince anwar shah connector,3,7148547,22000,976.0,Semi-Furnished,rent,be
 "Action Area 2, Kolkata",action area 2,3,12232258,22000,1200.0,Semi-Furnished,rent,address_bedroom,10193.55,18.33
 "Satyam Tower, Satyam Tower, South Dumdum, Kolkata",south dum dum,2,3733333,14000,700.0,Unfurnished,rent,bedroom_only,5333.33,20.0
 "Mukundapur, Kolkata",mukundapur,2,6425646,27000,668.0,Furnished,rent,address_bedroom,9619.23,40.42
-2 BHK House for Rent in Nayabad Kolkata,nayabad,2,4400000,17000,680.0,Semi-Furnished,rent,exact_match,6470.59,25.0
+Nayabad Kolkata,nayabad,2,4400000,17000,680.0,Semi-Furnished,rent,exact_match,6470.59,25.0
 "Beniapukur, Kolkata",beniapukur,2,3733333,27000,700.0,Unfurnished,rent,bedroom_only,5333.33,38.57
 "Godrej Seven, Godrej Seven, Joka, Kolkata",joka,3,8000000,26000,972.0,Unfurnished,rent,exact_match,8230.45,26.75
 "Primarc Southwinds, Primarc Southwinds, Sonarpur, Kolkata",sonarpur,3,3944851,24000,1000.0,Semi-Furnished,rent,address_only,3944.85,24.0
@@ -1438,7 +1438,7 @@ Kolkata,prince anwar shah connector,3,7148547,22000,976.0,Semi-Furnished,rent,be
 "Simoco Sanhita Housing Complex Commercial , Simoco Sanhita Housing Complex Commercial, Bhangar, Kolkata",bhangar,3,10986496,11000,1500.0,Unfurnished,rent,bedroom_only,7324.33,7.33
 "Howrah, Kolkata",howrah,2,3408626,15000,800.0,Furnished,rent,address_bedroom,4260.78,18.75
 "Genexx Valley, Genexx Valley, Joka, Kolkata",joka,1,4446602,14000,800.0,Furnished,rent,address_bedroom,5558.25,17.5
-3 BHK House for Rent in Mukundapur Main Road Kolkata,mukundapur main road,3,2519074,14000,816.0,Semi-Furnished,rent,address_only,3087.1,17.16
+Mukundapur Main Road Kolkata,mukundapur main road,3,2519074,14000,816.0,Semi-Furnished,rent,address_only,3087.1,17.16
 "JK Garden, JK Garden, International Airport, Dum Dum, Jessore Road, Kolkata",international airport,3,3900000,19500,1285.0,Unfurnished,rent,exact_match,3035.02,15.18
 "Rajarhat, Kolkata",rajarhat,3,10000000,14000,1100.0,Unfurnished,rent,exact_match,9090.91,12.73
 "Alcove Gloria, Alcove Gloria, Vip Road, Kolkata",vip road,4,20855000,65000,1940.0,Unfurnished,rent,bedroom_only,10750.0,33.51
@@ -1459,7 +1459,7 @@ Kolkata,park vista,3,7690547,50000,1050.0,Unfurnished,rent,bedroom_only,7324.33,
 "DTC Sojon, DTC Sojon, Joka, Kolkata",joka,3,8500000,21500,1130.0,Unfurnished,rent,exact_match,7522.12,19.03
 "Rishi Pranaya, Rishi Pranaya, Rajarhat, Kolkata",rajarhat,3,6700000,35000,1221.0,Unfurnished,rent,exact_match,5487.31,28.67
 "Eastern Metropolitan Bypass, Kolkata",em bypass,3,9653067,20000,900.0,Unfurnished,rent,address_bedroom,10725.63,22.22
-"3 BHK Villa for Rent in Srijan Botanica, Eastern Metropolitan Bypass Kolkata",em bypass,3,21000000,60000,1784.0,Unfurnished,rent,exact_match,11771.3,33.63
+"Srijan Botanica, Eastern Metropolitan Bypass Kolkata",em bypass,3,21000000,60000,1784.0,Unfurnished,rent,exact_match,11771.3,33.63
 "Uniworld City, Uniworld City, Action Area 3, Kolkata",action area 3,3,16176471,45000,2200.0,Semi-Furnished,rent,address_bedroom,7352.94,20.45
 "Action Area 1, Kolkata",action area 1,4,14676316,45000,1650.0,Unfurnished,rent,address_bedroom,8894.74,27.27
 "International Airport, Dum Dum, Jessore Road, Kolkata",international airport,3,3900000,15000,1150.0,Semi-Furnished,rent,exact_match,3391.3,13.04
@@ -1485,7 +1485,7 @@ Kolkata,park vista,3,7690547,50000,1050.0,Unfurnished,rent,bedroom_only,7324.33,
 "Ideal Aquaview, Ideal Aquaview, Nayapatty, Kolkata",nayapatty,4,14405000,55000,1340.0,Semi-Furnished,rent,bedroom_only,10750.0,41.04
 "Motilal Gupta Road, Kolkata",motilal gupta road,2,4025424,15000,950.0,Unfurnished,rent,address_only,4237.29,15.79
 "DTC Southern Heights, DTC Southern Heights, Joka, Kolkata",joka,3,8000000,24000,1169.0,Unfurnished,rent,exact_match,6843.46,20.53
-2 BHK House for Rent in Sector 1 Salt Lake City Kolkata,sector 1 salt lake city,2,13320000,22000,900.0,Unfurnished,rent,address_only,14800.0,24.44
+Sector 1 Salt Lake City Kolkata,sector 1 salt lake city,2,13320000,22000,900.0,Unfurnished,rent,address_only,14800.0,24.44
 "New Town, Kolkata",new town,3,17500000,28000,1000.0,Furnished,rent,exact_match,17500.0,28.0
 "Ekta Floral, Ekta Floral, Park Circus, Ballygunge, Kolkata",park circus,3,13500000,55000,1500.0,Furnished,rent,exact_match,9000.0,36.67
 "Tollygunge Karunamoyee, Kolkata",tollygunge karunamoyee,2,3000000,17000,700.0,Semi-Furnished,rent,exact_match,4285.71,24.29
@@ -1520,14 +1520,14 @@ Kolkata,sukanya apartment,3,6225681,15000,850.0,Semi-Furnished,rent,bedroom_only
 "Chandannagar, Hooghly-Chinsurah, Kolkata",chandannagar,3,5162281,16000,1100.0,Unfurnished,rent,address_only,4692.98,14.55
 "Sector 3 Salt Lake City, Kolkata",sector 3 salt lake city,2,7291667,30000,700.0,Furnished,rent,address_only,10416.67,42.86
 "Ideal Aquaview, Ideal Aquaview, Sector 5 Salt Lake City, Kolkata",sector 5 salt lake city,4,16384021,65000,1304.0,Semi-Furnished,rent,address_only,12564.43,49.85
-3 BHK House for Rent in Salt Lake City Kolkata,salt lake city,3,19607235,65000,1600.0,Semi-Furnished,rent,address_only,12254.52,40.62
+Salt Lake City Kolkata,salt lake city,3,19607235,65000,1600.0,Semi-Furnished,rent,address_only,12254.52,40.62
 "Action Area 3, Kolkata",action area 3,3,14000000,25000,1450.0,Unfurnished,rent,exact_match,9655.17,17.24
 "Upohar The Condoville, Upohar The Condoville, Eastern Metropolitan Bypass, Kolkata",em bypass,3,21000000,50000,1739.0,Semi-Furnished,rent,exact_match,12075.91,28.75
 "Prasad Rare Earth, Prasad Rare Earth, Narkeldanga, Kolkata",narkeldanga,4,19499346,80000,1982.0,Semi-Furnished,rent,address_only,9838.22,40.36
 "Parvati Residency, Parvati Residency, Kankurgachi, Kolkata",kankurgachi,4,16546763,85000,1600.0,Semi-Furnished,rent,address_bedroom,10341.73,53.12
-1 BHK House for Rent in Howrah AC Market Kolkata,howrah ac market,1,852632,5500,180.0,Unfurnished,rent,bedroom_only,4736.84,30.56
+Howrah AC Market Kolkata,howrah ac market,1,852632,5500,180.0,Unfurnished,rent,bedroom_only,4736.84,30.56
 "Eden Tolly Signature Plus, Eden Tolly Signature Plus, Tollygunge, Kolkata",tollygunge,3,17000000,22000,960.0,Unfurnished,rent,exact_match,17708.33,22.92
-2 BHK House for Rent in Netaji Nagar Kolkata,netaji nagar,2,2520000,15000,500.0,Unfurnished,rent,exact_match,5040.0,30.0
+Netaji Nagar Kolkata,netaji nagar,2,2520000,15000,500.0,Unfurnished,rent,exact_match,5040.0,30.0
 "Amrita Vihar Complex, Amrita Vihar Complex, Kamalgazi, Narendrapur, Kolkata",kamalgazi,2,2742049,12000,600.0,Unfurnished,rent,address_bedroom,4570.08,20.0
 "Shapoorji Paloonji Sukhobristi, Shapoorji Paloonji Sukhobristi, Action Area 3, Kolkata",action area 3,1,3676471,12000,500.0,Unfurnished,rent,address_only,7352.94,24.0
 "Amarabati, Kolkata",amarabati,2,4266667,8500,800.0,Unfurnished,rent,bedroom_only,5333.33,10.62
@@ -1537,7 +1537,7 @@ Kolkata,sukanya apartment,3,6225681,15000,850.0,Semi-Furnished,rent,bedroom_only
 "Anandapur, Kolkata",anandapur,2,7712944,11000,500.0,Semi-Furnished,rent,address_only,15425.89,22.0
 "Vedic Village, Vedic Village, Rajarhat, Kolkata",rajarhat,2,5200000,12000,640.0,Unfurnished,rent,exact_match,8125.0,18.75
 "Airport 2 Number Gate, Kolkata",airport 2 number gate,1,2441026,15000,425.0,Furnished,rent,address_only,5743.59,35.29
-3 BHK House for Rent in Kankurgachi Kolkata,kankurgachi,3,6000000,20000,900.0,Semi-Furnished,rent,exact_match,6666.67,22.22
+Kankurgachi Kolkata,kankurgachi,3,6000000,20000,900.0,Semi-Furnished,rent,exact_match,6666.67,22.22
 "Camelia Metro Garden, Camelia Metro Garden, Dum Dum, Kolkata",dum dum,2,5000000,13000,970.0,Semi-Furnished,rent,exact_match,5154.64,13.4
 "Bhowanipore, Kolkata",bhawanipur,3,15000000,30000,900.0,Unfurnished,rent,exact_match,16666.67,33.33
 "> Action Area 1, Kolkata",action area 1,10,82099932,350000,8500.0,Furnished,rent,address_only,9658.82,41.18
@@ -1548,20 +1548,20 @@ Kolkata,sukanya apartment,3,6225681,15000,850.0,Semi-Furnished,rent,bedroom_only
 "Citadel Silver Space, Citadel Silver Space, Doharia Srijoni Housing, Kolkata",doharia,2,5226667,12000,980.0,Unfurnished,rent,bedroom_only,5333.33,12.24
 "Vip Road, Kolkata",vip road,3,9397116,20000,1283.0,Furnished,rent,bedroom_only,7324.33,15.59
 "Srijan Heritage Heights, Srijan Heritage Heights, Rash Behari Avenue, Kolkata",rash behari avenue,3,15268000,67000,1388.0,Furnished,rent,address_bedroom,11000.0,48.27
-2 BHK House for Rent in Survey Park Kolkata,survey park,2,5264381,20000,700.0,Furnished,rent,address_bedroom,7520.54,28.57
-"3 BHK House for Rent in Ballygunge Place, Ballygunge Kolkata",ballygunge place,3,24869565,75000,2000.0,Semi-Furnished,rent,address_only,12434.78,37.5
+Survey Park Kolkata,survey park,2,5264381,20000,700.0,Furnished,rent,address_bedroom,7520.54,28.57
+"Ballygunge Place, Ballygunge Kolkata",ballygunge place,3,24869565,75000,2000.0,Semi-Furnished,rent,address_only,12434.78,37.5
 "Merlin Grove, Merlin Grove, Sukanta Pally Paschim Putiary, Kolkata",sukanta pally,3,8789197,25000,1200.0,Furnished,rent,bedroom_only,7324.33,20.83
 "Larica Township, Larica Township, Barasat, Kolkata",barasat,1,1583242,5000,403.0,Unfurnished,rent,address_only,3928.64,12.41
 "Siddha Waterfront, Siddha Waterfront, Khardaha, Kolkata",khardah,3,5864904,16000,1180.0,Semi-Furnished,rent,address_bedroom,4970.26,13.56
 "Ballygunge, Kolkata",ballygunge,2,9855769,15000,820.0,Unfurnished,rent,address_bedroom,12019.23,18.29
-1 BHK House for Rent in Dharmatala Pachuria Kolkata,dharmatala pachuria,1,1184211,8000,250.0,Semi-Furnished,rent,bedroom_only,4736.84,32.0
+Dharmatala Pachuria Kolkata,dharmatala pachuria,1,1184211,8000,250.0,Semi-Furnished,rent,bedroom_only,4736.84,32.0
 "Purba Putiary, Kolkata",purba putiary,2,3840000,9000,720.0,Unfurnished,rent,bedroom_only,5333.33,12.5
-2 BHK House for Rent in Netaji Nagar Kolkata,netaji nagar,2,2520000,9500,610.0,Unfurnished,rent,exact_match,4131.15,15.57
+Netaji Nagar Kolkata,netaji nagar,2,2520000,9500,610.0,Unfurnished,rent,exact_match,4131.15,15.57
 "Genexx Valley, Genexx Valley, Joka, Kolkata",joka,2,5700000,14500,875.0,Unfurnished,rent,exact_match,6514.29,16.57
 "Shrachi Greenwood Nest, Shrachi Greenwood Nest, New Town, Kolkata",new town,1,3080000,11000,560.0,Furnished,rent,address_bedroom,5500.0,19.64
-"2 BHK House for Rent in Sakher Bazar, Purba Barisha Kolkata",sakher bazar,2,1584000,6500,297.0,Semi-Furnished,rent,bedroom_only,5333.33,21.89
+"Sakher Bazar, Purba Barisha Kolkata",sakher bazar,2,1584000,6500,297.0,Semi-Furnished,rent,bedroom_only,5333.33,21.89
 "Dum Dum Cantonment, Kolkata",dum dum cantonment,2,4700000,8500,655.0,Unfurnished,rent,exact_match,7175.57,12.98
-2 BHK House for Rent in Sodepur Kolkata,sodepur,2,1600000,9000,550.0,Unfurnished,rent,exact_match,2909.09,16.36
+Sodepur Kolkata,sodepur,2,1600000,9000,550.0,Unfurnished,rent,exact_match,2909.09,16.36
 "SP Eco Prahari Village, SP Eco Prahari Village, New Town, Kolkata",new town,2,6100000,18000,850.0,Semi-Furnished,rent,exact_match,7176.47,21.18
 "Bansdroni, Kolkata",bansdroni,2,2600000,25000,600.0,Furnished,rent,exact_match,4333.33,41.67
 "Metropolitan Co Operative Housing Society Limited, Kolkata",metropolitan,2,5755396,21000,750.0,Semi-Furnished,rent,address_only,7673.86,28.0
@@ -1571,7 +1571,7 @@ Kolkata,sukanya apartment,3,6225681,15000,850.0,Semi-Furnished,rent,bedroom_only
 "Hatiara, Kolkata",hatiara,2,6800000,15000,932.0,Unfurnished,rent,exact_match,7296.14,16.09
 "Selimpur Road, Kolkata",selimpur road,1,1752632,10000,370.0,Semi-Furnished,rent,bedroom_only,4736.84,27.03
 "Behala, Kolkata",behala,3,6000000,27000,1200.0,Unfurnished,rent,exact_match,5000.0,22.5
-2 BHK House for Rent in Garifa Kolkata,garifa,2,5333333,10000,1000.0,Semi-Furnished,rent,bedroom_only,5333.33,10.0
+Garifa Kolkata,garifa,2,5333333,10000,1000.0,Semi-Furnished,rent,bedroom_only,5333.33,10.0
 "The Banyan Tree Mukul Shanti Garden, The Banyan Tree Mukul Shanti Garden, Rajarhat, Kolkata",rajarhat,2,6630000,18000,1158.0,Unfurnished,rent,exact_match,5725.39,15.54
 "Prinsep, Prinsep, Maheshtala, Kolkata",maheshtala,3,8800000,40000,1600.0,Furnished,rent,exact_match,5500.0,25.0
 "Uniworld City, Uniworld City, Action Area 3, Kolkata",action area 3,3,14000000,61000,1870.0,Furnished,rent,exact_match,7486.63,32.62
@@ -1581,7 +1581,7 @@ Kolkata,sukanya apartment,3,6225681,15000,850.0,Semi-Furnished,rent,bedroom_only
 "Cossipore Road, Kolkata",cossipore road,2,4000000,18000,750.0,Furnished,rent,bedroom_only,5333.33,24.0
 "Akankha, Akankha, New Town, Kolkata",new town,3,10100000,30000,1400.0,Semi-Furnished,rent,exact_match,7214.29,21.43
 "Jubilee Residency, Jubilee Residency, Satgachi, South Dum Dum, Kolkata",satgachi,3,8789197,20000,1200.0,Semi-Furnished,rent,bedroom_only,7324.33,16.67
-2 BHK House for Rent in Dankuni Kolkata,dankuni,2,2196078,7500,800.0,Unfurnished,rent,address_bedroom,2745.1,9.38
+Dankuni Kolkata,dankuni,2,2196078,7500,800.0,Unfurnished,rent,address_bedroom,2745.1,9.38
 Kolkata,highland park,2,7733333,32000,1450.0,Furnished,rent,bedroom_only,5333.33,22.07
 "Hanapara Krishnapur, Kolkata",hanapara,2,4800000,16000,900.0,Semi-Furnished,rent,bedroom_only,5333.33,17.78
 "GPS Meena Fortuna, GPS Meena Fortuna, New Town, Kolkata",new town,3,9250000,24000,800.0,Semi-Furnished,rent,exact_match,11562.5,30.0
@@ -1592,33 +1592,33 @@ Kolkata,highland park,2,7733333,32000,1450.0,Furnished,rent,bedroom_only,5333.33
 "Merlin 5th Avenue, Merlin 5th Avenue, Sector 5 Salt Lake City, Kolkata",sector 5 salt lake city,3,8500000,80000,1062.0,Furnished,rent,exact_match,8003.77,75.33
 "Golf Green Urban Complex, Golf Green Urban Complex, Golf Green, Jadavpur, Kolkata",golf green,2,2709333,12000,508.0,Unfurnished,rent,bedroom_only,5333.33,23.62
 "Stand Alone, Stand Alone, Dum Dum, Kolkata",dum dum,2,5000000,25000,923.0,Furnished,rent,exact_match,5417.12,27.09
-2 BHK House for Rent in Barrackpore Kolkata,barrackpore,2,3900000,10000,900.0,Unfurnished,rent,exact_match,4333.33,11.11
+Barrackpore Kolkata,barrackpore,2,3900000,10000,900.0,Unfurnished,rent,exact_match,4333.33,11.11
 "Barasat, Kolkata",barasat,2,4000000,13000,1000.0,Unfurnished,rent,exact_match,4000.0,13.0
 "Sealdah, Raja Bazar, Kolkata",sealdah,2,8716529,10000,600.0,Unfurnished,rent,address_only,14527.55,16.67
 "Sunflower Garden, Sunflower Garden, Topsia, Kolkata",topsia,3,18000000,45000,1900.0,Unfurnished,rent,exact_match,9473.68,23.68
 "Shivalaya, Shivalaya, Bidhan Sarani, Kolkata",bidhan sarani,2,8000000000,9500,600.0,Unfurnished,rent,address_only,13333333.33,15.83
-1 BHK House for Rent in Agarpara Kolkata,agarpara,1,1100000,2950,400.0,Unfurnished,rent,exact_match,2750.0,7.38
+Agarpara Kolkata,agarpara,1,1100000,2950,400.0,Unfurnished,rent,exact_match,2750.0,7.38
 "Mira Garden, Mira Garden, Madhyamgram, Kolkata",madhyamgram,1,3009135,8000,550.0,Unfurnished,rent,address_only,5471.15,14.55
 "Sabar Sukher Ashrey, Sabar Sukher Ashrey, Kaikhali, Kolkata",kaikhali,3,4623529,22000,950.0,Semi-Furnished,rent,address_only,4866.87,23.16
 "Hidco Appartment, Hidco Appartment, New Town, Kolkata",new town,3,17500000,40000,1000.0,Unfurnished,rent,exact_match,17500.0,40.0
-4 BHK House for Rent in Sarat Park Kolkata,sarat park,4,12900000,18000,1200.0,Unfurnished,rent,bedroom_only,10750.0,15.0
+Sarat Park Kolkata,sarat park,4,12900000,18000,1200.0,Unfurnished,rent,bedroom_only,10750.0,15.0
 "Godrej Elevate at Godrej Seven, Godrej Elevate at Godrej Seven, Joka, Kolkata",joka,2,6345786,24000,1106.0,Furnished,rent,address_bedroom,5737.6,21.7
 "Rishi Pranaya, Rishi Pranaya, Rajarhat, Kolkata",rajarhat,2,5000000,26000,596.0,Unfurnished,rent,exact_match,8389.26,43.62
-"5 BHK House for Rent in Uluberia, Howrah Kolkata",uluberia,5,36184211,14500,2500.0,Semi-Furnished,rent,bedroom_only,14473.68,5.8
+"Uluberia, Howrah Kolkata",uluberia,5,36184211,14500,2500.0,Semi-Furnished,rent,bedroom_only,14473.68,5.8
 "Dum Dum Park, Kolkata",dum dum park,2,3640000,14500,650.0,Furnished,rent,address_bedroom,5600.0,22.31
 "Ashirwad Apartments, Ashirwad Apartments, Neelasandra, Kolkata",neelasandra,3,10847333,25000,1481.0,Semi-Furnished,rent,bedroom_only,7324.33,16.88
-3 BHK House for Rent in Baguiati Kolkata,baguiati,3,4000000,13000,900.0,Unfurnished,rent,exact_match,4444.44,14.44
+Baguiati Kolkata,baguiati,3,4000000,13000,900.0,Unfurnished,rent,exact_match,4444.44,14.44
 "Picnic Garden, Tiljala, Kolkata",picnic garden,2,4000000,25000,750.0,Furnished,rent,bedroom_only,5333.33,33.33
 "Chinar Park, Rajarhat, Kolkata",chinar park,2,4300000,15000,751.0,Semi-Furnished,rent,exact_match,5725.7,19.97
 "Merlin Trinoyoni, Merlin Trinoyoni, Sarsuna, Kolkata",sarsuna,2,2858834,9000,730.0,Semi-Furnished,rent,address_bedroom,3916.21,12.33
-3 BHK House for Rent in Sector 3 Salt Lake City Kolkata,sector 3 salt lake city,3,12500000,42000,1100.0,Semi-Furnished,rent,exact_match,11363.64,38.18
+Sector 3 Salt Lake City Kolkata,sector 3 salt lake city,3,12500000,42000,1100.0,Semi-Furnished,rent,exact_match,11363.64,38.18
 "Geetanjali Apartments, Geetanjali Apartments, Tegharia Baguiati, Kolkata",teghoria,2,3800000,20000,900.0,Furnished,rent,exact_match,4222.22,22.22
-2 BHK House for Rent in Nivedita Colony Kolkata,nivedita colony,2,3200000,7500,600.0,Unfurnished,rent,bedroom_only,5333.33,12.5
+Nivedita Colony Kolkata,nivedita colony,2,3200000,7500,600.0,Unfurnished,rent,bedroom_only,5333.33,12.5
 "Dum Dum Park, Kolkata",dum dum park,3,7504000,25000,1340.0,Semi-Furnished,rent,address_only,5600.0,18.66
-"3 BHK House for Rent in Mandeville Gardens, Ballygunge Kolkata",mandeville gardens,3,19043259,110000,2600.0,Furnished,rent,bedroom_only,7324.33,42.31
+"Mandeville Gardens, Ballygunge Kolkata",mandeville gardens,3,19043259,110000,2600.0,Furnished,rent,bedroom_only,7324.33,42.31
 "Shapoorji Pallonji Housing Complex, Shapoorji Pallonji Housing Complex, Action Area 3, Kolkata",action area 3,2,4968331,13495,700.0,Semi-Furnished,rent,address_bedroom,7097.62,19.28
 "Swastika Pearl, Swastika Pearl, Howrah, Kolkata",howrah,2,2897332,13500,680.0,Furnished,rent,address_bedroom,4260.78,19.85
-2 BHK House for Rent in Barisha Kolkata,barisha,2,3400000,13000,750.0,Unfurnished,rent,exact_match,4533.33,17.33
+Barisha Kolkata,barisha,2,3400000,13000,750.0,Unfurnished,rent,exact_match,4533.33,17.33
 "Oswal Orchard Avaasa, Oswal Orchard Avaasa, Rajarhat, Kolkata",rajarhat,3,6700000,45000,1321.0,Semi-Furnished,rent,exact_match,5071.92,34.07
 "Prasad Rare Earth, Prasad Rare Earth, Narkeldanga, Kolkata",narkeldanga,4,19489507,82000,1981.0,Unfurnished,rent,address_only,9838.22,41.39
 "Kestopur, Kolkata",kestopur,2,5200000,14000,780.0,Unfurnished,rent,exact_match,6666.67,17.95
@@ -1638,7 +1638,7 @@ Kolkata,highland park,2,7733333,32000,1450.0,Furnished,rent,bedroom_only,5333.33
 "Santoshpur, Kolkata",santoshpur,3,4500000,17000,1036.0,Unfurnished,rent,exact_match,4343.63,16.41
 "Paikpara, Kolkata",paikpara,2,6330241,22000,800.0,Semi-Furnished,rent,address_only,7912.8,27.5
 "Ideal Aquaview, Ideal Aquaview, Sector 5 Salt Lake City, Kolkata",sector 5 salt lake city,4,24500644,50000,1950.0,Semi-Furnished,rent,address_only,12564.43,25.64
-3 BHK House for Rent in Beleghata Main Road Kolkata,beleghata main road,3,8789197,26000,1200.0,Unfurnished,rent,bedroom_only,7324.33,21.67
+Beleghata Main Road Kolkata,beleghata main road,3,8789197,26000,1200.0,Unfurnished,rent,bedroom_only,7324.33,21.67
 "Anik One Rajarhat, Anik One Rajarhat, New Town, Kolkata",new town,2,4900000,75000,740.0,Unfurnished,rent,exact_match,6621.62,101.35
 "Action Area 2C, Kolkata",action area 2c,4,10389610,140000,1500.0,Furnished,rent,address_only,6926.41,93.33
 "Ishani V, Ishani V, Rajarhat, Kolkata",rajarhat,2,5200000,11000,810.0,Semi-Furnished,rent,exact_match,6419.75,13.58
@@ -1646,7 +1646,7 @@ Kolkata,highland park,2,7733333,32000,1450.0,Furnished,rent,bedroom_only,5333.33
 "Hiland Greens, Hiland Greens, Maheshtala, Kolkata",maheshtala,2,3100000,15000,712.0,Unfurnished,rent,exact_match,4353.93,21.07
 "Gourav Garden, Gourav Garden, Behala, Kolkata",behala,2,2400000,20000,972.0,Unfurnished,rent,exact_match,2469.14,20.58
 "New Town, Kolkata",new town,2,6100000,12000,987.0,Unfurnished,rent,exact_match,6180.34,12.16
-1 BHK House for Rent in Behala Kolkata,behala,1,1450000,5000,300.0,Semi-Furnished,rent,exact_match,4833.33,16.67
+Behala Kolkata,behala,1,1450000,5000,300.0,Semi-Furnished,rent,exact_match,4833.33,16.67
 "Astasesh Cooperative Housing Society Ltd, Astasesh Cooperative Housing Society Ltd, Kolkata",cd17; new town,2,6933333,32000,1300.0,Semi-Furnished,rent,bedroom_only,5333.33,24.62
 "Panchvati Complex, Panchvati Complex, Kaikhali, Kolkata",kaikhali,5,10901796,110000,2240.0,Furnished,rent,address_only,4866.87,49.11
 "Manikpur Rajbari, Kolkata",manikpur,2,5850000,15000,650.0,Furnished,rent,address_only,9000.0,23.08
@@ -1659,16 +1659,16 @@ Kolkata,agrawala garden road,2,5866667,25000,1100.0,Furnished,rent,bedroom_only,
 "Tangra, Kolkata",tangra,2,5632694,12000,900.0,Semi-Furnished,rent,address_bedroom,6258.55,13.33
 Kolkata,motilal colony,2,4000000,12000,750.0,Unfurnished,rent,exact_match,5333.33,16.0
 "Vivekananda Nagar Madhyamgram, Kolkata",vivekananda nagar madhyamgram,2,4000000,6500,750.0,Unfurnished,rent,bedroom_only,5333.33,8.67
-2 BHK House for Rent in Vip Road Kolkata,vip road,2,4266667,15000,800.0,Semi-Furnished,rent,bedroom_only,5333.33,18.75
+Vip Road Kolkata,vip road,2,4266667,15000,800.0,Semi-Furnished,rent,bedroom_only,5333.33,18.75
 Kolkata,swabhumi apartment,2,4426667,9000,830.0,Unfurnished,rent,bedroom_only,5333.33,10.84
 "Hans Pushpak Rezidency, Hans Pushpak Rezidency, Jessore Road, Kolkata",jessore road,3,6576287,15000,1400.0,Semi-Furnished,rent,address_bedroom,4697.35,10.71
 "Golf Green, Jadavpur, Kolkata",golf green,1,1610526,9000,340.0,Furnished,rent,bedroom_only,4736.84,26.47
 "PS Nautical, PS Nautical, Patuli, Kolkata",patuli,3,10208451,35000,1208.0,Semi-Furnished,rent,address_bedroom,8450.7,28.97
 "Action Area 2B, Kolkata",action area 2b,3,8500000,23000,1100.0,Unfurnished,rent,exact_match,7727.27,20.91
 "Bansdroni, Kolkata",bansdroni,1,1569476,5500,330.0,Unfurnished,rent,address_only,4755.99,16.67
-2 BHK House for Rent in Baghbazar Kolkata,baghbazar,2,4725333,20000,886.0,Unfurnished,rent,bedroom_only,5333.33,22.57
+Baghbazar Kolkata,baghbazar,2,4725333,20000,886.0,Unfurnished,rent,bedroom_only,5333.33,22.57
 "SHANTIKUNJ, SHANTIKUNJ, Howrah, Kolkata",howrah,2,4500000,18000,900.0,Semi-Furnished,rent,exact_match,5000.0,20.0
-2 BHK House for Rent in Behala Chowrasta Kolkata,behala chowrasta,2,2500000,14000,745.0,Furnished,rent,exact_match,3355.7,18.79
+Behala Chowrasta Kolkata,behala chowrasta,2,2500000,14000,745.0,Furnished,rent,exact_match,3355.7,18.79
 "Kalindi Housing Estate, Kalindi Housing Estate, Kalindi Housing Estate, Kolkata",kalindi housing estate,2,3162582,16000,490.0,Semi-Furnished,rent,address_bedroom,6454.25,32.65
 Kolkata,samarpally 206 salatlake kestopur bridge,2,4000000,19000,750.0,Furnished,rent,bedroom_only,5333.33,25.33
 "Rupayan Su Casa Unique, Rupayan Su Casa Unique, Narendrapur Rajpur Sonarpur, Kolkata",narendrapur,3,4500000,15000,750.0,Semi-Furnished,rent,exact_match,6000.0,20.0
@@ -1683,7 +1683,7 @@ Kolkata,457 baishnabghata patuli,2,4320000,20000,810.0,Semi-Furnished,rent,bedro
 "Shriram Grand City, Shriram Grand City, Uttar Para, Kolkata",uttar para,3,5895425,20000,820.0,Semi-Furnished,rent,address_only,7189.54,24.39
 "Ideal Aquaview, Ideal Aquaview, Kolkata",salt lake,2,4213333,32000,790.0,Furnished,rent,bedroom_only,5333.33,40.51
 "Alipore, Kolkata",alipore,2,4200000,65000,906.0,Semi-Furnished,rent,exact_match,4635.76,71.74
-1 BHK House for Rent in Sinthi More Kolkata,sinthi more,1,757895,8500,160.0,Semi-Furnished,rent,bedroom_only,4736.84,53.12
+Sinthi More Kolkata,sinthi more,1,757895,8500,160.0,Semi-Furnished,rent,bedroom_only,4736.84,53.12
 "Salarpuria Amarana Residences, Salarpuria Amarana Residences, Tangra, Kolkata",tangra,3,17200111,45000,1194.0,Semi-Furnished,rent,address_bedroom,14405.45,37.69
 "Eden Solaris Joka Phase 1, Eden Solaris Joka Phase 1, Joka, Kolkata",joka,1,1578544,15000,284.0,Semi-Furnished,rent,address_bedroom,5558.25,52.82
 "Puri Residency, Puri Residency, Raja Rammohan Roy Road, Kolkata",raja rammohan roy road,3,6591897,18000,900.0,Furnished,rent,bedroom_only,7324.33,20.0
@@ -1705,44 +1705,44 @@ Kolkata,alipore park,4,43516000,440000,4048.0,Semi-Furnished,rent,bedroom_only,1
 Kolkata,sree mansion,2,5333333,24000,1000.0,Furnished,rent,bedroom_only,5333.33,24.0
 "Bablatola, Kolkata",bablatola,2,4800000,16000,900.0,Semi-Furnished,rent,bedroom_only,5333.33,17.78
 Kolkata,new town action area 2,3,9155413,30000,1250.0,Semi-Furnished,rent,bedroom_only,7324.33,24.0
-"1 BHK House for Rent in Ichapur Bidhanpally, Ichapur Kolkata",ichapur bidhanpally,1,710526,6000,150.0,Unfurnished,rent,bedroom_only,4736.84,40.0
-"5 BHK House for Rent in Golpark, Gariahat Road Kolkata",golpark,5,14036458,90000,1500.0,Furnished,rent,address_only,9357.64,60.0
+"Ichapur Bidhanpally, Ichapur Kolkata",ichapur bidhanpally,1,710526,6000,150.0,Unfurnished,rent,bedroom_only,4736.84,40.0
+"Golpark, Gariahat Road Kolkata",golpark,5,14036458,90000,1500.0,Furnished,rent,address_only,9357.64,60.0
 "Bag Bazar Colony Baghbazar, Kolkata",bag bazar colony baghbazar,2,5333333,24000,1000.0,Furnished,rent,bedroom_only,5333.33,24.0
 "Jai Hanuman Neer, Jai Hanuman Neer, Hindmotor, Kolkata",hindmotor,2,1837412,13000,685.0,Semi-Furnished,rent,address_bedroom,2682.35,18.98
 "Bengal Urban Sabujayan Phase II, Bengal Urban Sabujayan Phase II, Purbalok, Mukundapur, Kolkata",purbalok,3,9000000,17000,1265.0,Semi-Furnished,rent,exact_match,7114.62,13.44
-2 BHK Villa for Rent in S S Twp Sarsuna Kolkata,s s twp sarsuna,2,6400000,14000,1200.0,Semi-Furnished,rent,bedroom_only,5333.33,11.67
+S S Twp Sarsuna Kolkata,s s twp sarsuna,2,6400000,14000,1200.0,Semi-Furnished,rent,bedroom_only,5333.33,11.67
 "Kalyani, Kolkata",kalyani,3,6189059,10000,845.0,Semi-Furnished,rent,bedroom_only,7324.33,11.83
 "Jupiter Airport City 2, Jupiter Airport City 2, Dum Dum, Kolkata",dum dum,3,13877098,30000,1465.0,Unfurnished,rent,address_bedroom,9472.42,20.48
 Kolkata,purbadiganta land mark indus velly school,3,8789197,25000,1200.0,Unfurnished,rent,bedroom_only,7324.33,20.83
-2 BHK House for Rent in Uttarpara Kolkata,uttarpara,2,4000000,6500,750.0,Semi-Furnished,rent,exact_match,5333.33,8.67
+Uttarpara Kolkata,uttarpara,2,4000000,6500,750.0,Semi-Furnished,rent,exact_match,5333.33,8.67
 "Sukhpally, Haltu, Kolkata",sukhpally,2,5100000,15000,688.0,Semi-Furnished,rent,exact_match,7412.79,21.8
 "Magnolia Fantasia, Magnolia Fantasia, Barasat, Kolkata",barasat,2,2500000,9500,691.0,Unfurnished,rent,exact_match,3617.95,13.75
 "Jeet Residency Phase III, Jeet Residency Phase III, Nayabad, Kolkata",nayabad,3,6000000,16000,1000.0,Unfurnished,rent,exact_match,6000.0,16.0
 "SRCM Road, Kolkata",srcm road,2,4000000,15000,750.0,Semi-Furnished,rent,bedroom_only,5333.33,20.0
 "Rishi Pranaya, Rishi Pranaya, Rajarhat, Kolkata",rajarhat,3,6700000,47000,1221.0,Furnished,rent,exact_match,5487.31,38.49
 Kolkata,golpark,2,7018229,17000,750.0,Furnished,rent,address_bedroom,9357.64,22.67
-"3 BHK House for Rent in Palta, Barrackpore Kolkata",palta,3,5127031,6500,700.0,Unfurnished,rent,bedroom_only,7324.33,9.29
+"Palta, Barrackpore Kolkata",palta,3,5127031,6500,700.0,Unfurnished,rent,bedroom_only,7324.33,9.29
 "Sunny Seasons, Sunny Seasons, Garia, Kolkata",garia,3,6500000,22000,1107.0,Semi-Furnished,rent,exact_match,5871.73,19.87
 "Jain Dream Excellency, Jain Dream Excellency, Rajarhat, Kolkata",rajarhat,3,6700000,30000,1315.0,Semi-Furnished,rent,exact_match,5095.06,22.81
 Kolkata,mahabirtalla,2,6400000,35000,1200.0,Furnished,rent,bedroom_only,5333.33,29.17
-3 BHK House for Rent in Bansdroni Kolkata,bansdroni,3,3310000,3800000,840.0,Unfurnished,rent,exact_match,3940.48,4523.81
+Bansdroni Kolkata,bansdroni,3,3310000,3800000,840.0,Unfurnished,rent,exact_match,3940.48,4523.81
 "Devaloke Sonar City, Devaloke Sonar City, Garia, Kolkata",garia,3,6800000,22500,950.0,Semi-Furnished,rent,exact_match,7157.89,23.68
-2 BHK House for Rent in Birati Kolkata,birati,2,2500000,6000,700.0,Unfurnished,rent,exact_match,3571.43,8.57
+Birati Kolkata,birati,2,2500000,6000,700.0,Unfurnished,rent,exact_match,3571.43,8.57
 "Shapoorji Pallonji Joyville Howrah, Shapoorji Pallonji Joyville Howrah, Howrah, Kolkata",howrah,2,2000000,17000,600.0,Unfurnished,rent,exact_match,3333.33,28.33
 "Srijan Greenfield City, Srijan Greenfield City, Behala Chowrasta, Kolkata",behala chowrasta,2,4528477,14000,1052.0,Unfurnished,rent,address_bedroom,4304.64,13.31
 Kolkata,purbayan plot 480 baishnabghata patuli flat a3,2,3840000,22000,720.0,Semi-Furnished,rent,bedroom_only,5333.33,30.56
 "Pallisree, Netaji Nagar, Kolkata",pallisree,1,1894737,10000,400.0,Unfurnished,rent,bedroom_only,4736.84,25.0
-2 BHK House for Rent in Kestopur Kolkata,kestopur,2,5200000,12000,900.0,Semi-Furnished,rent,exact_match,5777.78,13.33
-2 BHK House for Rent in Chetla Kolkata,chetla,2,3977647,14500,490.0,Unfurnished,rent,address_bedroom,8117.65,29.59
-3 BHK House for Rent in Sodepur Kolkata,sodepur,3,8900000,20000,900.0,Unfurnished,rent,exact_match,9888.89,22.22
+Kestopur Kolkata,kestopur,2,5200000,12000,900.0,Semi-Furnished,rent,exact_match,5777.78,13.33
+Chetla Kolkata,chetla,2,3977647,14500,490.0,Unfurnished,rent,address_bedroom,8117.65,29.59
+Sodepur Kolkata,sodepur,3,8900000,20000,900.0,Unfurnished,rent,exact_match,9888.89,22.22
 "Kamalgazi Sonarpur Road, Kolkata",kamalgazi sonarpur road,1,2463158,8500,520.0,Semi-Furnished,rent,bedroom_only,4736.84,16.35
-2 BHK Villa for Rent in OAS SONAR GAON Kolkata,oas sonar gaon,2,6400000,15000,1200.0,Furnished,rent,bedroom_only,5333.33,12.5
+OAS SONAR GAON Kolkata,oas sonar gaon,2,6400000,15000,1200.0,Furnished,rent,bedroom_only,5333.33,12.5
 Kolkata,66,2,3733333,12000,700.0,Semi-Furnished,rent,bedroom_only,5333.33,17.14
 "Birati Abasan, Birati Abasan, Nimta, Kolkata",nimta,2,3200000,8000,600.0,Unfurnished,rent,bedroom_only,5333.33,13.33
 Kolkata,garden green apts,1,2463158,15000,520.0,Furnished,rent,bedroom_only,4736.84,28.85
 Kolkata,maniganga apartment,2,4000000,8500,750.0,Unfurnished,rent,bedroom_only,5333.33,11.33
-"3 BHK House for Rent in Chingrighata, canel south road kol - 700105 Kolkata",chingrighata canel south road kol - 700105,3,7324331,25000,1000.0,Semi-Furnished,rent,bedroom_only,7324.33,25.0
-2 BHK House for Rent in James Long Sarani Kolkata,james long sarani,2,4000000,20000,750.0,Unfurnished,rent,bedroom_only,5333.33,26.67
+"Chingrighata, canel south road kol - 700105 Kolkata",chingrighata canel south road kol - 700105,3,7324331,25000,1000.0,Semi-Furnished,rent,bedroom_only,7324.33,25.0
+James Long Sarani Kolkata,james long sarani,2,4000000,20000,750.0,Unfurnished,rent,bedroom_only,5333.33,26.67
 "DKB Green, DKB Green, Sinthee, Kolkata",sinthi,2,8260146,15000,900.0,Semi-Furnished,rent,address_only,9177.94,16.67
 "Sankalpa IV, Sankalpa IV, Rajarhat, Kolkata",rajarhat,3,10000000,20000,1100.0,Semi-Furnished,rent,exact_match,9090.91,18.18
 "Merujeen Housing Complex, Merujeen Housing Complex, Narendrapur Rajpur Sonarpur, Kolkata",narendrapur,1,6293706,11000,1000.0,Semi-Furnished,rent,address_only,6293.71,11.0
@@ -1755,11 +1755,11 @@ Kolkata,anisabad,2,3339141,20000,700.0,Furnished,rent,address_only,4770.2,28.57
 "Srijan Ozone Kolkata, Srijan Ozone Kolkata, Kamalgazi, Narendrapur, Kolkata",kamalgazi,5,9197657,380000,2267.0,Furnished,rent,address_only,4057.19,167.62
 "Peerless Nagar, Peerless Nagar, Sodepur, Kolkata",sodepur,3,11585799,20000,1100.0,Unfurnished,rent,address_bedroom,10532.54,18.18
 "Hastings Tower, Hastings Tower, Bosepukur, Kasba, Kolkata",bosepukur,3,16555556,65000,1490.0,Furnished,rent,address_only,11111.11,43.62
-2 BHK House for Rent in Chandmari Kolkata,chandmari,2,4266667,10000,800.0,Semi-Furnished,rent,bedroom_only,5333.33,12.5
+Chandmari Kolkata,chandmari,2,4266667,10000,800.0,Semi-Furnished,rent,bedroom_only,5333.33,12.5
 Kolkata,bagbazar,2,5333333,23000,1000.0,Furnished,rent,bedroom_only,5333.33,23.0
-"2 BHK House for Rent in Tentulberia, Garia Kolkata",tentulberia,2,2933333,8500,550.0,Unfurnished,rent,bedroom_only,5333.33,15.45
+"Tentulberia, Garia Kolkata",tentulberia,2,2933333,8500,550.0,Unfurnished,rent,bedroom_only,5333.33,15.45
 "Eastern Metropolitan Bypass, Kolkata",em bypass,1,4800000,13500,448.0,Unfurnished,rent,address_only,10714.29,30.13
 "Netaji Nagar, Kolkata",netaji nagar,3,11000000,25000,1200.0,Semi-Furnished,rent,exact_match,9166.67,20.83
 "Biswanath Abasan, Biswanath Abasan, Kolkata",biswanath abasan tegharia baguiati biswanath abasan tegharia baguiati,2,4298667,17000,806.0,Furnished,rent,bedroom_only,5333.33,21.09
 "Naktala, Garia, Kolkata",naktala,2,4500000,18000,650.0,Semi-Furnished,rent,exact_match,6923.08,27.69
-3 BHK House for Rent in New Alipore Kolkata,new alipore,3,24000000,60000,1800.0,Unfurnished,rent,exact_match,13333.33,33.33
+New Alipore Kolkata,new alipore,3,24000000,60000,1800.0,Unfurnished,rent,exact_match,13333.33,33.33
