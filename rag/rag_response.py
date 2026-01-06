@@ -37,6 +37,8 @@ def generate_rag_response(
     """
 
     if retrieved_df.empty:
+        if intent == "EDUCATIONAL":
+            return "I can explain general concepts, but I couldn't retrieve a specific property example to use as a reference."
         return "The requested property could not be identified clearly. Please specify the property."
 
     context = build_rag_context(retrieved_df)
