@@ -293,7 +293,6 @@ Name,Address,Bedrooms,Price,Rent,Area,Furnishing
 "3 BHK Apartment for Sale in Ganguly 4 Sight Grand Castle, Mahamaya Tala, Garia Kolkata",mahamaya tala,3,12500000.0,34451,1523.0,Unfurnished
 "2 BHK Apartment for Sale in Fortune Heights Barasat, Barasat Kolkata",barasat,2,3900000.0,10764,828.0,Semi-Furnished
 "3 BHK Apartment for Sale in Godrej Seven, Joka Kolkata",joka,3,8000000.0,24545,1215.0,Unfurnished
-5 BHK House for Sale in Sector 2 Salt Lake City Kolkata,sector 2 salt lake city,5,25000000.0,1848,84.0,Semi-Furnished
 2 BHK Apartment for Sale in Banerjee Para Paschim Putiary Kolkata,banerjee para,2,2700000.0,12613,720.0,Unfurnished
 "3 BHK Apartment for Sale in Hiland Greens, Maheshtala Kolkata",maheshtala,3,4500000.0,20325,1050.0,Semi-Furnished
 2 BHK Apartment for Sale in Sodepur Kolkata,sodepur,2,1600000.0,6815,610.0,Unfurnished
@@ -605,7 +604,6 @@ Name,Address,Bedrooms,Price,Rent,Area,Furnishing
 3 BHK Apartment for Sale in Madurdaha Main Road Kolkata,madurdaha main road,3,11700000.0,38798,1343.0,Semi-Furnished
 2 BHK Apartment for Sale in Baguiati Kolkata,baguiati,2,4730000.0,15220,780.0,Unfurnished
 3 BHK Apartment for Sale in Baghajatin Colony Kolkata,baghajatin,3,7000000.0,15056,1183.0,Semi-Furnished
-"4 BHK Apartment for Sale in Urbana NRI Complex, Eastern Metropolitan Bypass Kolkata",em bypass,4,150000000.0,109734,3716.0,Furnished
 3 BHK Apartment for Sale in Sarsuna Kolkata,sarsuna,3,4500000.0,9278,831.0,Unfurnished
 "3 BHK Apartment for Sale in Madurdaha, Hussainpur Kolkata",madurdaha,3,7500000.0,18162,1028.0,Semi-Furnished
 "3 BHK Apartment for Sale in Purbalok, Mukundapur Kolkata",purbalok,3,9000000.0,18477,1300.0,Semi-Furnished
@@ -653,7 +651,6 @@ Name,Address,Bedrooms,Price,Rent,Area,Furnishing
 2 BHK Apartment for Sale in Beleghata Main Road Kolkata,beleghata main road,2,5400000.0,27300,910.0,Unfurnished
 "2 BHK Builder Floor for Sale in Chaya Neer, Rajarhat Kolkata",rajarhat,2,2400000.0,13800,552.0,Unfurnished
 2 BHK Apartment for Sale in Action Area 1 Kolkata,action area 1,2,4500000.0,40112,675.0,Semi-Furnished
-4 BHK House for Sale in Rahara Kolkata,rahara,4,22000000.0,160,12.0,Unfurnished
 "3 BHK Apartment for Sale in Pratik Apartments, Belghoria Kolkata",belghoria,3,4000000.0,13304,745.0,Semi-Furnished
 "3 BHK Apartment for Sale in PS The 102, Joka Kolkata",joka,3,8000000.0,22788,1128.0,Furnished
 4 BHK Apartment for Sale in Prince Anwar Shah Road Kolkata,prince anwar shah road,4,35000000.0,110024,2500.0,Semi-Furnished
@@ -729,7 +726,6 @@ Name,Address,Bedrooms,Price,Rent,Area,Furnishing
 "2 BHK Apartment for Sale in Ujjwainee, Nagerbazar Kolkata",nagerbazar,2,4750000.0,14640,732.0,Unfurnished
 "2 BHK Apartment for Sale in Realtech The Indianaq, Bishnupur Rajarhat Kolkata",bishnupur rajarhat,2,2700000.0,14919,545.0,Unfurnished
 2 BHK Apartment for Sale in Narkeldanga Kolkata,narkeldanga,2,3500000.0,27447,680.0,Unfurnished
-3 BHK Apartment for Sale in Shobhabazar Kolkata,shobha bazar,3,45000000.0,23654,1230.0,Unfurnished
 2 BHK Apartment for Sale in Swiss Park Kolkata,swiss park,2,5750000.0,13714,600.0,Furnished
 3 BHK Apartment for Sale in Beleghata Kolkata,beleghata,3,10000000.0,30240,1080.0,Furnished
 "3 BHK Apartment for Sale in Godrej Seven, Joka Kolkata",joka,3,7500000.0,14828,734.0,Unfurnished
@@ -801,7 +797,6 @@ Name,Address,Bedrooms,Price,Rent,Area,Furnishing
 6 BHK House for Sale in Garia Station Road Kolkata,garia station road,6,45000000.0,58263,3500.0,Semi-Furnished
 "3 BHK Apartment for Sale in Primarc Southwinds, Harinavi Kolkata",harinavi,3,12500000.0,28479,967.0,Furnished
 "3 BHK Apartment for Sale in Mani Casa, New Town Kolkata",new town,3,17800000.0,31587,1166.0,Semi-Furnished
-"5 BHK Apartment for Sale in Urbana, Eastern Metropolitan Bypass Kolkata",em bypass,5,155000000.0,125621,4254.0,Furnished
 2 BHK Apartment for Sale in Thakurpukur Kolkata,thakurpukur,2,4700000.0,11815,800.0,Semi-Furnished
 "3 BHK Apartment for Sale in Deeshari Megacity Phase 1, Rajpur Sonarpur Kolkata",rajpur sonarpur,3,4000000.0,16758,850.0,Semi-Furnished
 "3 BHK Apartment for Sale in Sherwood Estate, Narendrapur Rajpur Sonarpur Kolkata",narendrapur,3,7500000.0,19099,965.0,Furnished
@@ -851,7 +846,6 @@ Name,Address,Bedrooms,Price,Rent,Area,Furnishing
 2 BHK Apartment for Sale in Baranagar Kolkata,baranagar,2,3000000.0,10400,600.0,Unfurnished
 "4 BHK Apartment for Sale in PS Rain Tree, Kankurgachi Kolkata",kankurgachi,4,25000000.0,48133,2166.0,Unfurnished
 1 BHK Apartment for Sale in Nagerbazar Kolkata,nagerbazar,1,2620000.0,10800,540.0,Unfurnished
-2 BHK Builder Floor for Sale in Action Area 2D Kolkata,action area 2d,2,6500000.0,39,2.0,Unfurnished
 3 BHK Apartment for Sale in Baguiati Kolkata,baguiati,3,13000000.0,31220,1600.0,Furnished
 4 BHK Apartment for Sale in Lake Gardens Kolkata,lake gardens,4,18000000.0,44000,1280.0,Semi-Furnished
 3 BHK Builder Floor for Sale in Dhakuria Kolkata,dhakuria,3,6000000.0,22076,833.0,Semi-Furnished
@@ -921,7 +915,6 @@ Name,Address,Bedrooms,Price,Rent,Area,Furnishing
 "2 BHK Apartment for Sale in The Banyan The Sky Garden, New Town Kolkata",new town,2,3740000.0,23568,870.0,Unfurnished
 "2 BHK Apartment for Sale in Yaduka Shree Krishna Ashrey, Kankurgachi Kolkata",kankurgachi,2,9370000.0,26022,1171.0,Unfurnished
 "2 BHK Apartment for Sale in PS Sansara, Howrah Kolkata",howrah,2,3840000.0,10848,605.0,Semi-Furnished
-"4 BHK Apartment for Sale in Anik One Rajarhat, New Town Kolkata",new town,4,80000000.0,51471,1900.0,Furnished
 "3 BHK Apartment for Sale in Netaji Metro, Netaji Nagar Kolkata",netaji nagar,3,3600000.0,20625,990.0,Semi-Furnished
 "3 BHK Apartment for Sale in MBPS WaterView, Rajpur Kolkata",rajpur,3,4500000.0,13849,951.0,Semi-Furnished
 2 BHK Apartment for Sale in Bansdroni Kolkata,bansdroni,2,3900000.0,20089,900.0,Semi-Furnished
@@ -975,7 +968,6 @@ Name,Address,Bedrooms,Price,Rent,Area,Furnishing
 5 BHK House for Sale in Barasat Kolkata,barasat,5,9500000.0,13000,1000.0,Unfurnished
 "4 BHK Apartment for Sale in PS VYOM, New Alipore Kolkata",new alipore,4,43000000.0,70460,2652.0,Semi-Furnished
 "3 BHK Apartment for Sale in Eden Tolly Lakeside II, Tollygunge Kolkata",tollygunge,3,6800000.0,32013,1000.0,Unfurnished
-4 BHK House for Sale in Habra Kolkata,habra,4,6500000.0,18,3.0,Unfurnished
 "2 BHK Apartment for Sale in Ishan 76 New Santoshpur, Santoshpur Kolkata",santoshpur,2,4000000.0,12197,670.0,Unfurnished
 "3 BHK Apartment for Sale in Bengal Peerless Avidipta Phase 2, Mukundapur Kolkata",mukundapur,3,29000000.0,64412,1677.0,Unfurnished
 "3 BHK Apartment for Sale in Magnolia Sports City, Barrackpore Kolkata",barrackpore,3,4000000.0,14200,1065.0,Unfurnished
@@ -1020,7 +1012,6 @@ Name,Address,Bedrooms,Price,Rent,Area,Furnishing
 "4 BHK Apartment for Sale in Multicon Narayani, Ballygunge Kolkata",ballygunge,4,19600000.0,109668,2109.0,Unfurnished
 "4 BHK Apartment for Sale in Orbit Victoria, Shakespeare Sarani Kolkata",shakespeare sarani road,4,70000000.0,228030,4300.0,Unfurnished
 "4 BHK Apartment for Sale in Orbit Victoria, Shakespeare Sarani Kolkata",shakespeare sarani road,4,70000000.0,270455,5100.0,Unfurnished
-10 BHK House for Sale in Chetla Kolkata,chetla,10,15000000.0,187,7.0,Unfurnished
 6 BHK House for Sale in Sinthee Kolkata,sinthi,6,20100000.0,45714,2400.0,Semi-Furnished
 "3 BHK Apartment for Sale in Unitech Heights, New Town Kolkata",new town,3,7100000.0,47705,1761.0,Unfurnished
 "2 BHK Apartment for Sale in Eden Tolly Signature Plus, Tollygunge Kolkata",tollygunge,2,3000000.0,28364,886.0,Unfurnished
@@ -1034,7 +1025,6 @@ Name,Address,Bedrooms,Price,Rent,Area,Furnishing
 3 BHK House for Sale in Baguiati Kolkata,baguiati,3,4200000.0,17561,900.0,Semi-Furnished
 "1 BHK Apartment for Sale in Dream Athena Palace, Sonarpur Kolkata",sonarpur,1,2230000.0,5836,616.0,Furnished
 "2 BHK Apartment for Sale in Sureka Elita Garden Vista, New Town Kolkata",new town,2,8900000.0,35217,1300.0,Unfurnished
-2 BHK Apartment for Sale in Bansdroni Government Colony Kolkata,bansdroni government colony,2,3960000.0,3412,780.0,Semi-Furnished
 2 BHK Apartment for Sale in Paikpara Kolkata,paikpara,2,2480000.0,8822,440.0,Unfurnished
 "2 BHK Apartment for Sale in Ganguly Bagan, Beliaghata Kolkata",ganguly bagan,2,2800000.0,14188,680.0,Semi-Furnished
 "2 BHK Apartment for Sale in Deeshari 5, Purbalok, Mukundapur Kolkata",purbalok,2,5500000.0,12792,900.0,Unfurnished
@@ -1077,7 +1067,6 @@ Name,Address,Bedrooms,Price,Rent,Area,Furnishing
 "3 BHK Apartment for Sale in Uniworld City, Action Area 3 Kolkata",action area 3,3,11000000.0,41349,1450.0,Unfurnished
 "2 BHK Apartment for Sale in Bengal Peerless Avidipta Phase 2, Eastern Metropolitan Bypass Kolkata",em bypass,2,15000000.0,27079,917.0,Unfurnished
 3 BHK Builder Floor for Sale in Jadavpur Kolkata,jadavpur,3,6500000.0,18475,1083.0,Unfurnished
-4 BHK House for Sale in Sinthee Kolkata,sinthi,4,16000000.0,38,2.0,Unfurnished
 "3 BHK Apartment for Sale in GPS Meena Bliss, Rajarhat Kolkata",rajarhat,3,5730000.0,29125,1165.0,Unfurnished
 "3 BHK Apartment for Sale in Identity Pride, Nagerbazar Kolkata",nagerbazar,3,9260000.0,18380,919.0,Unfurnished
 6 BHK House for Sale in Kalikapur Haltu Kolkata,kalikapur,6,15000000.0,43333,2000.0,Unfurnished
@@ -1139,7 +1128,6 @@ Name,Address,Bedrooms,Price,Rent,Area,Furnishing
 6 BHK House for Sale in Ballygunge Kolkata,ballygunge,6,50000000.0,187200,3600.0,Semi-Furnished
 3 BHK Apartment for Sale in Mukundapur Kolkata,mukundapur,3,33000000.0,82656,2152.0,Unfurnished
 2 BHK Apartment for Sale in Boral Kolkata,boral,2,2800000.0,7750,550.0,Semi-Furnished
-4 BHK House for Sale in Madhyamgram Kolkata,madhyamgram,4,13000000.0,79,5.0,Unfurnished
 "3 BHK Apartment for Sale in Jalvayu Residency, Behala Kolkata",behala,3,7800000.0,24092,1272.0,Semi-Furnished
 "4 BHK Apartment for Sale in Salarpuria Luxuria Heights, Tangra Kolkata",tangra,4,25000000.0,77968,2302.0,Furnished
 "2 BHK Apartment for Sale in Realtech Rajvansh, Rajarhat Kolkata",rajarhat,2,3700000.0,20025,801.0,Unfurnished
@@ -1155,7 +1143,6 @@ Name,Address,Bedrooms,Price,Rent,Area,Furnishing
 "3 BHK Apartment for Sale in Sureka Sunrise Heights, Beleghata Kolkata",beleghata,3,14000000.0,46480,1660.0,Furnished
 "3 BHK Apartment for Sale in Hiland Lake Town, Batanagar Kolkata",batanagar,3,20000000.0,23000,2300.0,Semi-Furnished
 "3 BHK Apartment for Sale in RDB Regent Sonarpur Phase I, Rajpur Sonarpur Kolkata",rajpur sonarpur,3,6200000.0,28193,1430.0,Semi-Furnished
-8 BHK House for Sale in Kalighat Kolkata,kalighat,8,17000000.0,35000,1000.0,Unfurnished
 "4 BHK Apartment for Sale in Aspirations Aloft, Shakespeare Sarani Kolkata",shakespeare sarani road,4,42800000.0,122765,2315.0,Semi-Furnished
 "2 BHK Apartment for Sale in Anik One Rajarhat, New Town Kolkata",new town,2,19000000.0,33700,1244.0,Furnished
 "3 BHK Apartment for Sale in Regent Sonarpur, Garia Kolkata",garia,3,4600000.0,23089,1430.0,Semi-Furnished
@@ -1184,7 +1171,6 @@ Name,Address,Bedrooms,Price,Rent,Area,Furnishing
 "2 BHK Builder Floor for Sale in Park Circus, Ballygunge Kolkata",park circus,2,10000000.0,68214,1146.0,Unfurnished
 4 BHK House for Sale in Kankurgachi Kolkata,kankurgachi,4,30000000.0,37778,1700.0,Unfurnished
 3 BHK Builder Floor for Sale in New Town Kolkata,new town,3,8500000.0,44156,1630.0,Semi-Furnished
-3 BHK House for Sale in Pailan Kolkata,pailan,3,3300000.0,100,2.0,Unfurnished
 3 BHK Builder Floor for Sale in Dhakuria Kolkata,dhakuria,3,4400000.0,23851,900.0,Semi-Furnished
 3 BHK Builder Floor for Sale in Lake Town Kolkata,lake town,3,5300000.0,18764,1130.0,Semi-Furnished
 3 BHK Apartment for Sale in Action Area 3 Kolkata,action area 3,3,7500000.0,25665,900.0,Semi-Furnished
@@ -1280,7 +1266,6 @@ Name,Address,Bedrooms,Price,Rent,Area,Furnishing
 3 BHK Apartment for Sale in Shrirampur Kolkata,shrirampur,3,2260000.0,18056,780.0,Furnished
 "3 BHK Apartment for Sale in Sai Dinesh Rittika Residency, Rajarhat Kolkata",rajarhat,3,4200000.0,17925,717.0,Unfurnished
 "3 BHK Villa for Sale in Vedic Greentech City Golf Grove Villas, Rajarhat Kolkata",rajarhat,3,22000000.0,62500,2500.0,Furnished
-5 BHK House for Sale in Barasat Kolkata,barasat,5,25200000.0,26,2.0,Unfurnished
 "2 BHK Apartment for Sale in Naktala, Garia Kolkata",naktala,2,3500000.0,16827,700.0,Furnished
 2 BHK Apartment for Sale in Dum Dum Kolkata,dum dum,2,7000000.0,14715,961.0,Unfurnished
 "3 BHK Apartment for Sale in Srijan Midlands, Jessore Road Kolkata",jessore road,3,6700000.0,18785,1148.0,Furnished
@@ -1315,7 +1300,6 @@ Name,Address,Bedrooms,Price,Rent,Area,Furnishing
 2 BHK Apartment for Sale in Santoshpur Kolkata,santoshpur,2,2800000.0,12743,700.0,Semi-Furnished
 5 BHK House for Sale in Paikpara Kolkata,paikpara,5,25000000.0,28972,1445.0,Semi-Furnished
 "2 BHK Apartment for Sale in Regent City, Rajarhat Kolkata",rajarhat,2,5000000.0,21750,870.0,Furnished
-4 BHK Apartment for Sale in Dum Dum Road Kolkata,dum dum road,4,6950000.0,3000,1500.0,Semi-Furnished
 2 BHK Apartment for Sale in Beleghata Kolkata,beleghata,2,6000000.0,25200,900.0,Furnished
 "3 BHK Apartment for Sale in Godrej Seven, Joka Kolkata",joka,3,7500000.0,24545,1215.0,Unfurnished
 2 BHK Apartment for Sale in Rabindra Sarobar Kolkata,rabindra sarobar,2,13000000.0,18000,900.0,Unfurnished
@@ -1341,8 +1325,6 @@ Name,Address,Bedrooms,Price,Rent,Area,Furnishing
 4 BHK Villa for Sale in Joka Kolkata,joka,4,14000000.0,43434,2150.0,Unfurnished
 "2 BHK Apartment for Sale in Picnic Garden, Tiljala Kolkata",picnic garden,2,2500000.0,14861,600.0,Furnished
 "3 BHK Apartment for Sale in Ideal Aurum, Sonarpur Kolkata",sonarpur,3,7000000.0,7408,782.0,Unfurnished
-6 BHK House for Sale in Baruipur Kolkata,baruipur,6,10000000.0,61,3.0,Semi-Furnished
-"4 BHK Apartment for Sale in Vinayak Vista, Laketown Kolkata",laketown,4,20500000.0,16917,1400.0,Unfurnished
 3 BHK Apartment for Sale in Dum Dum Cantonment Kolkata,dum dum cantonment,3,6300000.0,22502,1734.0,Unfurnished
 "3 BHK Apartment for Sale in Magnolia Nakshatra, Barasat Kolkata",barasat,3,3500000.0,11908,916.0,Semi-Furnished
 2 BHK Apartment for Sale in Motilal Gupta Road Kolkata,motilal gupta road,2,3400000.0,11246,820.0,Furnished
@@ -1435,7 +1417,6 @@ Name,Address,Bedrooms,Price,Rent,Area,Furnishing
 "2 BHK Apartment for Sale in Manorama Heights, Tollygunge Kolkata",tollygunge,2,5140000.0,28876,902.0,Unfurnished
 "2 BHK Apartment for Sale in Manorama Heights, Tollygunge Kolkata",tollygunge,2,5140000.0,28876,902.0,Unfurnished
 "2 BHK Apartment for Sale in Manorama Heights, Tollygunge Kolkata",tollygunge,2,5140000.0,28876,902.0,Unfurnished
-4 BHK House for Sale in Uttarpara Chinsurah Kolkata,uttarpara,4,13500000.0,8727,800.0,Semi-Furnished
 "7 BHK Villa for Sale in Chandannagar, Hooghly-Chinsurah Kolkata",chandannagar,7,27500000.0,32810,1930.0,Furnished
 "2 BHK Apartment for Sale in Mira Garden, Madhyamgram Kolkata",madhyamgram,2,2800000.0,14182,900.0,Semi-Furnished
 "2 BHK Apartment for Sale in Mira Garden, Madhyamgram Kolkata",madhyamgram,2,2800000.0,14339,910.0,Semi-Furnished
@@ -1465,7 +1446,6 @@ Name,Address,Bedrooms,Price,Rent,Area,Furnishing
 "5 BHK House for Sale in Ballygunge Place, Ballygunge Kolkata",ballygunge place,5,25000000.0,85974,2160.0,Semi-Furnished
 "4 BHK House for Sale in Chandannagar, Hooghly-Chinsurah Kolkata",chandannagar,4,8000000.0,23800,1400.0,Semi-Furnished
 2 BHK Apartment for Sale in Jyangra Bottala Kolkata,jyangra bottala,2,3200000.0,22454,973.0,Semi-Furnished
-2 BHK House for Sale in Rahara Kolkata,rahara,2,18000000.0,53,4.0,Semi-Furnished
 2 BHK Apartment for Sale in Garia Kolkata,garia,2,2200000.0,14208,880.0,Unfurnished
 2 BHK Apartment for Sale in Garfa Kolkata,garfa,2,3500000.0,15750,700.0,Unfurnished
 3 BHK House for Sale in Birati Kolkata,birati,3,17000000.0,48065,3600.0,Unfurnished
@@ -1551,7 +1531,6 @@ Name,Address,Bedrooms,Price,Rent,Area,Furnishing
 2 BHK Builder Floor for Sale in Kasba Kolkata,kasba,2,3800000.0,24565,928.0,Unfurnished
 "3 BHK Apartment for Sale in Gourav Garden, Behala Kolkata",behala,3,6500000.0,15872,838.0,Unfurnished
 7 BHK House for Sale in Shyamnagar Kolkata,shyamnagar,7,17000000.0,34722,4000.0,Furnished
-6 BHK House for Sale in Dum Dum Kolkata,dum dum,6,96000000.0,22662,1480.0,Semi-Furnished
 "3 BHK Apartment for Sale in Shivoham Paradise, Vip Road Kolkata",vip road,3,12000000.0,27182,1643.0,Furnished
 6 BHK House for Sale in Behala Kolkata,behala,6,12000000.0,56821,3000.0,Unfurnished
 4 BHK House for Sale in Howrah Kolkata,howrah,4,12000000.0,21517,1200.0,Unfurnished
@@ -1629,7 +1608,6 @@ Name,Address,Bedrooms,Price,Rent,Area,Furnishing
 "3 BHK Apartment for Sale in Siddha Happyville, Rajarhat Kolkata",rajarhat,3,10700000.0,32750,1310.0,Unfurnished
 "3 BHK Apartment for Sale in Ambuja Ecospace Residencia, New Town Kolkata",new town,3,16000000.0,31803,1174.0,Unfurnished
 "2 BHK Apartment for Sale in Utsa The Condovile, Rajarhat Kolkata",rajarhat,2,11000000.0,27625,1105.0,Semi-Furnished
-> 10 BHK House for Sale in Rash Behari Avenue Kolkata,rash behari avenue,10,17000000.0,97,2.0,Semi-Furnished
 "3 BHK Apartment for Sale in DLF New Town Heights, Rajarhat Kolkata",rajarhat,3,11500000.0,38025,1521.0,Unfurnished
 4 BHK House for Sale in Unique Park Behala Kolkata,unique park behala,4,16000000.0,31111,2000.0,Semi-Furnished
 "4 BHK Apartment for Sale in Siddha Pines, Rajarhat Main Road Kolkata",rajarhat main road,4,15000000.0,42341,2025.0,Unfurnished
@@ -1698,7 +1676,6 @@ Name,Address,Bedrooms,Price,Rent,Area,Furnishing
 2 BHK Apartment for Sale in Alipore Kolkata,alipore,2,15000000.0,110092,1000.0,Unfurnished
 "3 BHK Apartment for Sale in ISHA GREENS, Raja Rammohan Roy Road Kolkata",raja rammohan roy road,3,12000000.0,25640,1282.0,Semi-Furnished
 "2 BHK Apartment for Sale in Premier Joy 98, Baranagar Kolkata",baranagar,2,9200000.0,10053,580.0,Unfurnished
-4 BHK House for Sale in Bhowanipore Kolkata,bhawanipur,4,26000000.0,75,3.0,Unfurnished
 "2 BHK Apartment for Sale in Eden Tolly Signature Phase 1, Mahatma Gandhi Road Kolkata",m.g.road,2,4000000.0,19281,938.0,Unfurnished
 3 BHK Apartment for Sale in New Town Kolkata,new town,3,17500000.0,48274,1782.0,Unfurnished
 "3 BHK Apartment for Sale in Rajwada Lake Bliss, Sonarpur Station Road Kolkata",sonarpur station road,3,4700000.0,15141,732.0,Unfurnished
@@ -1706,7 +1683,6 @@ Name,Address,Bedrooms,Price,Rent,Area,Furnishing
 "4 BHK Villa for Sale in The Orchid Grandeur, Rajarhat Kolkata",rajarhat,4,16000000.0,62500,2500.0,Unfurnished
 "3 BHK Apartment for Sale in Merlin 5th Avenue, Sector 5 Salt Lake City Kolkata",sector 5 salt lake city,3,40000000.0,57400,1435.0,Furnished
 2 BHK Apartment for Sale in Salt Lake City Kolkata,salt lake city,2,21000000.0,23333,700.0,Unfurnished
-5 BHK House for Sale in Tala Kolkata,tala,5,27000000.0,3255,186.0,Furnished
 4 BHK House for Sale in Dum Dum Kolkata,dum dum,4,10500000.0,16844,1100.0,Semi-Furnished
 "3 BHK Villa for Sale in Kolkata West International City, Howrah Kolkata",howrah,3,8000000.0,35862,2000.0,Semi-Furnished
 6 BHK House for Sale in Khardaha Kolkata,khardah,6,11000000.0,62283,3700.0,Unfurnished
@@ -1733,7 +1709,6 @@ Name,Address,Bedrooms,Price,Rent,Area,Furnishing
 "1 BHK Apartment for Sale in Shapoorji Paloonji Sukhobristi, New Town Kolkata",new town,1,2800000.0,12190,450.0,Unfurnished
 "3 BHK Apartment for Sale in DLF New Town Heights, Rajarhat Kolkata",rajarhat,3,11500000.0,38050,1522.0,Semi-Furnished
 4 BHK House for Sale in Shobhabazar Kolkata,shobha bazar,4,9500000.0,76923,4000.0,Furnished
-4 BHK House for Sale in Beleghata Kolkata,beleghata,4,25000000.0,140,5.0,Unfurnished
 3 BHK Apartment for Sale in Mukundapur Kolkata,mukundapur,3,10000000.0,46475,1210.0,Furnished
 "2 BHK Apartment for Sale in Realtech Curiocity Classic, New Town Kolkata",new town,2,4500000.0,19017,702.0,Unfurnished
 "4 BHK Apartment for Sale in Sanjeeva Orchard, New Town Kolkata",new town,4,15000000.0,37926,1400.0,Semi-Furnished
@@ -1780,7 +1755,6 @@ Name,Address,Bedrooms,Price,Rent,Area,Furnishing
 2 BHK Apartment for Sale in Alipore Kolkata,alipore,2,25000000.0,154128,1400.0,Semi-Furnished
 "2 BHK Apartment for Sale in Park Circus, Ballygunge Kolkata",park circus,2,7250000.0,35714,600.0,Unfurnished
 "3 BHK Apartment for Sale in Bangur Avenue, Bangur Avenue, Lake Town Kolkata",bangur avenue,3,11500000.0,36081,1770.0,Semi-Furnished
-"3 BHK House for Sale in Halisahar, Kanchrapara Kolkata",halisahar,3,4000000.0,20,2.0,Semi-Furnished
 "3 BHK Apartment for Sale in Dharitri Royal Enclave, New Town Kolkata",new town,3,12000000.0,26819,990.0,Furnished
 2 BHK Apartment for Sale in Tetultala Agarpara Kolkata,tetultala agarpara,2,2160000.0,5442,440.0,Furnished
 "4 BHK Apartment for Sale in PS ONE10, New Town Kolkata",new town,4,27000000.0,40851,1508.0,Unfurnished
@@ -1839,7 +1813,6 @@ Name,Address,Bedrooms,Price,Rent,Area,Furnishing
 "2 BHK Apartment for Sale in Rishi Pranaya, Rajarhat Kolkata",rajarhat,2,7500000.0,16100,644.0,Unfurnished
 "2 BHK Apartment for Sale in Realtech HIJIBIJI, Rajarhat Kolkata",rajarhat,2,7500000.0,20025,801.0,Unfurnished
 "3 BHK Apartment for Sale in Sima Abasan, Rajarhat Kolkata",rajarhat,3,3290000.0,20200,808.0,Unfurnished
-3 BHK House for Sale in Dum Dum Road Kolkata,dum dum road,3,6000000.0,3500,1750.0,Unfurnished
 "2 BHK Apartment for Sale in Madurdaha, Hussainpur Kolkata",madurdaha,2,5500000.0,14734,834.0,Unfurnished
 1 BHK Builder Floor for Sale in Sree Colony Kolkata,sree colony,1,1900000.0,11200,440.0,Unfurnished
 "3 BHK Apartment for Sale in Merlin Iland, Picnic Garden Road Kolkata",picnic garden road,3,16900000.0,28519,1501.0,Furnished
@@ -1859,12 +1832,10 @@ Name,Address,Bedrooms,Price,Rent,Area,Furnishing
 3 BHK Apartment for Sale in Bramhapur Kolkata,brahmapur,3,4200000.0,14087,900.0,Semi-Furnished
 3 BHK Apartment for Sale in New Town Kolkata,new town,3,15000000.0,41989,1550.0,Unfurnished
 "4 BHK Apartment for Sale in Manglam Apartment, Nayabad Kolkata",nayabad,4,25000000.0,43511,1900.0,Unfurnished
-"2 BHK Apartment for Sale in Eastern Enclave Cooperative Housing Society, Picnic Garden, Tiljala Kolkata",picnic garden,2,4500000.0,1610,65.0,Unfurnished
 "3 BHK Apartment for Sale in Siddha Suburbia, Southern Bypass Kolkata",southern bypass,3,7500000.0,25307,1259.0,Unfurnished
 2 BHK Apartment for Sale in Malancha Mahi Nagar Kolkata,malancha,2,9600000.0,13788,910.0,Semi-Furnished
 2 BHK Apartment for Sale in Dum Dum Kolkata,dum dum,2,3000000.0,8422,550.0,Unfurnished
 2 BHK Builder Floor for Sale in Lake Gardens Kolkata,lake gardens,2,6500000.0,41250,1200.0,Unfurnished
-4 BHK House for Sale in Nimta Kolkata,nimta,4,12000000.0,21,2.0,Furnished
 3 BHK Builder Floor for Sale in Uttarpara Chinsurah Kolkata,uttarpara,3,5500000.0,13036,1195.0,Semi-Furnished
 "2 BHK Apartment for Sale in Team Taurus Singhaduar, Rajarhat Kolkata",rajarhat,2,6630000.0,29925,1197.0,Unfurnished
 "3 BHK Apartment for Sale in Srijan Town Square, New Town Kolkata",new town,3,27500000.0,54640,2017.0,Unfurnished
