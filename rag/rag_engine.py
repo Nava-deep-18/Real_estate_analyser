@@ -132,6 +132,7 @@ def create_explanation_records(df):
             addr = row.get('address', 'Unknown Location')
             price = row.get('price', 'N/A')
             rent = row.get('rent', 'N/A')
+            area = row.get('area', 'N/A')
             decision = row.get('decision', 'N/A')
             wealth_diff = row.get('wealth_difference', '0')
             emi = row.get('monthly_emi', 'N/A') # Assuming column name
@@ -144,6 +145,7 @@ def create_explanation_records(df):
             --- PROPERTY RECORD {index+1} ---
             Name: {name}
             Location: {addr}
+            Size: {area} sqft
             Financials: Price: {price}, Monthly Rent: {rent}
             Analysis Decision: {decision}
             Wealth Difference (Buy vs Rent over 20y): {wealth_diff}
