@@ -3,6 +3,7 @@ from chromadb.utils import embedding_functions
 import pandas as pd
 import os
 import uuid
+import json
 
 # Initialize Chroma Client with Logic defined in Manual
 # "Vector Store: FAISS, pgvector, or Chroma" -> Using Chroma (Local/File-based)
@@ -20,78 +21,109 @@ def get_embedding_function():
 
 def initialize_vector_store(df):
     """
-    Ingests the Property Explanation Records into ChromaDB.
-    Strictly follows Section 6: "Only these explanation records are eligible for embedding."
+    Ingests Property Records AND Educational Concepts into ChromaDB.
     """
     client = get_chroma_client()
     embedding_fn = get_embedding_function()
     
     # Get or Create Collection
-    # existing_collections = client.list_collections() # Check if needs reset?
-    # For prototype, we verify if it exists.
-    
     try:
         collection = client.get_collection(name=COLLECTION_NAME, embedding_function=embedding_fn)
-        # If it has data, assume it's loaded. 
-        if collection.count() > 0:
-            print(f"Vector Store already contains {collection.count()} records.")
-            return
     except:
-        # Create if not exists
         collection = client.create_collection(name=COLLECTION_NAME, embedding_function=embedding_fn)
 
-    print("Hydrating Vector Store with Property Explanation Records...")
-    
-    ids = []
-    documents = []
-    metadatas = []
-    
-    for index, row in df.iterrows():
-        # Generate the Explanation Record (Text)
-        # Logic duplicated from rag_engine for consistency, ensuring identical formatting
+    # 1. Hydrate Property Records (only if empty to avoid dups)
+    if collection.count() == 0:
+        print("Hydrating Vector Store with Property Explanation Records...")
         
-        name = row.get('name', 'Unknown')
-        addr = row.get('address', 'Unknown')
-        price = str(row.get('price', 'N/A'))
-        rent = str(row.get('rent', 'N/A'))
-        decision = row.get('decision', 'N/A')
-        wealth_diff = str(row.get('wealth_difference', '0'))
-        emi = str(row.get('monthly_emi', 'N/A'))
-        regime = row.get('chosen_tax_regime', 'N/A')
-        total_tax = str(row.get('total_tax_paid', 'N/A'))
+        ids = []
+        documents = []
+        metadatas = []
         
-        explanation_text = f"""
-        Property: {name}
-        Location: {addr}
-        Financials: Price {price}, Rent {rent}, EMI {emi}
-        Decision: {decision}
-        Wealth Difference: {wealth_diff}
-        Tax Regime: {regime}, Tax Paid: {total_tax}
-        Rationale: This property in {addr} is calculated to be a {decision}.
-        """
-        
-        # Section 7: "Permitted embedding sources: Property explanation records"
-        documents.append(explanation_text)
-        ids.append(f"prop_{index}")
-        metadatas.append({
-            "name": name, 
-            "location": addr,
-            "decision": decision,
-            "source": "csv_analysis"
-        })
-        
-    # Batch Add
-    BATCH_SIZE = 100
-    for i in range(0, len(documents), BATCH_SIZE):
-        collection.add(
-            ids=ids[i:i+BATCH_SIZE],
-            documents=documents[i:i+BATCH_SIZE],
-            metadatas=metadatas[i:i+BATCH_SIZE]
-        )
-        
-    print(f"Successfully embedded {len(documents)} records into ChromaDB.")
+        for index, row in df.iterrows():
+            name = row.get('name', 'Unknown')
+            addr = row.get('address', 'Unknown')
+            price = str(row.get('price', 'N/A'))
+            rent = str(row.get('rent', 'N/A'))
+            decision = row.get('decision', 'N/A')
+            wealth_diff = str(row.get('wealth_difference', '0'))
+            emi = str(row.get('monthly_emi', 'N/A'))
+            regime = row.get('chosen_tax_regime', 'N/A')
+            total_tax = str(row.get('total_tax_paid', 'N/A'))
+            
+            explanation_text = f"""
+            Property: {name}
+            Location: {addr}
+            Financials: Price {price}, Rent {rent}, EMI {emi}
+            Decision: {decision}
+            Wealth Difference: {wealth_diff}
+            Tax Regime: {regime}, Tax Paid: {total_tax}
+            Rationale: This property in {addr} is calculated to be a {decision}.
+            """
+            
+            documents.append(explanation_text)
+            ids.append(f"prop_{index}")
+            metadatas.append({
+                "name": name, 
+                "location": addr,
+                "decision": decision,
+                "source": "csv_analysis"
+            })
+            
+        BATCH_SIZE = 100
+        for i in range(0, len(documents), BATCH_SIZE):
+            collection.add(
+                ids=ids[i:i+BATCH_SIZE],
+                documents=documents[i:i+BATCH_SIZE],
+                metadatas=metadatas[i:i+BATCH_SIZE]
+            )
+        print(f"Successfully embedded {len(documents)} property records.")
+    else:
+        print(f"Vector Store already contains {collection.count()} property records.")
 
-def semantic_search(query, n_results=3):
+    # 2. Check/Inject Educational Concepts (Always check if missing)
+    # We query specifically for educational sources to see if they are missing
+    try:
+        edu_check = collection.get(where={"source": "educational_concept"}, limit=1)
+        if len(edu_check['ids']) == 0:
+            print("Injecting Educational Concepts...")
+            json_path = os.path.join(os.path.dirname(__file__), "educational_concepts.json")
+            
+            if os.path.exists(json_path):
+                with open(json_path, "r") as f:
+                    concepts = json.load(f)
+                
+                edu_ids = []
+                edu_docs = []
+                edu_metas = []
+                
+                for i, concept in enumerate(concepts):
+                    # Richer context format for the LLM
+                    text = f"Topic: {concept['topic']}\nQuestion: {concept['question']}\nExplanation: {concept['content']}"
+                    
+                    edu_ids.append(f"edu_{i}")
+                    edu_docs.append(text)
+                    edu_metas.append({
+                        "source": "educational_concept", 
+                        "topic": concept['topic']
+                    })
+                
+                if edu_ids:
+                    collection.add(
+                        ids=edu_ids,
+                        documents=edu_docs,
+                        metadatas=edu_metas
+                    )
+                    print(f"Successfully embedded {len(edu_ids)} educational concepts.")
+            else:
+                print("Warning: educational_concepts.json not found.")
+        else:
+             print("Educational concepts already present.")
+             
+    except Exception as e:
+        print(f"Error checking educational concepts: {e}")
+
+def semantic_search(query, n_results=3, where=None):
     """
     Performs semantic retrieval.
     Useful for 'Educational' or 'Broad' queries where SQL is too rigid.
@@ -102,9 +134,12 @@ def semantic_search(query, n_results=3):
     
     results = collection.query(
         query_texts=[query],
-        n_results=n_results
+        n_results=n_results,
+        where=where
     )
     
     # Flatten results
-    docs = results['documents'][0]
-    return "\n\n".join(docs)
+    if results['documents']:
+        docs = results['documents'][0]
+        return "\n\n".join(docs)
+    return ""

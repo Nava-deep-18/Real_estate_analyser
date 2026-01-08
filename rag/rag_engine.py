@@ -1,3 +1,4 @@
+
 import os
 import json
 import pandas as pd
@@ -178,7 +179,16 @@ def generate_rag_response(query, explanation_context, intent):
         try:
             # We strictly protect this call so it never crashes the main app
             from rag import vector_store
-            vector_results = vector_store.semantic_search(query)
+            
+            # Refined Retrieval Strategy based on Intent
+            if intent == "EDUCATIONAL":
+                # Strict Filtering: Only look at educational concepts, and take the single best match
+                # to avoid confusing the LLM with contradictory "rules of thumb" vs "exact methodology"
+                vector_results = vector_store.semantic_search(query, n_results=1, where={"source": "educational_concept"})
+            else:
+                # Broad Retrieval: Look at everything (properties + concepts)
+                vector_results = vector_store.semantic_search(query, n_results=3)
+
             if vector_results:
                  additional_context = f"\n\n--- RELEVANT KNOWLEDGE (Vector Retrieval) ---\n{vector_results}\n"
         except Exception as e:
@@ -228,4 +238,3 @@ def generate_rag_response(query, explanation_context, intent):
                  "The system successfully filtered the properties. Please refer to the 'Explanation Data' or 'Raw Data' section to see the exact financial details computed by the backend."
              )
         return f"Error generating response: {e}"
-

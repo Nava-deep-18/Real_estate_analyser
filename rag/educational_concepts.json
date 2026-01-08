@@ -1,0 +1,37 @@
+[
+  {
+    "topic": "Buy vs Rent Methodology",
+    "question": "How is the Buy vs Rent decision calculated?",
+    "content": "The analysis compares two financial paths over 20 years. 1) Buying: You pay a down payment and EMIs. Your final wealth is the Property Value (projected at 7% growth) minus maintenance, property tax, and stamp duty. 2) Renting: You rent the same property (rent rises 5% annually) and invest the 'savings' (Down Payment + difference between EMI and Rent) into equity mutual funds (SIP) returning 10%. The 'Decision' is based on which path results in higher total wealth."
+  },
+  {
+    "topic": "Wealth Difference",
+    "question": "What does Wealth Difference mean?",
+    "content": "Wealth Difference is the net financial gap between Buying and Renting after 20 years. If Positive (+): Buying results in higher net worth (Asset Value > Investment Corpus). If Negative (-): Renting results in higher net worth (Investment Corpus > Asset Value). It quantifies exactly how much money you gain or lose by choosing one option over the other."
+  },
+  {
+    "topic": "Effective EMI",
+    "question": "What is Effective EMI?",
+    "content": "Effective EMI is the 'real' monthly cost of the loan after accounting for tax savings. Although you pay the full EMI to the bank, using the Old Tax Regime allows deductions on Interest (Sec 24b) and Principal (Sec 80C). These deductions lower your income tax. We subtract this tax saving from your EMI to show the effective cash outflow."
+  },
+  {
+    "topic": "Tax Regime Selection",
+    "question": "How is the tax regime chosen?",
+    "content": "The system uses a 'Dynamic Regime Switching' model. For every single year of the 20-year tenure, it calculates your tax liability under both the Old Regime (with home loan benefits) and the New Regime (lower rates, no benefits). It automatically assumes you switch to the regime that results in the lowest total tax for that specific year."
+  },
+  {
+    "topic": "Assumptions / Model Parameters",
+    "question": "What assumptions are used in the calculation?",
+    "content": "The model uses standard Indian market assumptions: 1) Property Appreciation: 7% annually. 2) Rent Escalation: 5% annually. 3) Salary/Income Growth: 5% annually. 4) Investment (SIP) Return: 10% annually. 5) Loan Tenure: 20 Years. 6) Interest Rate: Average floating rate (~8.5%). 7) Maintenance Cost: 1.5% of property value annually."
+  },
+  {
+    "topic": "Rental Yield",
+    "question": "What is Rental Yield?",
+    "content": "Rental Yield is the annual rent earned divided by the property price, expressed as a percentage. In India, residential yield is typically 2-3%. If a property's rental yield is lower than the cost of borrowing (minus appreciation), renting often beats buying mathematically."
+  },
+  {
+    "topic": "EMI to Income Ratio",
+    "question": "How is affordability calculated?",
+    "content": "Affordability is based on the 'EMI Stress Ratio'. We assume you should not spend more than 40% of your Net Monthly Income on EMI. The system calculates the maximum loan you can get based on this 40% cap. If the property requires a loan higher than this cap, it is marked as unaffordable or 'Income Capped'."
+  }
+]
