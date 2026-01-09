@@ -10,38 +10,113 @@ st.set_page_config(
     layout="wide"
 )
 
-
-# Custom CSS for Premium Look
+# Custom CSS for Premium Glassmorphism Look (Fixed White Areas)
 st.markdown("""
 <style>
-    /* Force text color for markdown to ensure visibility */
-    .stMarkdown, p, h1, h2, h3, li {
-        color: #2c3e50 !important;
+    /* Import Google Font 'Outfit' */
+    @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+    /* --- 1. GLOBAL RESET & BACKGROUND --- */
+    .stApp {
+        background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+        font-family: 'Outfit', sans-serif;
     }
     
-    .main-header {
-        font-family: 'Helvetica Neue', sans-serif;
-        color: #2c3e50;
-        font-weight: 700;
+    /* Remove white background from the top header */
+    header[data-testid="stHeader"] {
+        background: transparent !important;
+        backdrop-filter: none !important;
+    }
+
+    /* Remove white background from the bottom sticky input container */
+    div[data-testid="stBottom"] > div {
+        background-color: transparent !important;
+        background: transparent !important;
     }
     
-    /* Styling for chat messages */
+    /* --- 2. TYPOGRAPHY --- */
+    h1, h2, h3, p, div, span, li {
+        font-family: 'Outfit', sans-serif !important;
+        color: #e2e8f0 !important;
+    }
+
+    h1 {
+        background: linear-gradient(to right, #60a5fa, #c084fc);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-weight: 700 !important;
+    }
+
+    /* --- 3. CHAT INTERFACE --- */
+    
+    /* Transparent container for messages */
     .stChatMessage {
         background-color: transparent !important;
     }
-    
+
+    /* Bubble styling */
     .stChatMessageContent {
-        background-color: #ffffff;
-        border-radius: 10px;
-        padding: 15px;
-        box-shadow: 0 2px 5px rgba(0,0,0,0.05);
-        color: #2c3e50 !important;
+        background: rgba(30, 41, 59, 0.7) !important;
+        backdrop-filter: blur(12px);
+        -webkit-backdrop-filter: blur(12px);
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        border-radius: 16px;
+        padding: 20px !important;
+        box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
     }
+    
+    /* User Message - Blue Tint */
+    div[data-testid="stChatMessage"]:nth-child(odd) .stChatMessageContent {
+        background: linear-gradient(135deg, rgba(59, 130, 246, 0.15) 0%, rgba(37, 99, 235, 0.15) 100%) !important;
+        border: 1px solid rgba(59, 130, 246, 0.3);
+    }
+
+    /* --- 4. INPUT FIELD STYLING --- */
+    .stChatInputContainer textarea {
+        background-color: #1e293b !important; /* Dark Slate */
+        color: #f8fafc !important;
+        border: 1px solid rgba(255, 255, 255, 0.2) !important;
+        border-radius: 12px;
+    }
+    
+    .stChatInputContainer textarea:focus {
+        border-color: #60a5fa !important;
+        box-shadow: 0 0 0 2px rgba(96, 165, 250, 0.3) !important;
+    }
+
+    /* --- 5. SIDEBAR & COMPONENTS --- */
+    section[data-testid="stSidebar"] {
+        background-color: #0b1120 !important; /* Very Dark Blue */
+        border-right: 1px solid rgba(255, 255, 255, 0.05);
+    }
+    
+    div[data-testid="stExpander"] {
+        background-color: transparent !important;
+        border: 1px solid rgba(255,255,255,0.1);
+        border-radius: 10px;
+    }
+    
+    /* --- 6. TEXT AREA & INPUT WIDGETS (Fixes White Schema Box) --- */
+    .stTextArea textarea {
+        background-color: rgba(30, 41, 59, 0.6) !important;
+        color: #f8fafc !important;
+        border: 1px solid rgba(255, 255, 255, 0.1) !important;
+        border-radius: 8px !important;
+    }
+    
+    .stTextArea label {
+        color: #e2e8f0 !important;
+    }
+
+    .stSpinner > div {
+        border-color: #60a5fa transparent #c084fc transparent !important;
+    }
+
 </style>
 """, unsafe_allow_html=True)
 
 # Application Title
-st.title("🏠 Real Estate Investment Ruler")
+st.title("🏠 Real Estate Investment Analyzer")
 st.markdown("### Deterministic Backend • RAG Explanation Layer")
 
 # Initialize Session State
@@ -143,4 +218,3 @@ if prompt := st.chat_input("Ask about properties (e.g., 'Show me 3 BHK in New To
                 st.dataframe(context_df)
                 
     st.session_state.messages.append({"role": "assistant", "content": final_response})
-
