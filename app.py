@@ -150,8 +150,12 @@ except Exception as e:
     st.error(f"System Error: {e}")
     st.stop()
 
+# Sidebar Navigation
+page = st.sidebar.radio("Mode", ["🤖 AI Assistant", "📈 Market Analytics"], index=0)
+
 # Sidebar for Creative/Analytical Specs
 with st.sidebar:
+    st.markdown("---")
     st.markdown("### 📊 Market Pulse")
     
     # Quick Stats from DB
@@ -159,7 +163,7 @@ with st.sidebar:
         conn = db.init_db(reload=False)
         total_props = pd.read_sql("SELECT COUNT(*) as count FROM properties", conn).iloc[0]['count']
         
-        # Focus on BUY metrics (Price & Area)
+        # Load simpler stats for sidebar here
         avg_price = pd.read_sql("SELECT AVG(price) as val FROM properties", conn).iloc[0]['val']
         avg_area = pd.read_sql("SELECT AVG(area) as val FROM properties", conn).iloc[0]['val']
         
@@ -177,75 +181,141 @@ with st.sidebar:
         """
         **Hybrid RAG System**
         
-        • **Router**: Classifies intent (Filter vs Explain)
-        • **SQL Engine**: Deterministic filtering
-        • **Vector Core**: Educational retrieval
-        • **LLM**: Synthesis & Explanation
+        • **Router**: Classifies intent
+        • **SQL**: Filtering
+        • **Vector**: Knowledge
+        • **LLM**: Synthesis
         """
     )
     
     with st.expander("Debug Mode (Schema)"):
          st.text_area("Schema", schema, height=150, disabled=True)
 
-# Chat Interface
-for message in st.session_state.messages:
-    with st.chat_message(message["role"]):
-        st.markdown(message["content"])
+# ----------------- MAIN CONTENT -----------------
 
-# User Input
-if prompt := st.chat_input("Ask about properties (e.g., 'Show me 3 BHK in New Town')"):
-    # 1. Display User Message
-    with st.chat_message("user"):
-        st.markdown(prompt)
-    st.session_state.messages.append({"role": "user", "content": prompt})
+if page == "🤖 AI Assistant":
+    # Chat Interface
+    for message in st.session_state.messages:
+        with st.chat_message(message["role"]):
+            st.markdown(message["content"])
 
-    # 2. Process Intent
-    with st.status("Processing Query...", expanded=True) as status:
-        
-        # Step A: Intent Classification
-        st.write("🔍 Classifying Intent...")
-        intent = rag_engine.classify_intent(prompt)
-        st.write(f"**Intent Detected:** `{intent}`")
-        
-        # Step B: SQL Generation (if needed)
-        explanation_data = ""
-        context_df = None
-        
-        if intent in ["FILTER", "COMPARE", "EXPLAIN"]:
-            st.write("💻 Generating SQL Query...")
-            sql_query = rag_engine.generate_sql_query(prompt, schema)
-            st.code(sql_query, language="sql")
+    # User Input
+    if prompt := st.chat_input("Ask about properties (e.g., 'Show me 3 BHK in New Town')"):
+        # 1. Display User Message
+        with st.chat_message("user"):
+            st.markdown(prompt)
+        st.session_state.messages.append({"role": "user", "content": prompt})
+
+        # 2. Process Intent
+        with st.status("Processing Query...", expanded=True) as status:
             
-            # Step C: Execution
-            st.write("🗄️ Retrieving Data...")
-            context_df, error = db.execute_sql_query(sql_query)
+            # Step A: Intent Classification
+            st.write("🔍 Classifying Intent...")
+            intent = rag_engine.classify_intent(prompt)
+            st.write(f"**Intent Detected:** `{intent}`")
             
-            if error:
-                st.error(f"SQL Error: {error}")
-                explanation_data = f"Error executing retrieval: {error}"
-            else:
-                record_count = len(context_df) if context_df is not None else 0
-                st.write(f"✅ Retrieved {record_count} records.")
+            # Step B: SQL Generation (if needed)
+            explanation_data = ""
+            context_df = None
+            
+            if intent in ["FILTER", "COMPARE", "EXPLAIN"]:
+                st.write("💻 Generating SQL Query...")
+                sql_query = rag_engine.generate_sql_query(prompt, schema)
+                st.code(sql_query, language="sql")
                 
-                # Step D: Explanation Generation
-                explanation_data = rag_engine.create_explanation_records(context_df)
-        elif intent == "EDUCATIONAL":
-            st.write("📚 Educational Query Detected. Skipping SQL.")
-            explanation_data = "User asked a general educational question."
-        
-        # Step E: LLM Response
-        st.write("🤖 Generating Response...")
-        final_response = rag_engine.generate_rag_response(prompt, explanation_data, intent)
-        
-        status.update(label="Complete", state="complete", expanded=False)
+                # Step C: Execution
+                st.write("🗄️ Retrieving Data...")
+                context_df, error = db.execute_sql_query(sql_query)
+                
+                if error:
+                    st.error(f"SQL Error: {error}")
+                    explanation_data = f"Error executing retrieval: {error}"
+                else:
+                    record_count = len(context_df) if context_df is not None else 0
+                    st.write(f"✅ Retrieved {record_count} records.")
+                    
+                    # Step D: Explanation Generation
+                    explanation_data = rag_engine.create_explanation_records(context_df)
+            elif intent == "EDUCATIONAL":
+                st.write("📚 Educational Query Detected. Skipping SQL.")
+                explanation_data = "User asked a general educational question."
+            
+            # Step E: LLM Response
+            st.write("🤖 Generating Response...")
+            final_response = rag_engine.generate_rag_response(prompt, explanation_data, intent)
+            
+            status.update(label="Complete", state="complete", expanded=False)
 
-    # 3. Display Assistant Response
-    with st.chat_message("assistant"):
-        st.markdown(final_response)
+        # 3. Display Assistant Response
+        with st.chat_message("assistant"):
+            st.markdown(final_response)
+            
+            # Optional: Show data table if available
+            if context_df is not None and not context_df.empty:
+                with st.expander("View Raw Data (Deterministic Output)"):
+                    st.dataframe(context_df)
+                    
+        st.session_state.messages.append({"role": "assistant", "content": final_response})
+
+elif page == "📈 Market Analytics":
+    st.subheader("📈 Real Estate Market Insights")
+    
+    # Lazy load full data for analytics
+    try:
+        conn = db.init_db(reload=False)
+        df_full = pd.read_sql("SELECT * FROM properties", conn)
         
-        # Optional: Show data table if available
-        if context_df is not None and not context_df.empty:
-            with st.expander("View Raw Data (Deterministic Output)"):
-                st.dataframe(context_df)
+        if df_full.empty:
+            st.warning("No data available to generate analytics.")
+        else:
+            # Create Tabs for different views
+            tab1, tab2, tab3 = st.tabs(["💰 Price Analysis", "📍 Location Trends", "🏡 Inventory Specs"])
+            
+            with tab1:
+                st.markdown("#### Price vs Size Correlation")
+                st.caption("Identify 'Good Deals' (properties below the curve) vs 'Premium/Overpriced' (above).")
                 
-    st.session_state.messages.append({"role": "assistant", "content": final_response})
+                # Scatter Plot: Area vs Price
+                st.scatter_chart(
+                    df_full,
+                    x='area',
+                    y='price',
+                    color='decision' if 'decision' in df_full.columns else None,
+                    size='bedrooms',  # Bubble size by BHK
+                    use_container_width=True,
+                    height=500
+                ) 
+                
+            with tab2:
+                # Split columns for better visibility
+                c_loc1, c_loc2 = st.columns(2)
+                
+                with c_loc1:
+                    st.markdown("#### Top Locations by Inventory")
+                    loc_counts = df_full['address'].value_counts().head(10)
+                    st.bar_chart(loc_counts, color="#60a5fa", use_container_width=True)
+                
+                with c_loc2:
+                    st.markdown("#### Average Price by Location")
+                    loc_prices = df_full.groupby('address')['price'].mean().sort_values(ascending=False).head(10)
+                    st.bar_chart(loc_prices, color="#c084fc", use_container_width=True)
+
+            with tab3:
+                c1, c2 = st.columns(2)
+                
+                with c1:
+                    st.markdown("#### Bedroom Distribution")
+                    bed_counts = df_full['bedrooms'].value_counts()
+                    st.bar_chart(bed_counts, color="#38bdf8", use_container_width=True)
+                    
+                with c2:
+                    st.markdown("#### Buy vs Rent Recommendation")
+                    if 'decision' in df_full.columns:
+                        dec_counts = df_full['decision'].value_counts()
+                        # Use a single safe color to avoid length mismatch errors
+                        st.bar_chart(dec_counts, color="#34d399", horizontal=True)
+                    else:
+                        st.info("Decision data not available.")
+                        
+    except Exception as e:
+        st.error(f"Could not load analytics: {e}")
