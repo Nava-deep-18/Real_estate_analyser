@@ -1,69 +1,117 @@
 import streamlit as st
 import pandas as pd
 from rag import db, rag_engine, vector_store
+import base64
 import os
+
+# Function to encode image to base64
+def get_base64_of_bin_file(bin_file):
+    with open(bin_file, 'rb') as f:
+        data = f.read()
+    return base64.b64encode(data).decode()
 
 # Page Config
 st.set_page_config(
     page_title="Real Estate Investment Analyzer",
-    page_icon="🏠",
     layout="wide"
 )
 
 # Custom CSS for Premium Glassmorphism Look (Fixed White Areas)
-st.markdown("""
+background_image_path = "image.jpg"
+background_style = ""
+
+if os.path.exists(background_image_path):
+    bin_str = get_base64_of_bin_file(background_image_path)
+    # Reduced overlay slightly for better brightness (0.9 -> 0.75) and visibility
+    background_style = f"""
+    .stApp {{
+        background-image: linear-gradient(rgba(15, 23, 42, 0.75), rgba(15, 23, 42, 0.85)), url("data:image/jpg;base64,{bin_str}");
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+        font-family: 'Outfit', sans-serif;
+    }}
+    """
+else:
+    # Fallback to gradient if image missing
+    background_style = """
+    .stApp {
+        background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+        font-family: 'Outfit', sans-serif;
+    }
+    """
+
+st.markdown(f"""
 <style>
     /* Import Google Font 'Outfit' */
     @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
 
     /* --- 1. GLOBAL RESET & BACKGROUND --- */
-    .stApp {
-        background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
-        font-family: 'Outfit', sans-serif;
-    }
+    {background_style}
     
     /* Remove white background from header/footer */
-    header[data-testid="stHeader"] {
+    header[data-testid="stHeader"] {{
         background: transparent !important;
-    }
-    div[data-testid="stBottom"] > div {
+    }}
+    div[data-testid="stBottom"] > div {{
         background-color: transparent !important;
-    }
+    }}
+    
+    /* PULL CONTENT UP: Reduce top padding of the main container */
+    .block-container {{
+        padding-top: 1rem !important;
+    }}
     
     /* --- 2. TEXT --- */
     /* Target specific text elements rather than global wildcards to avoid overlay issues */
-    .stMarkdown, h1, h2, h3, p, li {
+    .stMarkdown, h1, h2, h3, p, li {{
         color: #e2e8f0 !important;
-    }
+    }}
 
-    h1 {
-        background: linear-gradient(to right, #60a5fa, #c084fc);
+    h1 {{
+        /* WARM GOLD GRADIENT - Premium look against dark backdrops */
+        background: linear-gradient(to right, #facc15, #f8fafc);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
-    }
+        font-family: 'Outfit', sans-serif !important;
+        font-weight: 800 !important;
+        font-size: 3rem !important;
+        letter-spacing: -1px;
+    }}
 
     /* --- 3. INPUTS --- */
-    .stChatInputContainer textarea {
+    .stChatInputContainer textarea {{
         background-color: #1e293b !important;
         color: #f8fafc !important;
         border: 1px solid rgba(255, 255, 255, 0.2) !important;
-    }
+    }}
     
-    .stTextArea textarea {
+    .stTextArea textarea {{
         background-color: rgba(30, 41, 59, 0.6) !important;
         color: #f8fafc !important;
-    }
+    }}
 
-    /* --- 4. SIDEBAR --- */
-    section[data-testid="stSidebar"] {
+    /* --- 4. SIDEBAR & METRICS --- */
+    section[data-testid="stSidebar"] {{
         background-color: #0b1120 !important;
-    }
+    }}
+
+    /* Fix Metric Visibility */
+    [data-testid="stMetricValue"] {{
+        color: #e2e8f0 !important;
+        font-size: 26px !important;
+        font-weight: 600 !important;
+    }}
+    [data-testid="stMetricLabel"] {{
+        color: #94a3b8 !important; /* Lighter Grey */
+        font-size: 14px !important;
+    }}
 </style>
 """, unsafe_allow_html=True)
 
 # Application Title
-st.title("🏠 Real Estate Investment Analyzer")
-st.markdown("### • Built using RAG")
+st.title("Real Estate Investment Analyzer")
+
 
 # Initialize Session State
 if "messages" not in st.session_state:
@@ -102,10 +150,42 @@ except Exception as e:
     st.error(f"System Error: {e}")
     st.stop()
 
-# Sidebar for Debugging/Transparency
+# Sidebar for Creative/Analytical Specs
 with st.sidebar:
-    st.header("System Internals")
-    st.text_area("Database Schema", schema, height=200, disabled=True)
+    st.markdown("### 📊 Market Pulse")
+    
+    # Quick Stats from DB
+    try:
+        conn = db.init_db(reload=False)
+        total_props = pd.read_sql("SELECT COUNT(*) as count FROM properties", conn).iloc[0]['count']
+        
+        # Focus on BUY metrics (Price & Area)
+        avg_price = pd.read_sql("SELECT AVG(price) as val FROM properties", conn).iloc[0]['val']
+        avg_area = pd.read_sql("SELECT AVG(area) as val FROM properties", conn).iloc[0]['val']
+        
+        # Display - Stacked for better visibility
+        st.metric("Total Properties", f"{total_props}")
+        st.metric("Avg Price", f"₹{avg_price/100000:.1f} Lakhs")
+        st.metric("Avg Size", f"{avg_area:,.0f} sqft")
+        
+    except Exception as e:
+        st.error("Stats unavailable")
+
+    st.markdown("---")
+    st.markdown("### 🧠 AI Architecture")
+    st.info(
+        """
+        **Hybrid RAG System**
+        
+        • **Router**: Classifies intent (Filter vs Explain)
+        • **SQL Engine**: Deterministic filtering
+        • **Vector Core**: Educational retrieval
+        • **LLM**: Synthesis & Explanation
+        """
+    )
+    
+    with st.expander("Debug Mode (Schema)"):
+         st.text_area("Schema", schema, height=150, disabled=True)
 
 # Chat Interface
 for message in st.session_state.messages:

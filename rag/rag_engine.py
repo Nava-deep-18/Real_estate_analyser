@@ -216,6 +216,11 @@ def generate_rag_response(query, explanation_context, intent):
     2. If the user asks for a calculation (e.g., "Calculate the EMI"), REFUSE politely and state that the backend has already computed the optimal values shown in the records.
     3. Refer to the 'Analysis Decision' (BUY vs RENT) as the system's recommendation.
     4. Be professional and concise.
+    
+    IMPORTANT CLARIFICATION ON 'RENT' DECISION:
+    When the decision is 'RENT', you MUST explain clearly that this means:
+    "It is financially better to invest your capital in market instruments (e.g., SIPs) and rent a SIMILAR property in the same area."
+    Clarify that the user should NOT try to rent *this specific* property (which is for sale), but rather look for a comparable rental to save wealth.
     """
     
     try:
