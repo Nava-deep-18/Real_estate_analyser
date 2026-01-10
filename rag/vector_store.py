@@ -19,7 +19,24 @@ def get_embedding_function():
     # This is "equivalent" to OpenAI embeddings as permitted.
     return embedding_functions.SentenceTransformerEmbeddingFunction(model_name="all-MiniLM-L6-v2")
 
-def initialize_vector_store(df):
+def needs_hydration():
+    """
+    Checks if the vector store needs hydration without loading the full model.
+    Returns True if the collection is empty.
+    """
+    try:
+        client = get_chroma_client()
+        # Just check count without embedding function first if possible, but simpler to use get_collection
+        # Note: get_collection might fail if collection doesn't exist, so we use list_collections or try/except
+        try:
+           collection = client.get_collection(name=COLLECTION_NAME) # No embedding fn needed for count
+           return collection.count() == 0
+        except:
+           return True # If collection doesn't exist, we need to hydrate
+    except:
+        return True
+
+def initialize_vector_store(df=None):
     """
     Ingests Property Records AND Educational Concepts into ChromaDB.
     """
@@ -34,50 +51,54 @@ def initialize_vector_store(df):
 
     # 1. Hydrate Property Records (only if empty to avoid dups)
     if collection.count() == 0:
-        print("Hydrating Vector Store with Property Explanation Records...")
-        
-        ids = []
-        documents = []
-        metadatas = []
-        
-        for index, row in df.iterrows():
-            name = row.get('name', 'Unknown')
-            addr = row.get('address', 'Unknown')
-            price = str(row.get('price', 'N/A'))
-            rent = str(row.get('rent', 'N/A'))
-            decision = row.get('decision', 'N/A')
-            wealth_diff = str(row.get('wealth_difference', '0'))
-            emi = str(row.get('monthly_emi', 'N/A'))
-            regime = row.get('chosen_tax_regime', 'N/A')
-            total_tax = str(row.get('total_tax_paid', 'N/A'))
+        if df is not None:
+            print("Hydrating Vector Store with Property Explanation Records...")
             
-            explanation_text = f"""
-            Property: {name}
-            Location: {addr}
-            Financials: Price {price}, Rent {rent}, EMI {emi}
-            Decision: {decision}
-            Wealth Difference: {wealth_diff}
-            Tax Regime: {regime}, Tax Paid: {total_tax}
-            Rationale: This property in {addr} is calculated to be a {decision}.
-            """
+            ids = []
+            documents = []
+            metadatas = []
             
-            documents.append(explanation_text)
-            ids.append(f"prop_{index}")
-            metadatas.append({
-                "name": name, 
-                "location": addr,
-                "decision": decision,
-                "source": "csv_analysis"
-            })
-            
-        BATCH_SIZE = 100
-        for i in range(0, len(documents), BATCH_SIZE):
-            collection.add(
-                ids=ids[i:i+BATCH_SIZE],
-                documents=documents[i:i+BATCH_SIZE],
-                metadatas=metadatas[i:i+BATCH_SIZE]
-            )
-        print(f"Successfully embedded {len(documents)} property records.")
+            for index, row in df.iterrows():
+                name = row.get('name', 'Unknown')
+                addr = row.get('address', 'Unknown')
+                price = str(row.get('price', 'N/A'))
+                rent = str(row.get('rent', 'N/A'))
+                decision = row.get('decision', 'N/A')
+                wealth_diff = str(row.get('wealth_difference', '0'))
+                emi = str(row.get('monthly_emi', 'N/A'))
+                regime = row.get('chosen_tax_regime', 'N/A')
+                total_tax = str(row.get('total_tax_paid', 'N/A'))
+                
+                explanation_text = f"""
+                Property: {name}
+                Location: {addr}
+                Financials: Price {price}, Rent {rent}, EMI {emi}
+                Decision: {decision}
+                Wealth Difference: {wealth_diff}
+                Tax Regime: {regime}, Tax Paid: {total_tax}
+                Rationale: This property in {addr} is calculated to be a {decision}.
+                """
+                
+                documents.append(explanation_text)
+                ids.append(f"prop_{index}")
+                metadatas.append({
+                    "name": name, 
+                    "location": addr,
+                    "decision": decision,
+                    "source": "csv_analysis"
+                })
+                
+            BATCH_SIZE = 100
+            for i in range(0, len(documents), BATCH_SIZE):
+                collection.add(
+                    ids=ids[i:i+BATCH_SIZE],
+                    documents=documents[i:i+BATCH_SIZE],
+                    metadatas=metadatas[i:i+BATCH_SIZE]
+                )
+            print(f"Successfully embedded {len(documents)} property records.")
+        else:
+             print("Vector store empty/incomplete, but no DataFrame provided for hydration. Skipping property data.")
+
     else:
         print(f"Vector Store already contains {collection.count()} property records.")
 

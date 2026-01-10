@@ -22,21 +22,17 @@ st.markdown("""
         font-family: 'Outfit', sans-serif;
     }
     
-    /* Remove white background from the top header */
+    /* Remove white background from header/footer */
     header[data-testid="stHeader"] {
         background: transparent !important;
-        backdrop-filter: none !important;
     }
-
-    /* Remove white background from the bottom sticky input container */
     div[data-testid="stBottom"] > div {
         background-color: transparent !important;
-        background: transparent !important;
     }
     
-    /* --- 2. TYPOGRAPHY --- */
-    h1, h2, h3, p, div, span, li {
-        font-family: 'Outfit', sans-serif !important;
+    /* --- 2. TEXT --- */
+    /* Target specific text elements rather than global wildcards to avoid overlay issues */
+    .stMarkdown, h1, h2, h3, p, li {
         color: #e2e8f0 !important;
     }
 
@@ -44,80 +40,30 @@ st.markdown("""
         background: linear-gradient(to right, #60a5fa, #c084fc);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
-        font-weight: 700 !important;
     }
 
-    /* --- 3. CHAT INTERFACE --- */
-    
-    /* Transparent container for messages */
-    .stChatMessage {
-        background-color: transparent !important;
-    }
-
-    /* Bubble styling */
-    .stChatMessageContent {
-        background: rgba(30, 41, 59, 0.7) !important;
-        backdrop-filter: blur(12px);
-        -webkit-backdrop-filter: blur(12px);
-        border: 1px solid rgba(255, 255, 255, 0.1);
-        border-radius: 16px;
-        padding: 20px !important;
-        box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
-    }
-    
-    /* User Message - Blue Tint */
-    div[data-testid="stChatMessage"]:nth-child(odd) .stChatMessageContent {
-        background: linear-gradient(135deg, rgba(59, 130, 246, 0.15) 0%, rgba(37, 99, 235, 0.15) 100%) !important;
-        border: 1px solid rgba(59, 130, 246, 0.3);
-    }
-
-    /* --- 4. INPUT FIELD STYLING --- */
+    /* --- 3. INPUTS --- */
     .stChatInputContainer textarea {
-        background-color: #1e293b !important; /* Dark Slate */
+        background-color: #1e293b !important;
         color: #f8fafc !important;
         border: 1px solid rgba(255, 255, 255, 0.2) !important;
-        border-radius: 12px;
     }
     
-    .stChatInputContainer textarea:focus {
-        border-color: #60a5fa !important;
-        box-shadow: 0 0 0 2px rgba(96, 165, 250, 0.3) !important;
-    }
-
-    /* --- 5. SIDEBAR & COMPONENTS --- */
-    section[data-testid="stSidebar"] {
-        background-color: #0b1120 !important; /* Very Dark Blue */
-        border-right: 1px solid rgba(255, 255, 255, 0.05);
-    }
-    
-    div[data-testid="stExpander"] {
-        background-color: transparent !important;
-        border: 1px solid rgba(255,255,255,0.1);
-        border-radius: 10px;
-    }
-    
-    /* --- 6. TEXT AREA & INPUT WIDGETS (Fixes White Schema Box) --- */
     .stTextArea textarea {
         background-color: rgba(30, 41, 59, 0.6) !important;
         color: #f8fafc !important;
-        border: 1px solid rgba(255, 255, 255, 0.1) !important;
-        border-radius: 8px !important;
-    }
-    
-    .stTextArea label {
-        color: #e2e8f0 !important;
     }
 
-    .stSpinner > div {
-        border-color: #60a5fa transparent #c084fc transparent !important;
+    /* --- 4. SIDEBAR --- */
+    section[data-testid="stSidebar"] {
+        background-color: #0b1120 !important;
     }
-
 </style>
 """, unsafe_allow_html=True)
 
 # Application Title
 st.title("🏠 Real Estate Investment Analyzer")
-st.markdown("### Deterministic Backend • RAG Explanation Layer")
+st.markdown("### • Built using RAG")
 
 # Initialize Session State
 if "messages" not in st.session_state:
@@ -134,9 +80,15 @@ def ensure_vector_db():
     if "vector_db_ready" not in st.session_state:
         with st.spinner("Checking AI Knowledge Base..."):
             try:
-                conn = db.init_db(reload=False)
-                df = pd.read_sql("SELECT * FROM properties", conn)
-                vector_store.initialize_vector_store(df)
+                # OPTIMIZATION: Check if Vector DB is already hydrated to avoid expensive SQL read
+                if vector_store.needs_hydration():
+                    conn = db.init_db(reload=False)
+                    df = pd.read_sql("SELECT * FROM properties", conn)
+                    vector_store.initialize_vector_store(df)
+                else:
+                    # DB exists! Skip loading the dataframe, just check educational concepts
+                    vector_store.initialize_vector_store(df=None)
+                
                 st.session_state.vector_db_ready = True
             except Exception as e:
                 st.error(f"Vector DB Init Failed: {e}")
@@ -154,7 +106,6 @@ except Exception as e:
 with st.sidebar:
     st.header("System Internals")
     st.text_area("Database Schema", schema, height=200, disabled=True)
-    st.info("This panel shows the RAG pipeline steps for verification.")
 
 # Chat Interface
 for message in st.session_state.messages:
