@@ -3,6 +3,7 @@ import pandas as pd
 from rag import db, rag_engine, vector_store
 import base64
 import os
+import plotly.express as px
 
 # Function to encode image to base64
 def get_base64_of_bin_file(bin_file):
@@ -265,57 +266,102 @@ elif page == "📈 Market Analytics":
         conn = db.init_db(reload=False)
         df_full = pd.read_sql("SELECT * FROM properties", conn)
         
+        # Pre-process for advanced metrics
+        # 1. Price per Sqft
+        df_full['price_per_sqft'] = df_full['price'] / df_full['area']
+        
+        # 2. Rental Yield (if rent exists)
+        if 'rent' in df_full.columns:
+             df_full['rental_yield'] = (df_full['rent'] * 12 / df_full['price']) * 100
+             
+        # Filter: Remove unrealistic yields > 6%
+        if 'rental_yield' in df_full.columns:
+            df_full = df_full[df_full['rental_yield'] <= 6]
+        
         if df_full.empty:
             st.warning("No data available to generate analytics.")
         else:
             # Create Tabs for different views
-            tab1, tab2, tab3 = st.tabs(["💰 Price Analysis", "📍 Location Trends", "🏡 Inventory Specs"])
+            tab1, tab2, tab3 = st.tabs(["📍 Location & Value", "💰 Market Depth", "💎 Deal Discovery"])
             
+            # --- TAB 1: LOCATION & VALUE ---
             with tab1:
-                st.markdown("#### Price vs Size Correlation")
-                st.caption("Identify 'Good Deals' (properties below the curve) vs 'Premium/Overpriced' (above).")
+                st.markdown("#### 1. Price Efficiency by Location")
+                st.caption("Which areas are expensive per sqft? (Heatmap logic)")
                 
-                # Scatter Plot: Area vs Price
-                st.scatter_chart(
-                    df_full,
-                    x='area',
-                    y='price',
-                    color='decision' if 'decision' in df_full.columns else None,
-                    size='bedrooms',  # Bubble size by BHK
-                    use_container_width=True,
-                    height=500
-                ) 
+                # Group by Location
+                loc_stats = df_full.groupby('address').agg({
+                    'price_per_sqft': 'mean',
+                    'rental_yield': 'mean',
+                    'price': 'count'
+                }).reset_index()
                 
-            with tab2:
-                # Split columns for better visibility
-                c_loc1, c_loc2 = st.columns(2)
+                # Filter low data points
+                loc_stats = loc_stats[loc_stats['price'] > 5].sort_values('price_per_sqft', ascending=False).head(15)
                 
-                with c_loc1:
-                    st.markdown("#### Top Locations by Inventory")
-                    loc_counts = df_full['address'].value_counts().head(10)
-                    st.bar_chart(loc_counts, color="#60a5fa", use_container_width=True)
+                # Chart 1: Price per Sqft
+                fig_pps = px.bar(
+                    loc_stats, x='address', y='price_per_sqft',
+                    color='price_per_sqft',
+                    title="Avg Price per Sqft by Top Locations",
+                    labels={'price_per_sqft': 'Price/Sqft (₹)', 'address': 'Location'},
+                    color_continuous_scale='RdBu_r'
+                )
+                st.plotly_chart(fig_pps, use_container_width=True)
                 
-                with c_loc2:
-                    st.markdown("#### Average Price by Location")
-                    loc_prices = df_full.groupby('address')['price'].mean().sort_values(ascending=False).head(10)
-                    st.bar_chart(loc_prices, color="#c084fc", use_container_width=True)
+                st.markdown("#### 2. Rental Yield Hotspots")
+                # Chart 2: Yield
+                fig_yield = px.bar(
+                    loc_stats.sort_values('rental_yield', ascending=False), 
+                    x='address', y='rental_yield',
+                    color='rental_yield',
+                    title="Top Areas for Rental Income (High Yield)",
+                    labels={'rental_yield': 'Yield (%)', 'address': 'Location'},
+                    color_continuous_scale='Turbo' 
+                )
+                st.plotly_chart(fig_yield, use_container_width=True)
 
-            with tab3:
+            # --- TAB 2: MARKET DEPTH ---
+            with tab2:
                 c1, c2 = st.columns(2)
-                
                 with c1:
-                    st.markdown("#### Bedroom Distribution")
-                    bed_counts = df_full['bedrooms'].value_counts()
-                    st.bar_chart(bed_counts, color="#38bdf8", use_container_width=True)
+                    st.markdown("#### 3. Bedroom Price Ranges")
+                    # Box Plot to show ranges
+                    fig_box = px.box(
+                        df_full, x='bedrooms', y='price', 
+                        color='bedrooms',
+                        title="Price Min/Max Range by Bedroom Count",
+                        points="outliers"
+                    )
+                    st.plotly_chart(fig_box, use_container_width=True)
                     
                 with c2:
-                    st.markdown("#### Buy vs Rent Recommendation")
-                    if 'decision' in df_full.columns:
-                        dec_counts = df_full['decision'].value_counts()
-                        # Use a single safe color to avoid length mismatch errors
-                        st.bar_chart(dec_counts, color="#34d399", horizontal=True)
-                    else:
-                        st.info("Decision data not available.")
-                        
+                    st.markdown("#### 4. Buy vs Rent Strategy")
+                    # Distribution of Decisions
+                    fig_pie = px.pie(
+                        df_full, names='decision', 
+                        title="System Recommendation Split (Buy vs Rent)",
+                        color_discrete_sequence=px.colors.sequential.RdBu
+                    )
+                    st.plotly_chart(fig_pie, use_container_width=True)
+
+            # --- TAB 3: DEAL DISCOVERY ---
+            with tab3:
+                st.markdown("#### 5. Undervalued Property Finder")
+                st.caption("Properties BELOW the trend line offer better value (larger size for lower price). Hover to see details.")
+                
+                # Scatter with Trendline
+                fig_scatter = px.scatter(
+                    df_full, x='area', y='price',
+                    color='decision', 
+                    size='bedrooms',
+                    hover_data=['name', 'address', 'price_per_sqft'],
+                    trendline="ols", # Ordinary Least Squares regression
+                    title="Correlation: Price vs Area (with Fair Value Line)",
+                    labels={'area': 'Size (sqft)', 'price': 'Price (₹)'},
+                    template="plotly_dark"
+                )
+                st.plotly_chart(fig_scatter, use_container_width=True)
+
     except Exception as e:
         st.error(f"Could not load analytics: {e}")
