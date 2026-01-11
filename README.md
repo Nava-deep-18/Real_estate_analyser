@@ -83,7 +83,7 @@ This is the heart of the system. It runs a 20-year simulation for every property
 #### 🏦 Home Loan Logic
 *   **LTV (Loan to Value)**: Follows RBI norms (90% loan for <30L, 80% for 30-75L, 75% for >75L).
 *   **Tenure**: Assumed 20 years.
-*   **Interest Rate**: Average of top 5 banks (SBI, HDFC, ICICI, etc.) ~8.5%.
+*   **Interest Rate**: Average of top 5 banks (SBI, HDFC, ICICI, etc.) ~8.0% floating.
 
 #### ⚖️ Tax Regime Simulation
 The system simulates two tax scenarios for every year of the loan:
@@ -93,7 +93,7 @@ The system simulates two tax scenarios for every year of the loan:
 
 #### 💰 Wealth Comparison (The "Decision")
 *   **Buying Wealth**: `(Final Property Value * Appreciation)` - `(Interest Paid + Maintenance + Taxes)`.
-*   **Renting Wealth**: The user invests the difference between (EMI + Down Payment) and (Rent) into an **SIP (Mutual Fund)** with 15% step-up returns.
+*   **Renting Wealth**: The user invests the difference between (EMI + Down Payment) and (Rent) into an **SIP (Mutual Fund)** with 10% annual returns.
 *   **Final Output**: `decision` ("BUY" or "RENT") based on which strategy yields higher net worth after 20 years.
 
 ---
@@ -188,7 +188,7 @@ Real_estate_analyser/
 
 ### 1. Market Analytics Dashboard
 *   Visualizes the Buy vs Rent split across Kolkata.
-*   Use the sidebar to filter by "Recommended Action" (Buy/Rent).
+*   Explore price trends, rental yields, and undervalued properties via interactive tabs.
 
 ### 2. AI Chat Interface
 Asking questions drives the analysis.
