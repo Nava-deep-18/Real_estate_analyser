@@ -1,5 +1,4 @@
-
-# 🏠 Real Estate Investment Ruler
+# 🏠 Real Estate Investment Analyzer
 
 <div align="center">
 
@@ -17,33 +16,89 @@
 
 ---
 
-## 🎯 What is This Project?
+## 📖 Table of Contents
 
-This is a **Hybrid RAG Application** designed to analyze Real Estate investments (Buy vs Rent). Unlike standard chatbots, it adheres to a strict "Explanation-Second" architecture:
-
-- **Deterministic Backend**: Financial outcomes (EMI, Tax, Wealth Difference) are pre-calculated using Python/Pandas logic.
-- **RAG Layer**: The AI is strictly an *interface*. It retrieves verified data and explains it, but never performs financial math itself.
-
-**Key capabilities:**
-- 🔍 **Strict SQL Retrieval**: "Show 3 BHKs in New Town" -> Executes exact SQL.
-- 🧠 **Semantic Vector Search**: "What are the tax benefits of buying?" -> Searches embedded knowledge.
-- � **Hybrid Intelligence**: Combines verified numbers with natural language reasoning.
-
----
-
-## ✨ Key Features
-
-| Feature | Description |
-|---------|-------------|
-| 🔒 **Safety First** | Financials are hard-coded in the backend. The LLM cannot hallucinate numbers. |
-| ⚡ **Hybrid retrieval** | Intelligently switches between SQL (filtering) and ChromaDB (semantic context). |
-| 💰 **Buy vs Rent Analysis** | detailed comparison of EMI, Tax Regimes, and 20-Year Wealth accumulation. |
-| 🎨 **Premium UI** | minimal, modern Streamlit interface with "Dark Text" readability optimizations. |
-| 🚀 **Offline Capable** | Uses local `sentence-transformers` for embeddings, reducing API costs. |
+1.  [Project Overview](#-project-overview)
+2.  [Design Philosophy](#-design-principles)
+3.  [Data Pipeline](#-data-pipeline)
+    *   [1. Web Scraping](#1-web-scraping)
+    *   [2. Data Wrangling](#2-data-wrangling)
+    *   [3. Financial Calculations](#3-financial-calculations)
+4.  [RAG Architecture](#-rag-architecture)
+5.  [Project Structure](#-project-structure)
+6.  [Setup & Installation](#-setup--installation)
+7.  [Usage Guide](#-usage-guide)
 
 ---
 
-## 🏗️ Architecture Overview
+## 🎯 Project Overview
+
+This is a **Hybrid RAG Application** designed to analyze Real Estate investments (Buy vs Rent) in the **Kolkata** market. Unlike standard chatbots that hallucinate numbers, this system adheres to a strict **"Explanation-Second"** architecture.
+
+*   **Deterministic Backend**: All financial outcomes (EMI, Tax, Wealth Difference) are pre-calculated using Python/Pandas logic.
+*   **RAG Layer**: The AI is strictly an *interface*. It retrieves verified data and explains it, but **never** performs financial math itself.
+
+---
+
+## 📝 Design Principles
+
+This project strictly follows the **Real Estate Analyzer RAG Manual**:
+
+1.  **No Calculus in LLM**: The LLM is a narrator, not a calculator. All numbers (EMI, Rent Yield, Wealth Gain) are computed in Python.
+2.  **SQL First**: For specific property queries (e.g., "3 BHK in Salt Lake"), we use SQL for exact retrieval.
+3.  **Vector Second**: For educational queries (e.g., "How is tax calculated?"), we use ChromaDB vector search.
+4.  **Property Explanation Records**: Raw CSV data is converted into "text summaries" before embedding, allowing the LLM to understand property features semantically.
+
+---
+
+## 🔄 Data Pipeline
+
+The system is built on a robust data pipeline that transforms raw web data into actionable financial insights.
+
+### 1. Web Scraping
+**Source**: `webscraping.ipynb`
+*   **Target**: MagicBricks (Kolkata Region).
+*   **Scope**: Residential Properties (Apartments, Villas, Builder Floors).
+*   **Method**:
+    *   Scraped separate datasets for **BUY** (For Sale) and **RENT** (For Rent) listings.
+    *   Extracted key attributes: `Price`, `Rent`, `Carpet Area`, `Bedrooms`, `Address`, `Furnishing`.
+    *   Handled pagination to scrape ~160 pages of Buy listings and ~130 pages of Rent listings.
+
+### 2. Data Wrangling
+**Source**: `Data Wrangling.ipynb`
+*   **Cleaning**:
+    *   Converted raw price strings (e.g., "1.5 Cr", "60 Lac") into actual integers.
+    *   Standardized addresses to remove noise.
+*   **Imputation**:
+    *   **The "Rent Estimator"**: Most "For Sale" properties don't have a rental price.
+    *   The system calculated the **Median Rent per Sqft** for every locality using the "Rent" dataset.
+    *   This multiplier was then applied to "Sale" properties to estimate their potential rental income.
+*   **Outlier Removal**:
+    *   Used **IQR (Interquartile Range)** filtering to remove properties with unrealistic price-to-rent ratios or data entry errors.
+
+### 3. Financial Calculations
+**Source**: `calculations.ipynb`
+This is the heart of the system. It runs a 20-year simulation for every property.
+
+#### 🏦 Home Loan Logic
+*   **LTV (Loan to Value)**: Follows RBI norms (90% loan for <30L, 80% for 30-75L, 75% for >75L).
+*   **Tenure**: Assumed 20 years.
+*   **Interest Rate**: Average of top 5 banks (SBI, HDFC, ICICI, etc.) ~8.5%.
+
+#### ⚖️ Tax Regime Simulation
+The system simulates two tax scenarios for every year of the loan:
+*   **Old Regime**: Claims deductions under **Section 24(b)** (Interest) and **80C** (Principal).
+*   **New Regime**: Lower tax slabs but no deductions.
+*   **Decision**: The algorithm automatically switches regimes each year to minimize total tax liability.
+
+#### 💰 Wealth Comparison (The "Decision")
+*   **Buying Wealth**: `(Final Property Value * Appreciation)` - `(Interest Paid + Maintenance + Taxes)`.
+*   **Renting Wealth**: The user invests the difference between (EMI + Down Payment) and (Rent) into an **SIP (Mutual Fund)** with 15% step-up returns.
+*   **Final Output**: `decision` ("BUY" or "RENT") based on which strategy yields higher net worth after 20 years.
+
+---
+
+## 🏗️ RAG Architecture
 
 ```mermaid
 graph TD
@@ -63,108 +118,92 @@ graph TD
     LLM --> Answer[Final Response]
 ```
 
----
-
-## 🛠️ Tech Stack
-
-<div align="center">
-
-| Category | Technology | Purpose |
-|----------|-----------|---------|
-| **� AI/ML** | Google Gemini (via OpenRouter) | Intent classification & Response generation |
-| | Sentence-Transformers | Local embedding generation |
-| **🌐 App Framework** | Streamlit | Full-stack UI and logic execution |
-| **🗄️ Database** | SQLite | Deterministic financial data storage |
-| | ChromaDB | Vector storage for semantic search |
-| **🐼 Data Processing** | Pandas | Data wrangling and SQL interaction |
-
-</div>
+*   **Intent Classifier**: Decides if the user wants *data* (SQL) or *knowledge* (Vector).
+*   **Hybrid Retrieval**:
+    *   **SQL**: "Show me flats under 1 Cr" -> `SELECT * FROM properties WHERE price < 10000000`
+    *   **Vector**: "Is it better to buy or rent?" -> Retrieves `educational_concepts.json` chunks.
 
 ---
 
 ## 📦 Project Structure
 
-```
+```bash
 Real_estate_analyser/
-├── app.py                     # 🚀 Main Application Entry Point
-├── run_app.bat                # 🖱️ One-click launcher script
-├── .env                       # � API Keys (ignored by git)
-├── real_estate.db             # 💾 Generated SQL Database
+├── app.py                     # 🚀 Main Application (Streamlit)
+├── run_app.bat                # 🖱️ One-click launcher
+├── .env                       # 🔑 API Keys
+├── real_estate.db             # 💾 SQLite DB (Financial Results)
 │
 ├── rag/                       # 🧠 RAG Logic Module
-│   ├── __init__.py
-│   ├── rag_engine.py          # Core Logic: Intent, SQL Gen, LLM interaction
-│   ├── db.py                  # Database connection & schema utilities
-│   └── vector_store.py        # ChromaDB setup & semantic search logic
+│   ├── rag_engine.py          # Master Controller (Intent + Generation)
+│   ├── db.py                  # SQL connection & retrieval
+│   ├── vector_store.py        # ChromaDB setup & search
+│   └── educational_concepts.json # 📚 Knowledge base for Vector Store
 │
-├── chroma_db/                 # 📂 Vector Index (Auto-generated)
-├── calculations.ipynb         # � Original Financial Analysis Notebook
-└── data/                      # � Raw CSV Data Sources
+├── chroma_db/                 # 📂 Persistent Vector Index
+├── webscraping.ipynb          # 🕷️ Data Collection
+├── Data Wrangling.ipynb       # 🧹 Data Cleaning
+├── calculations.ipynb         # 🧮 Financial Simulation Engine
+└── data/                      # 📁 CSV Data Files
 ```
 
 ---
 
-## 🚀 Quick Start
+## 🚀 Setup & Installation
 
 ### Prerequisites
+*   **Python 3.10+**
+*   **API Key**: OpenRouter (Gemini Flash) or OpenAI.
 
-- **Python 3.10+** installed
-- **OpenRouter/OpenAI API Key**
+### Steps
 
-### Installation
+1.  **Clone the Repository**:
+    ```bash
+    git clone https://github.com/YourRepo/Real_estate_analyser.git
+    cd Real_estate_analyser
+    ```
 
-1.  **Clone the repository** (or unzip the folder).
 2.  **Install Dependencies**:
     ```bash
     pip install streamlit pandas openai python-dotenv chromadb sentence-transformers
     ```
-3.  **Configure Environment**:
-    Create a `.env` file in the root directory:
+
+3.  **Set Environment Variables**:
+    Create a `.env` file in the root:
     ```ini
-    OPENAI_API_KEY=sk-or-your-key-here
-    OPENAI_BASE_URL=https://openrouter.ai/api/v1
+    OPENAI_API_KEY=sk-your-key-here
+    OPENAI_BASE_URL=https://openrouter.ai/api/v1  # Functioning as OpenAI compatible endpoint
     ```
 
-### Running the App
-
-Refreshed the database and start the server with one click:
-
-```bash
-.\run_app.bat
-```
-
-*Or manually:*
-```bash
-python -m streamlit run app.py
-```
+4.  **Run the Application**:
+    *   **Windows**: Double click `run_app.bat`
+    *   **Manual**:
+        ```bash
+        python -m streamlit run app.py
+        ```
 
 ---
 
-## 💡 Example Queries
+## 💡 Usage Guide
 
-The system handles different "Intents":
+### 1. Market Analytics Dashboard
+*   Visualizes the Buy vs Rent split across Kolkata.
+*   Use the sidebar to filter by "Recommended Action" (Buy/Rent).
 
-### 1. Filtering (SQL Driven)
-> "Show me 3 BHK properties in New Town under 80 Lakhs"
-> "List all properties where buying is better than renting"
+### 2. AI Chat Interface
+Asking questions drives the analysis.
 
-### 2. Explanation (Hybrid)
-> "Why is the property in Salt Lake marked as a BUY?"
-> "Explain the tax strategy used for the Villa calculation."
+*   **Specific Property Search**:
+    > "Find me 3 BHK apartments in New Town."
+    > "List properties with a price below 80 Lakhs."
 
-### 3. Educational (Vector Driven)
-> "What are the benefits of Section 24b?"
-> "How is rental yield calculated?"
+*   **Financial Analysis**:
+    > "Why is the property in Salt Lake marked as a BUY?"
+    > "What is the EMI for the property at EM Bypass?"
 
----
-
-## 📝 Design Principles
-
-This project strictly follows the **Real Estate Analyzer RAG Manual**:
-
-1.  **No Calculus in LLM**: The LLM is a narrator, not a calculator.
-2.  **SQL First**: We prefer exact matches over fuzzy matches for property specs.
-3.  **Property Explanation Records**: Data is converted to a text schema before embedding.
+*   **Educational Concepts**:
+    > "How is rental yield calculated?"
+    > "What are the tax benefits of a home loan?"
 
 ---
 
