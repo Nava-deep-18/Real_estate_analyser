@@ -314,7 +314,7 @@ elif page == "📈 Market Analytics":
                     labels={'price_per_sqft': 'Price/Sqft (₹)', 'address': 'Location'},
                     color_continuous_scale='RdBu_r'
                 )
-                st.plotly_chart(fig_pps, use_container_width=True)
+                st.plotly_chart(fig_pps, width="stretch")
                 
                 st.markdown("#### 2. Rental Yield Hotspots")
                 # Chart 2: Yield
@@ -326,7 +326,7 @@ elif page == "📈 Market Analytics":
                     labels={'rental_yield': 'Yield (%)', 'address': 'Location'},
                     color_continuous_scale='Turbo' 
                 )
-                st.plotly_chart(fig_yield, use_container_width=True)
+                st.plotly_chart(fig_yield, width="stretch")
 
             # --- TAB 2: MARKET DEPTH ---
             with tab2:
@@ -340,7 +340,7 @@ elif page == "📈 Market Analytics":
                         title="Price Min/Max Range by Bedroom Count",
                         points="outliers"
                     )
-                    st.plotly_chart(fig_box, use_container_width=True)
+                    st.plotly_chart(fig_box, width="stretch")
                     
                 with c2:
                     st.markdown("#### 4. Buy vs Rent Strategy")
@@ -350,7 +350,7 @@ elif page == "📈 Market Analytics":
                         title="System Recommendation Split (Buy vs Rent)",
                         color_discrete_sequence=px.colors.sequential.RdBu
                     )
-                    st.plotly_chart(fig_pie, use_container_width=True)
+                    st.plotly_chart(fig_pie, width="stretch")
 
             # --- TAB 3: DEAL DISCOVERY ---
             with tab3:
@@ -368,7 +368,7 @@ elif page == "📈 Market Analytics":
                     labels={'area': 'Size (sqft)', 'price': 'Price (₹)'},
                     template="plotly_dark"
                 )
-                st.plotly_chart(fig_scatter, use_container_width=True)
+                st.plotly_chart(fig_scatter, width="stretch")
 
     except Exception as e:
         st.error(f"Could not load analytics: {e}")
