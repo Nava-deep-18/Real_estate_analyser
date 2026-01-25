@@ -6,3 +6,4 @@ python-dotenv
 chromadb
 sentence-transformers
 pysqlite3-binary
+statsmodels
