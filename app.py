@@ -282,8 +282,9 @@ elif page == "📈 Market Analytics":
              df_full['rental_yield'] = (df_full['rent'] * 12 / df_full['price']) * 100
              
         # Filter: Remove unrealistic yields > 6%
-        if 'rental_yield' in df_full.columns:
-            df_full = df_full[df_full['rental_yield'] <= 6]
+        # NOTE: DB is now pre-filtered in init_db, so we don't need to filter here.
+        # But we can keep a safeguard or just rely on DB. 
+        # Removing explicit filter to avoid confusion, trusting DB.
         
         if df_full.empty:
             st.warning("No data available to generate analytics.")

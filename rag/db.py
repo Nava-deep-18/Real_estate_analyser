@@ -22,13 +22,32 @@ def init_db(reload=True):
             # We want deterministic SQL queries, so simple names are better
             df.columns = [c.strip().replace(" ", "_").replace("(", "").replace(")", "").lower() for c in df.columns]
             
-            # Explicitly ensure numeric types for critical calculation fields if they were read as strings
-            # Only strictly necessary if the CSV has formatting like "1,000"
-            # df['price'] = pd.to_numeric(df['price'], errors='coerce') 
+            # --- FILTERING LOGIC (Applied Globally) ---
+            # Remove unrealistic rental yields (> 6%) and invalid data
+            if 'rent' in df.columns and 'price' in df.columns:
+                # Calculate yield dynamically for filtering
+                # Note: We don't save this column unless we want it in DB, but filtering is the goal
+                # Ensure numeric types to avoid errors
+                df['rent'] = pd.to_numeric(df['rent'], errors='coerce')
+                df['price'] = pd.to_numeric(df['price'], errors='coerce')
+                
+                # Calculate yield
+                # Avoid division by zero
+                mask_valid = (df['price'] > 0) & (df['rent'] > 0)
+                df = df[mask_valid].copy()
+                
+                calculated_yield = (df['rent'] * 12 / df['price']) * 100
+                
+                # Filter strict <= 6%
+                # Keeping only realistic investments
+                initial_count = len(df)
+                df = df[calculated_yield <= 6]
+                
+                # print(f"Data Cleaning: Removed {initial_count - len(df)} properties with yield > 6% or invalid data.")
             
             # 4. Write to SQL
             df.to_sql("properties", conn, if_exists="replace", index=False)
-            print("Database initialized and data loaded from CSV.")
+            # print("Database initialized and data loaded from CSV (Filtered).")
         else:
             print(f"Error: {CSV_PATH} not found.")
             

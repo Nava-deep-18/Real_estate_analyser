@@ -30,7 +30,11 @@ def needs_hydration():
         # Note: get_collection might fail if collection doesn't exist, so we use list_collections or try/except
         try:
            collection = client.get_collection(name=COLLECTION_NAME) # No embedding fn needed for count
-           return collection.count() == 0
+           count = collection.count()
+           # Re-hydrate if empty OR if it holds the old dataset (migration limit)
+           if count == 0 or count > 3400:
+               return True
+           return False
         except:
            return True # If collection doesn't exist, we need to hydrate
     except:
@@ -46,13 +50,23 @@ def initialize_vector_store(df=None):
     # Get or Create Collection
     try:
         collection = client.get_collection(name=COLLECTION_NAME, embedding_function=embedding_fn)
+        
+        # MIGRATION FIX: Check if collection has the old "unfiltered" data (approx 3419 records)
+        # We want to reset it to match the new filtered dataset (~3026 records)
+        if df is not None:
+            cutoff_threshold = 3400 # Old count was 3419, new is ~3026
+            if collection.count() > cutoff_threshold:
+                 # print(f"Detected outdated dataset (Count: {collection.count()}). Resetting Vector DB...")
+                 client.delete_collection(name=COLLECTION_NAME)
+                 collection = client.create_collection(name=COLLECTION_NAME, embedding_function=embedding_fn)
+                 
     except:
         collection = client.create_collection(name=COLLECTION_NAME, embedding_function=embedding_fn)
 
     # 1. Hydrate Property Records (only if empty to avoid dups)
     if collection.count() == 0:
         if df is not None:
-            print("Hydrating Vector Store with Property Explanation Records...")
+            # print("Hydrating Vector Store with Property Explanation Records...")
             
             ids = []
             documents = []
@@ -95,19 +109,20 @@ def initialize_vector_store(df=None):
                     documents=documents[i:i+BATCH_SIZE],
                     metadatas=metadatas[i:i+BATCH_SIZE]
                 )
-            print(f"Successfully embedded {len(documents)} property records.")
+            # print(f"Successfully embedded {len(documents)} property records.")
         else:
              print("Vector store empty/incomplete, but no DataFrame provided for hydration. Skipping property data.")
 
     else:
-        print(f"Vector Store already contains {collection.count()} property records.")
+        # print(f"Vector Store already contains {collection.count()} property records.")
+        pass
 
     # 2. Check/Inject Educational Concepts (Always check if missing)
     # We query specifically for educational sources to see if they are missing
     try:
         edu_check = collection.get(where={"source": "educational_concept"}, limit=1)
         if len(edu_check['ids']) == 0:
-            print("Injecting Educational Concepts...")
+            # print("Injecting Educational Concepts...")
             json_path = os.path.join(os.path.dirname(__file__), "educational_concepts.json")
             
             if os.path.exists(json_path):
@@ -135,11 +150,12 @@ def initialize_vector_store(df=None):
                         documents=edu_docs,
                         metadatas=edu_metas
                     )
-                    print(f"Successfully embedded {len(edu_ids)} educational concepts.")
+                    # print(f"Successfully embedded {len(edu_ids)} educational concepts.")
             else:
                 print("Warning: educational_concepts.json not found.")
         else:
-             print("Educational concepts already present.")
+             # print("Educational concepts already present.")
+             pass
              
     except Exception as e:
         print(f"Error checking educational concepts: {e}")
