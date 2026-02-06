@@ -20,8 +20,8 @@ def get_base64_of_bin_file(bin_file):
 def render_glass_card(title, caption, fig, height=450):
     """Wraps a native Plotly chart in a styled Container to create a Glassmorphism Card effect."""
     with st.container(border=True):
-        st.markdown(f'<h4 style="color: #facc15; margin: 0; font-weight: 600;">{title}</h4>', unsafe_allow_html=True)
-        st.markdown(f'<p style="color: #cbd5e1; font-size: 0.9rem; margin-top: 5px; margin-bottom: 15px;">{caption}</p>', unsafe_allow_html=True)
+        st.markdown(f'<h4 style="color: #e2e8f0; margin: 0; font-weight: 600;">{title}</h4>', unsafe_allow_html=True)
+        st.markdown(f'<p style="color: #94a3b8; font-size: 0.9rem; margin-top: 5px; margin-bottom: 15px;">{caption}</p>', unsafe_allow_html=True)
         if fig:
            
             fig.update_layout(
@@ -42,30 +42,30 @@ def inject_custom_css(background_image_path="image.jpg"):
 
     st.markdown(f"""
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Inter:wght@600;800&family=Playfair+Display:wght@700&display=swap');
         .stApp {{ {bg_style} background-size: cover; background-attachment: fixed; font-family: 'Outfit', sans-serif; }}
         html, body, [class*="css"] {{ font-family: 'Outfit', sans-serif !important; }}
         header[data-testid="stHeader"], div[data-testid="stBottom"] > div {{ background: transparent !important; }}
         .block-container {{ padding-top: 1rem !important; }}
         h1, h2, h3, h4, h5, h6, p, li, span, div {{ color: #e2e8f0; }}
-        h1 {{ background: linear-gradient(to right, #facc15, #f8fafc); -webkit-background-clip: text; -webkit-text-fill-color: transparent; font-weight: 800 !important; font-size: 3.2rem !important; letter-spacing: -1.5px; margin-bottom: 0.5rem !important; }}
+        h1 {{ background: linear-gradient(to right, #94a3b8, #f1f5f9); -webkit-background-clip: text; -webkit-text-fill-color: transparent; font-family: 'Playfair Display', serif !important; font-weight: 700 !important; font-size: 3.5rem !important; letter-spacing: 0px; margin-bottom: 0.5rem !important; }}
         section[data-testid="stSidebar"] {{ background-color: #0b1120 !important; border-right: 1px solid rgba(255,255,255,0.05); }}
         .sidebar-header {{ font-size: 1.1rem; font-weight: 600; color: #94a3b8; margin-top: 20px; margin-bottom: 10px; text-transform: uppercase; letter-spacing: 1px; }}
         div[role="radiogroup"] {{ background-color: #1e293b; padding: 5px; border-radius: 12px; border: 1px solid rgba(255,255,255,0.1); }}
-        div[role="radiogroup"] label:hover {{ color: #facc15 !important; }}
+        div[role="radiogroup"] label:hover {{ color: #e2e8f0 !important; }}
         div[data-testid="stMetric"] {{ background: rgba(30, 41, 59, 0.4) !important; backdrop-filter: blur(10px); border: 1px solid rgba(255, 255, 255, 0.08); border-radius: 12px !important; padding: 15px !important; }}
-        div[data-testid="stMetric"]:hover {{ transform: translateY(-2px); border-color: rgba(250, 204, 21, 0.4); }}
+        div[data-testid="stMetric"]:hover {{ transform: translateY(-2px); border-color: rgba(226, 232, 240, 0.4); }}
         [data-testid="stMetricLabel"] {{ font-size: 13px !important; color: #94a3b8 !important; font-weight: 500 !important; }}
-        [data-testid="stMetricValue"] {{ font-size: 24px !important; font-weight: 700 !important; color: #facc15 !important; }}
+        [data-testid="stMetricValue"] {{ font-size: 24px !important; font-weight: 700 !important; color: #e2e8f0 !important; }}
         
         .stChatInputContainer textarea {{ background-color: #0f172a !important; color: #f8fafc !important; border-radius: 25px !important; border: 1px solid rgba(255,255,255,0.1) !important; }}
-        .stChatInputContainer textarea:focus {{ border-color: #facc15 !important; box-shadow: 0 0 0 1px #facc15 !important; }}
+        .stChatInputContainer textarea:focus {{ border-color: #e2e8f0 !important; box-shadow: 0 0 0 1px #e2e8f0 !important; }}
         .stChatMessage[data-testid="stChatMessage"]:nth-child(odd) {{ background-color: rgba(30, 41, 59, 0.4); border-radius: 15px; border: 1px solid rgba(255,255,255,0.05); }}
-        .stChatMessage[data-testid="stChatMessage"]:nth-child(even) {{ background-color: rgba(15, 23, 42, 0.6); border-left: 3px solid #facc15; border-radius: 0 15px 15px 0; }}
+        .stChatMessage[data-testid="stChatMessage"]:nth-child(even) {{ background-color: rgba(15, 23, 42, 0.6); border-left: 3px solid #e2e8f0; border-radius: 0 15px 15px 0; }}
         
         .stTabs [data-baseweb="tab-list"] {{ background-color: transparent; gap: 8px; }}
         .stTabs [data-baseweb="tab"] {{ background-color: rgba(255,255,255,0.05); border-radius: 8px; color: #cbd5e1; border: 1px solid transparent; padding: 8px 16px; }}
-        .stTabs [aria-selected="true"] {{ background-color: rgba(250, 204, 21, 0.1) !important; color: #facc15 !important; border-color: rgba(250, 204, 21, 0.3) !important; }}
+        .stTabs [aria-selected="true"] {{ background-color: rgba(226, 232, 240, 0.1) !important; color: #e2e8f0 !important; border-color: rgba(226, 232, 240, 0.3) !important; }}
         
         /* Glass Card Container Styling */
         div[data-testid="stVerticalBlockBorderWrapper"] > div > div {{ 
@@ -77,6 +77,40 @@ def inject_custom_css(background_image_path="image.jpg"):
             padding: 24px !important; /* Increased padding */
         }}
         div[data-testid="stVerticalBlockBorderWrapper"] h4 {{ margin-top: 0 !important; padding-top: 0 !important; font-size: 1.3rem !important; }}
+        
+        /* Code Block Styling */
+        div[data-testid="stCode"], code {{ 
+            background-color: #0f172a !important; 
+            color: #e2e8f0 !important; 
+            border-radius: 8px !important; 
+        }}
+        div[data-testid="stCode"] pre {{
+            background-color: #0f172a !important;
+        }}
+
+        /* Dataframe/Table Fixes */
+        div[data-testid="stDataFrame"] {{
+            background-color: transparent !important;
+        }}
+        div[data-testid="stDataFrame"] div[class*="stDataFrame"] {{
+            background-color: transparent !important;
+        }}
+        /* Table Headers */
+        div[data-testid="stDataFrame"] th {{
+            background-color: #1e293b !important;
+            color: #e2e8f0 !important; 
+            border-bottom: 1px solid rgba(255,255,255,0.1) !important;
+        }}
+        /* Table Cells */
+        div[data-testid="stDataFrame"] td {{
+            color: #cbd5e1 !important;
+            background-color: rgba(30, 41, 59, 0.4) !important;
+            border-bottom: 1px solid rgba(255,255,255,0.05) !important;
+        }}
+        /* Row Hover */
+        div[data-testid="stDataFrame"] tr:hover td {{
+             background-color: rgba(255, 255, 255, 0.1) !important;
+        }}
     </style>
     """, unsafe_allow_html=True)
 
@@ -126,11 +160,11 @@ with st.sidebar:
 # PAGE LOGIC 
 if page == "🤖 AI Assistant":
     if not st.session_state.messages:
-        st.markdown('<div style="text-align: center; margin: 50px 0;"><h1 style="font-size: 3.5rem;">Hello, Investor.</h1><p style="color: #94a3b8; font-size: 1.2rem;">I\'m your AI Real Estate Consultant.</p></div>', unsafe_allow_html=True)
+        st.markdown('<div style="text-align: center; margin-top: 10px; margin-bottom: 20px;"><h1 style="font-size: 3.5rem;">Hello, Investor.</h1><p style="color: #94a3b8; font-size: 1.2rem;">I\'m your AI Real Estate Consultant.</p></div>', unsafe_allow_html=True)
         cols = st.columns(3)
-        prompts = [("🔍 Find", "Show me 3 BHK flats under 80L"), ("📊 Compare", "Compare rental yield of AA1 vs AA2"), ("💡 Learn", "Explain the 1% rule")]
+        prompts = [("🔍 Find", "Show me 3 BHK flats under 80L"), ("📊 Compare", "Compare rental yield of AA1 vs AA2"), ("💡 Learn", "How Buy vs rent is decided")]
         for c, (h, p) in zip(cols, prompts):
-            c.markdown(f'<div class="css-card" style="padding: 20px; text-align: center;"><h3 style="color: #facc15;">{h}</h3><p style="font-size: 0.9rem;">"{p}"</p></div>', unsafe_allow_html=True)
+            c.markdown(f'<div class="css-card" style="padding: 20px; text-align: center;"><h3 style="color: #e2e8f0;">{h}</h3><p style="font-size: 0.9rem;">"{p}"</p></div>', unsafe_allow_html=True)
 
     for msg in st.session_state.messages:
         st.chat_message(msg["role"]).markdown(msg["content"])

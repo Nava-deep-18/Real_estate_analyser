@@ -52,25 +52,57 @@ def classify_intent(query):
 def generate_sql_query(query, schema):
     """
     Converts a natural language query into a SQL query based on the schema.
-    Strictly for filtering and sorting.
+    Features robust error handling, spelling correction, and flexible number parsing.
     """
     system_prompt = f"""
-    You are a SQL Generator for a Real Estate database.
-    Your task is to convert the User Query into a valid SQLite SQL query.
-    
-    SCHEMA:
+    You are an expert SQL Generator for a Real Estate Analysis Database. 
+    Your goal is to output VALID SQLite SQL based on the User's Query.
+
+    DATABASE SCHEMA:
     {schema}
-    
-    RULES:
-    1. Table name is 'properties'.
-    2. ONLY use SELECT statements.
-    3. Select ALL columns (*) unless specific ones are irrelevant, but usually * is safest for the explanation layer.
-    4. Do not hallucinates column names. Use ONLY those in the schema.
-    5. 'wealth_difference' > 0 usually implies BUY is better, but check 'decision' column ('BUY' or 'RENT').
-    6. For 'undervalued' or 'good deals', you might sort by wealth_difference DESC or yield DESC.
-    7. Limit results to 5 unless asked otherwise.
-    
-    Return ONLY the SQL query. No markdown formatting.
+
+    -------------------------------------------------------------------------
+    CRITICAL RULES - FOLLOW THESE STRICTLY:
+    -------------------------------------------------------------------------
+    1. **OUTPUT FORMAT**: 
+       - Return *ONLY* the SQL query. 
+       - Start with `SELECT * FROM properties`.
+       - Do NOT output explanations or markdown formatting like "Here is the query".
+
+    2. **SPELLING & FUZZY MATCHING**:
+       - The user may make spelling mistakes (e.g., "kolkatta", "newtwn").
+       - You MUST correct these key terms mentally and generate SQL with corrected wildcards.
+       - ALWAYS use `LIKE` with wildcards for text fields.
+       - Example: User "newtwn" -> SQL `address LIKE '%new town%' OR address LIKE '%newtown%'`.
+       - Example: User "saltlake" -> SQL `address LIKE '%salt lake%' OR address LIKE '%saltlake%'`.
+
+    3. **NUMBER PARSING**:
+       - User may use shortcuts: 'k' (thousand), 'L' (Lakh/100,000), 'Cr' (Crore/10,000,000).
+       - User may use currency symbols (₹, $, Rs).
+       - YOU must convert these to pure integers in the SQL.
+       - Example: "budget 20k to 30k" -> `rent BETWEEN 20000 AND 30000` (if renting) or `price BETWEEN ...` (if buying).
+       - Example: "under 50L" -> `price < 5000000`.
+
+    4. **INTENT FILTERING (Rent vs Buy)**:
+       - **Rent Context**: If user says "rent", "lease", "to let", "booking" -> ADD `WHERE decision = 'RENT'`.
+         - Use column `rent` for budget checks.
+       - **Buy Context**: If user says "buy", "purchase", "invest", "sale" -> ADD `WHERE decision = 'BUY'`.
+         - Use column `price` for budget checks.
+       - If unclear, do not filter by decision, but default to checking `price` for budget unless 'rent' is implied by value size (<100k usually rent).
+
+    5. **SORTING & LIMITS**:
+       - "Best" usually means highest returns.
+         - For BUY: `ORDER BY wealth_difference DESC`
+         - For RENT: `ORDER BY wealth_difference ASC` (Optimized savings) or `rent ASC` (Cheapest).
+       - "Cheapest" -> `ORDER BY price ASC` or `rent ASC`.
+       - **DEFAULT LIMIT**: Always use `LIMIT 5` unless user asks for a specific number. 
+       - Never return just 1 unless explicitly asked.
+
+    6. **LOGIC CORRECTION (Checking for City Name)**:
+       - **CRITICAL**: The database contains ONLY properties in **Kolkata**.
+       - If user asks for "Kolkata", "Calcutta", or "city", do **NOT** add `address LIKE '%kolkata%'`. This excludes valid data where address is just "New Town" or "Salt Lake".
+       - **ACTION**: Ignore "Kolkata" for location filtering. Only filter address if a *specific area* (e.g., "New Town", "Garia") is mentioned.
+    -------------------------------------------------------------------------
     """
     
     try:
@@ -82,39 +114,49 @@ def generate_sql_query(query, schema):
             ],
             temperature=0.0
         )
-        sql = response.choices[0].message.content.strip()
-        # Clean potential markdown
-        sql = sql.replace("```sql", "").replace("```", "").strip()
+        content = response.choices[0].message.content.strip()
+        
+        # --- ROBUST CLEANING ---
+        import re
+        # 1. Remove markdown code blocks (handle ```sql, ```sqlite, ```, etc)
+        # Matches ```<optional_lang> <content> ```
+        code_block = re.search(r"```(?:\w+)?\s*(SELECT.*?)```", content, re.DOTALL | re.IGNORECASE)
+        if code_block:
+            sql = code_block.group(1).strip()
+        else:
+            # 2. If no code blocks, look for the first SELECT statement
+            select_match = re.search(r"(SELECT.*)", content, re.DOTALL | re.IGNORECASE)
+            if select_match:
+                sql = select_match.group(1).strip()
+            else:
+                # 3. Last resort clean
+                sql = content.replace("```sql", "").replace("```sqlite", "").replace("```", "").strip()
+        
+        # FINAL SAFEGUARD: If SQL contains "LIKE '%kolkata%'" or similar, warn or strip it?
+        # Better to rely on prompt, but we can do a quick replace if prompt fails.
+        # Removing "AND address LIKE '%kolkata%'" risks breaking syntax if not careful.
+        # We trust the prompt for now.
+        
         return sql
+
     except Exception as e:
         print(f"Error generating SQL: {e}")
-        
-        # Simple Fallback Logic for Offline Mode
-        query_lower = query.lower()
-        conditions = []
-        
-        # Bed count detection
-        import re
-        bed_match = re.search(r'(\d+)\s*bhk', query_lower)
-        if bed_match:
-            conditions.append(f"bedrooms = {bed_match.group(1)}")
+        # Fallback mechanism
+        try:
+            # Basic keyword extraction fallback
+            conditions = []
+            q = query.lower()
+            if "rent" in q: conditions.append("decision = 'RENT'")
+            elif "buy" in q: conditions.append("decision = 'BUY'")
             
-        # Location detection (simple heuristic)
-        locations = ["new town", "salt lake", "rajarhat", "south kolkata"]
-        for loc in locations:
-            if loc in query_lower:
-                conditions.append(f"address LIKE '%{loc}%'")
-                
-        # Rent vs Buy
-        if "rent" in query_lower and "buy" not in query_lower:
-             conditions.append("decision = 'RENT'")
-        elif "buy" in query_lower and "rent" not in query_lower:
-             conditions.append("decision = 'BUY'")
-
-        if conditions:
-            return f"SELECT * FROM properties WHERE {' AND '.join(conditions)} LIMIT 5"
+            if "new town" in q or "newtown" in q: conditions.append("(address LIKE '%new town%' OR address LIKE '%newtown%')")
             
-        return "SELECT * FROM properties LIMIT 5"
+            base_sql = "SELECT * FROM properties"
+            if conditions:
+                base_sql += " WHERE " + " AND ".join(conditions)
+            return base_sql + " LIMIT 5"
+        except:
+            return "SELECT * FROM properties LIMIT 5"
 
 def create_explanation_records(df):
     """
@@ -187,7 +229,7 @@ def generate_rag_response(query, explanation_context, intent):
                 vector_results = vector_store.semantic_search(query, n_results=1, where={"source": "educational_concept"})
             else:
                 # Broad Retrieval: Look at everything (properties + concepts)
-                vector_results = vector_store.semantic_search(query, n_results=3)
+                vector_results = vector_store.semantic_search(query, n_results=5)
 
             if vector_results:
                  additional_context = f"\n\n--- RELEVANT KNOWLEDGE (Vector Retrieval) ---\n{vector_results}\n"
@@ -221,6 +263,11 @@ def generate_rag_response(query, explanation_context, intent):
     When the decision is 'RENT', you MUST explain clearly that this means:
     "It is financially better to invest your capital in market instruments (e.g., SIPs) and rent a SIMILAR property in the same area."
     Clarify that the user should NOT try to rent *this specific* property (which is for sale), but rather look for a comparable rental to save wealth.
+    
+    5. **PRESENTATION**: You MUST present **ALL** properties listed in the 'Context Data'.
+       - If the context has 5 properties, you MUST write about all 5. 
+       - Do NOT pick just the "best" one. The user wants to see the options.
+       - Use a numbered list (1., 2., 3., etc) for clarity.
     """
     
     try:
