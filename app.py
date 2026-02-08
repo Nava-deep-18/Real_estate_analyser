@@ -8,6 +8,8 @@ except ImportError:
 import streamlit as st
 import pandas as pd
 import plotly.express as px
+import plotly.graph_objects as go
+from plotly.subplots import make_subplots
 import base64
 import os
 from rag import db, rag_engine, vector_store
@@ -30,7 +32,7 @@ def render_glass_card(title, caption, fig, height=450):
                 margin=dict(t=20, l=0, r=0, b=0), 
                 height=height-80
             )
-            st.plotly_chart(fig, use_container_width=True)
+            st.plotly_chart(fig)
 
 def inject_custom_css(background_image_path="image.jpg"):
     bg_style = ""
@@ -212,10 +214,45 @@ elif page == "📈 Market Analytics":
             t1, t2, t3, t4 = st.tabs(["📍 Location", "💰 Market", "💎 Value", "🏦 Wealth"])
             
             with t1:
-                loc = df.groupby('address').agg({'price_per_sqft':'mean', 'rental_yield':'mean', 'price':'count'}).reset_index()
-                loc = loc[loc['price']>5].sort_values('price_per_sqft', ascending=False).head(15)
-                render_glass_card("Price Efficiency", "Top areas by Price/Sqft", px.bar(loc, x='address', y='price_per_sqft', color='price_per_sqft', color_continuous_scale='RdBu_r'))
-                render_glass_card("Rental Yields", "Top areas by Rental Yield", px.bar(loc.sort_values('rental_yield', ascending=False), x='address', y='rental_yield', color='rental_yield', color_continuous_scale='Turbo'))
+                # Aggregation
+                loc = df.groupby('address').agg({'price_per_sqft':'mean', 'rent':'mean', 'rental_yield':'mean', 'price':'count'}).reset_index()
+                # Filter for popular areas (more than 5 listings)
+                loc_filtered = loc[loc['price']>5]
+                
+                # 1. Premium Areas (High Price/Sqft)
+                high_price = loc_filtered.sort_values('price_per_sqft', ascending=False).head(15)
+                render_glass_card("Premium Areas", "Popular areas with highest Price/Sqft", px.bar(high_price, x='address', y='price_per_sqft', color='price_per_sqft', color_continuous_scale='RdBu_r'))
+
+                # 2. Affordable Areas (Low Price/Sqft)
+                low_price = loc_filtered.sort_values('price_per_sqft', ascending=True).head(15)
+                render_glass_card("Affordable Hotspots", "Popular areas with lowest Price/Sqft", px.bar(low_price, x='address', y='price_per_sqft', color='price_per_sqft', color_continuous_scale='Teal'))
+
+                # 3. Premium Rentals (High Rent)
+                high_rent = loc_filtered.sort_values('rent', ascending=False).head(15)
+                render_glass_card("Premium Rentals", "Areas with Highest Average Rent", px.bar(high_rent, x='address', y='rent', color='rent', color_continuous_scale='Magma'))
+
+                # 4. Budget Rentals (Low Rent)
+                low_rent = loc_filtered.sort_values('rent', ascending=True).head(15)
+                render_glass_card("Budget Rentals", "Areas with Lowest Average Rent", px.bar(low_rent, x='address', y='rent', color='rent', color_continuous_scale='Viridis'))
+                
+                # New Chart: Avg Price vs Rent
+                price_rent = df.groupby('address').agg(avg_price=('price', 'mean'), avg_rent=('rent', 'mean'), count=('price', 'count')).reset_index()
+                price_rent = price_rent[price_rent['count']>5].sort_values('avg_price', ascending=False).head(15)
+                
+                fig_dual = make_subplots(specs=[[{"secondary_y": True}]])
+                fig_dual.add_trace(go.Bar(x=price_rent['address'], y=price_rent['avg_price']/100000, name="Avg Price (Lakhs)", marker_color='#38bdf8', opacity=0.8), secondary_y=False)
+                fig_dual.add_trace(go.Scatter(x=price_rent['address'], y=price_rent['avg_rent'], name="Avg Rent (₹)", line=dict(color='#f472b6', width=3), mode='lines+markers'), secondary_y=True)
+                
+                fig_dual.update_layout(
+                    title_text="Price vs Rent Trends",
+                    plot_bgcolor='rgba(0,0,0,0)', 
+                    paper_bgcolor='rgba(0,0,0,0)',
+                    font=dict(color='#e2e8f0'),
+                    legend=dict(orientation="h", yanchor="bottom", y=1.02, xanchor="right", x=1),
+                    yaxis=dict(title=dict(text="Price (Lakhs)", font=dict(color="#38bdf8")), tickfont=dict(color="#38bdf8"), gridcolor='rgba(255,255,255,0.1)'),
+                    yaxis2=dict(title=dict(text="Rent (₹)", font=dict(color="#f472b6")), tickfont=dict(color="#f472b6"), overlaying='y', side='right')
+                )
+                render_glass_card("Area Value Analysis", "Avg Price (Lakhs) vs Monthly Rent", fig_dual)
             
             with t2:
                 c1, c2 = st.columns(2)
