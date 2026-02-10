@@ -215,48 +215,133 @@ elif page == "📈 Market Analytics":
             
             with t1:
                 # Aggregation
-                loc = df.groupby('address').agg({'price_per_sqft':'mean', 'rent':'mean', 'rental_yield':'mean', 'price':'count'}).reset_index()
-                # Filter for popular areas (more than 5 listings)
-                loc_filtered = loc[loc['price']>5]
+                loc = df.groupby('address').agg(
+                    avg_price_sqft=('price_per_sqft', 'mean'), 
+                    avg_rent=('rent', 'mean'), 
+                    avg_price=('price', 'mean'),
+                    count=('price', 'count')
+                ).reset_index()
                 
-                # 1. Premium Areas (High Price/Sqft)
-                high_price = loc_filtered.sort_values('price_per_sqft', ascending=False).head(15)
-                render_glass_card("Premium Areas", "Popular areas with highest Price/Sqft", px.bar(high_price, x='address', y='price_per_sqft', color='price_per_sqft', color_continuous_scale='RdBu_r'))
+                # Filter for popular areas (more than 3 listins to populate graph better)
+                loc_filtered = loc[loc['count']>3]
+                loc_filtered['avg_price_lakhs'] = loc_filtered['avg_price'] / 100000
 
-                # 2. Affordable Areas (Low Price/Sqft)
-                low_price = loc_filtered.sort_values('price_per_sqft', ascending=True).head(15)
-                render_glass_card("Affordable Hotspots", "Popular areas with lowest Price/Sqft", px.bar(low_price, x='address', y='price_per_sqft', color='price_per_sqft', color_continuous_scale='Teal'))
+                # 1. Premium Areas (High Total Price)
+                high_price = loc_filtered.sort_values('avg_price', ascending=False).head(15)
+                render_glass_card("Premium Areas", "Areas with Highest Avg Property Price (Lakhs)", 
+                    px.bar(high_price, x='address', y='avg_price_lakhs', color='avg_price_lakhs', color_continuous_scale='RdBu_r', labels={'avg_price_lakhs': 'Price (₹ Lakhs)'}))
+
+                # 2. Affordable Areas (Low Total Price)
+                low_price = loc_filtered.sort_values('avg_price', ascending=True).head(15)
+                render_glass_card("Affordable Hotspots", "Areas with Lowest Avg Property Price (Lakhs)", 
+                    px.bar(low_price, x='address', y='avg_price_lakhs', color='avg_price_lakhs', color_continuous_scale='Teal', labels={'avg_price_lakhs': 'Price (₹ Lakhs)'}))
 
                 # 3. Premium Rentals (High Rent)
-                high_rent = loc_filtered.sort_values('rent', ascending=False).head(15)
-                render_glass_card("Premium Rentals", "Areas with Highest Average Rent", px.bar(high_rent, x='address', y='rent', color='rent', color_continuous_scale='Magma'))
+                high_rent = loc_filtered.sort_values('avg_rent', ascending=False).head(15)
+                render_glass_card("Premium Rentals", "Areas with Highest Average Rent", 
+                    px.bar(high_rent, x='address', y='avg_rent', color='avg_rent', color_continuous_scale='Magma'))
 
                 # 4. Budget Rentals (Low Rent)
-                low_rent = loc_filtered.sort_values('rent', ascending=True).head(15)
-                render_glass_card("Budget Rentals", "Areas with Lowest Average Rent", px.bar(low_rent, x='address', y='rent', color='rent', color_continuous_scale='Viridis'))
+                low_rent = loc_filtered.sort_values('avg_rent', ascending=True).head(15)
+                render_glass_card("Budget Rentals", "Areas with Lowest Average Rent", 
+                    px.bar(low_rent, x='address', y='avg_rent', color='avg_rent', color_continuous_scale='Viridis'))
                 
-                # New Chart: Avg Price vs Rent
-                price_rent = df.groupby('address').agg(avg_price=('price', 'mean'), avg_rent=('rent', 'mean'), count=('price', 'count')).reset_index()
-                price_rent = price_rent[price_rent['count']>5].sort_values('avg_price', ascending=False).head(15)
+                # --- NEW QUADRANT CHART: Price vs Rent ---
+                # Calculate medians for quadrants
+                median_price = loc_filtered['avg_price_lakhs'].median()
+                median_rent = loc_filtered['avg_rent'].median()
                 
-                fig_dual = make_subplots(specs=[[{"secondary_y": True}]])
-                fig_dual.add_trace(go.Bar(x=price_rent['address'], y=price_rent['avg_price']/100000, name="Avg Price (Lakhs)", marker_color='#38bdf8', opacity=0.8), secondary_y=False)
-                fig_dual.add_trace(go.Scatter(x=price_rent['address'], y=price_rent['avg_rent'], name="Avg Rent (₹)", line=dict(color='#f472b6', width=3), mode='lines+markers'), secondary_y=True)
+                def get_quadrant_label(row):
+                    p = row['avg_price_lakhs']
+                    r = row['avg_rent']
+                    if r >= median_rent and p < median_price: return "Best Investment (High Rent, Low Price)"
+                    elif r >= median_rent and p >= median_price: return "Lifestyle (High Rent, High Price)"
+                    elif r < median_rent and p < median_price: return "Budget Living (Low Rent, Low Price)"
+                    else: return "Avoid (Low Rent, High Price)"
+
+                def get_quadrant_color(row):
+                    p = row['avg_price_lakhs']
+                    r = row['avg_rent']
+                    if r >= median_rent and p < median_price: return "#22c55e" # Green
+                    elif r >= median_rent and p >= median_price: return "#eab308" # Yellow
+                    elif r < median_rent and p < median_price: return "#3b82f6" # Blue
+                    else: return "#ef4444" # Red
                 
-                fig_dual.update_layout(
-                    title_text="Price vs Rent Trends",
-                    plot_bgcolor='rgba(0,0,0,0)', 
-                    paper_bgcolor='rgba(0,0,0,0)',
-                    font=dict(color='#e2e8f0'),
-                    legend=dict(orientation="h", yanchor="bottom", y=1.02, xanchor="right", x=1),
-                    yaxis=dict(title=dict(text="Price (Lakhs)", font=dict(color="#38bdf8")), tickfont=dict(color="#38bdf8"), gridcolor='rgba(255,255,255,0.1)'),
-                    yaxis2=dict(title=dict(text="Rent (₹)", font=dict(color="#f472b6")), tickfont=dict(color="#f472b6"), overlaying='y', side='right')
+                loc_filtered['Quadrant'] = loc_filtered.apply(get_quadrant_label, axis=1)
+                loc_filtered['Color'] = loc_filtered.apply(get_quadrant_color, axis=1)
+
+                fig_quad = px.scatter(
+                    loc_filtered, 
+                    x='avg_price_lakhs', 
+                    y='avg_rent', 
+                    color='Quadrant',
+                    hover_name='address',
+                    size='count',
+                    color_discrete_map={
+                        "Best Investment (High Rent, Low Price)": "#22c55e",
+                        "Lifestyle (High Rent, High Price)": "#eab308",
+                        "Budget Living (Low Rent, Low Price)": "#3b82f6",
+                        "Avoid (Low Rent, High Price)": "#ef4444"
+                    }
                 )
-                render_glass_card("Area Value Analysis", "Avg Price (Lakhs) vs Monthly Rent", fig_dual)
+                
+                # Add Quadrant Lines
+                fig_quad.add_hline(y=median_rent, line_dash="dash", line_color="white", opacity=0.3, annotation_text="Avg Rent")
+                fig_quad.add_vline(x=median_price, line_dash="dash", line_color="white", opacity=0.3, annotation_text="Avg Price")
+                
+                fig_quad.update_layout(
+                    xaxis_title="Avg Property Price (Lakhs)",
+                    yaxis_title="Avg Monthly Rent (₹)",
+                    showlegend=True,
+                    legend=dict(orientation="h", yanchor="bottom", y=1.02, xanchor="right", x=1)
+                )
+
+                render_glass_card("Investment Matrix", "Analyze Areas by Price vs Rent Potential", fig_quad)
             
             with t2:
+                # --- EMI & Down Payment Calculations ---
+                r = 0.0875 / 12 # 8.75% Interest
+                n = 240 # 20 Years
+                df['loan_amount'] = df['price'] * 0.80
+                df['calculated_dp'] = df['price'] * 0.20
+                df['calculated_emi'] = df['loan_amount'] * r * (1 + r)**n / ((1 + r)**n - 1)
+                
+                # Create Summary Stats by Bedroom
+                bed_stats = df.groupby('bedrooms').agg(
+                    min_price=('price', 'min'), max_price=('price', 'max'),
+                    min_dp=('calculated_dp', 'min'), max_dp=('calculated_dp', 'max'),
+                    min_emi=('calculated_emi', 'min'), max_emi=('calculated_emi', 'max')
+                ).reset_index()
+                
+                # Helper to format Lacs/Crores/Thousand
+                def fmt_L(v): return f"₹{v/100000:.1f}L"
+                def fmt_K(v): return f"₹{v/1000:.0f}k"
+                
+                st.markdown("### 🏷️ Price & Affordability Breakdown")
+                
+                # Display Custom Cards for each Bedroom Layout
+                for _, row in bed_stats.iterrows():
+                    if row['bedrooms'] in [1,2,3,4]: # Limit to standard sizes
+                        bhk = int(row['bedrooms'])
+                        price_rng = f"{fmt_L(row['min_price'])} – {fmt_L(row['max_price'])}"
+                        dp_rng = f"{fmt_L(row['min_dp'])} – {fmt_L(row['max_dp'])}"
+                        emi_rng = f"{fmt_K(row['min_emi'])} – {fmt_K(row['max_emi'])}"
+                        
+                        st.markdown(f"""
+                        <div style="background: rgba(30, 41, 59, 0.5); padding: 15px; border-radius: 12px; border: 1px solid rgba(255,255,255,0.1); margin-bottom: 10px; display: flex; justify-content: space-between; align-items: center;">
+                            <div style="flex: 1;"><h3 style="margin:0; color: #38bdf8;">{bhk} BHK</h3></div>
+                            <div style="flex: 2; text-align:center;"><p style="margin:0; font-size: 0.8rem; color:#94a3b8;">Price Range</p><p style="margin:0; font-weight:600;">{price_rng}</p></div>
+                            <div style="flex: 2; text-align:center;"><p style="margin:0; font-size: 0.8rem; color:#94a3b8;">Down Payment</p><p style="margin:0; font-weight:600;">{dp_rng}</p></div>
+                            <div style="flex: 2; text-align:center;"><p style="margin:0; font-size: 0.8rem; color:#94a3b8;">Est. EMI</p><p style="margin:0; font-weight:600;">{emi_rng}</p></div>
+                        </div>
+                        """, unsafe_allow_html=True)
+
                 c1, c2 = st.columns(2)
-                with c1: render_glass_card("Price Ranges", "Min/Max Price by Bedroom", px.box(df, x='bedrooms', y='price', color='bedrooms'), height=500)
+                with c1: 
+                    # Enhanced Box Plot
+                    fig_box = px.box(df, x='bedrooms', y='price', color='bedrooms', 
+                                    hover_data={'calculated_emi':':.0f', 'calculated_dp':':.0f', 'price':':.0f'})
+                    render_glass_card("Price Distribution", "Spread of property prices by room count", fig_box, height=500)
                 with c2: render_glass_card("Buy vs Rent", "System Recommendation Split", px.pie(df, names='decision', color_discrete_sequence=px.colors.sequential.RdBu), height=500)
             
             with t3:
