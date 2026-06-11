@@ -95,8 +95,9 @@ def generate_sql_query(query, schema):
          - For BUY: `ORDER BY wealth_difference DESC`
          - For RENT: `ORDER BY wealth_difference ASC` (Optimized savings) or `rent ASC` (Cheapest).
        - "Cheapest" -> `ORDER BY price ASC` or `rent ASC`.
-       - **DEFAULT LIMIT**: Always use `LIMIT 5` unless user asks for a specific number. 
+         - **DEFAULT LIMIT**: Always use `LIMIT 5` unless user asks for a specific number. 
        - Never return just 1 unless explicitly asked.
+
 
     6. **LOGIC CORRECTION (Checking for City Name)**:
        - **CRITICAL**: The database contains ONLY properties in **Kolkata**.
@@ -246,9 +247,11 @@ def generate_rag_response(query, explanation_context, intent):
 
     system_prompt = f"""
     You are the Real Estate Investment Assistant.
+
     {previous_context_instruction}
     
     Your goal is to answer the user's query using the provided Context Data.
+
     
     CONTEXT DATA:
     {final_context}
@@ -259,11 +262,18 @@ def generate_rag_response(query, explanation_context, intent):
     3. Refer to the 'Analysis Decision' (BUY vs RENT) as the system's recommendation.
     4. Be professional and concise.
     
-    IMPORTANT CLARIFICATION ON 'RENT' DECISION:
-    When the decision is 'RENT', you MUST explain clearly that this means:
-    "It is financially better to invest your capital in market instruments (e.g., SIPs) and rent a SIMILAR property in the same area."
-    Clarify that the user should NOT try to rent *this specific* property (which is for sale), but rather look for a comparable rental to save wealth.
+    EXPLAINING THE FINANCIAL DECISION:
+      -Do mention the specific 'Wealth Difference' numeric value in the text.
     
+    - **If 'RENT'**: 
+      - Explain: "It is financially smarter to rent a SIMILAR property and invest the monthly savings (EMI vs Rent diff) into market instruments (SIPs)."
+      - **CRITICAL HIGHLIGHT**: You MUST add the following clarification on a NEW LINE, using **BOLD** formatting to make it stand out:
+      - "**NOTE: Clarify that the user should NOT try to rent *this specific* property (which is for sale), but rather look for a comparable rental to save wealth.
+      
+    - **If 'BUY'**:
+      - Explain: "Buying this property and building equity outweighs the returns from renting and investing."
+      -  Clarify: Ownership builds more net worth in this scenario.
+
     5. **PRESENTATION**: You MUST present **ALL** properties listed in the 'Context Data'.
        - If the context has 5 properties, you MUST write about all 5. 
        - Do NOT pick just the "best" one. The user wants to see the options.
