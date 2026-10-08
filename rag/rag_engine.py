@@ -38,7 +38,7 @@ def classify_intent(query):
     
     try:
         response = client.chat.completions.create(
-            model="google/gemini-2.0-flash-001",
+            model="gemini-3.5-flash-lite",
             messages=[
                 {"role": "system", "content": system_prompt},
                 {"role": "user", "content": query}
@@ -108,7 +108,7 @@ def generate_sql_query(query, schema):
     
     try:
         response = client.chat.completions.create(
-            model="google/gemini-2.0-flash-001",
+            model="gemini-3.5-flash-lite",
             messages=[
                 {"role": "system", "content": system_prompt},
                 {"role": "user", "content": query}
@@ -282,7 +282,7 @@ def generate_rag_response(query, explanation_context, intent):
     
     try:
         response = client.chat.completions.create(
-            model="google/gemini-2.0-flash-001",
+            model="gemini-3.5-flash-lite",
             messages=[
                 {"role": "system", "content": system_prompt},
                 {"role": "user", "content": query}
