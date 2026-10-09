@@ -1,3 +1,19 @@
 # Environment Variables
 .env
 
+# Python Cache
+__pycache__/
+*.pyc
+
+# Virtual Environments
+venv/
+.venv/
+env/
+.env_*/
+
+# Databases
+real_estate.db
+chroma_db/
+
+# MacOS
+.DS_Store
