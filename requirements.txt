@@ -7,4 +7,4 @@ chromadb
 sentence-transformers
 pysqlite3-binary
 statsmodels
-protobuf<5.0.0
+protobuf<5.0.0tf-keras
